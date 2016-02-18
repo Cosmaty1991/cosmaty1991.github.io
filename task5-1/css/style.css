@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'Helvetica Neue Regular';
+  src: url('../fonts/helveticaneue-thin-webfont.eot');
+  src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+       url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+       url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin-top: -16px;
+  font-family: "Helvetica Neue Regular", Arial;
+}
+
+.header {
+  border: -1px solid black;
+  padding-left: 570px;
+  padding-bottom: 5px;
+  background-image: url(../img/header.png);
+}
+
+.header li {
+  list-style: none;
+  display: inline;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+
+.header li:hover {
+  border: -1px solid black;
+  background: #4eabda;
+  cursor: pointer;
+}
+
+.header li a {
+  color: #60b5ed;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+
+.header li a:hover {
+  color: white;
+}
+
+.header li:nth-child(6) a {
+  color: white;
+}
+
+.header li:nth-child(6):hover {
+  background-image: url(../img/header.png);
+}
+
+.header li:nth-child(6) a img {
+  position: relative;
+  top: 5px;
+}
+
+.header li:last-child {
+  border: -1px solid black;
+  color: white;
+  padding-left: 10px;
+  cursor: auto;
+  background: rgb(104,198,230);
+  background: -moz-linear-gradient(top,  rgba(104,198,230,1) 0%, rgba(82,177,221,1) 3%, rgba(50,129,199,1) 69%, rgba(46,122,196,1) 86%, rgba(46,122,196,1) 94%, rgba(67,153,210,1) 97%, rgba(208,226,236,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(104,198,230,1) 0%,rgba(82,177,221,1) 3%,rgba(50,129,199,1) 69%,rgba(46,122,196,1) 86%,rgba(46,122,196,1) 94%,rgba(67,153,210,1) 97%,rgba(208,226,236,1) 100%);
+  background: linear-gradient(to bottom,  rgba(104,198,230,1) 0%,rgba(82,177,221,1) 3%,rgba(50,129,199,1) 69%,rgba(46,122,196,1) 86%,rgba(46,122,196,1) 94%,rgba(67,153,210,1) 97%,rgba(208,226,236,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68c6e6', endColorstr='#d0e2ec',GradientType=0 );
+}
+
+.header li:last-child a {
+  color: white;
+  text-decoration: underline;
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.wrapper {
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 210px;
+  padding-bottom: 210px;
+  margin-top: -16px;
+}
+
+.content {
+  text-align: center;
+  margin-left: 350px;
+  margin-right: 350px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+h1 {
+  border-bottom: 2px solid white;
+  height: 65px;
+  padding-top: 20px;
+}
+
+.content img{
+  width: 300px;
+}
+
+.content .ou {
+  color: grey;
+}
+
+.content .hr1 {
+  width: 130px;
+  position: relative;
+  top: 18px;
+  right: 80px;
+}
+
+.content .hr2 {
+  width: 130px;
+  position: relative;
+  top: -18px;
+  left: 80px;
+}
+
+.content input {
+  width: 276px;
+  height: 36px;
+  background: black;
+  color: white;
+  padding-left: 15px;
+}
+
+.content input:hover {
+  background: #1b5288;
+}
+
+.content label {
+  position: relative;
+  bottom: 12px;
+  right: 130px;
+}
+
+.content .check {
+  position: relative;
+  right: 15px;
+}
+
+.content label:hover {
+  cursor: pointer;
+}
+
+.content a input {
+  background: url(../img/submit.png);
+  width: 150px;
+  height: 40px;
+  border: 1px solid #2e7ac4;
+  border-radius: 5px;
+  padding-left: 7px;
+}
+
+.content a input:hover {
+  background: url(../img/submit.png);
+  cursor: pointer;
+}
+
+.content .submit {
+  padding-left: 120px;
+  padding-right: 120px;
+}
