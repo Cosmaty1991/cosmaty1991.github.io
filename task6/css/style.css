@@ -1,0 +1,605 @@
+body {
+  font-family: sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.wrapper {
+  width: 910px;
+  margin: 0px auto;
+  padding-top: 6px;
+}
+
+ul {
+  padding-left: 5px;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 8px;
+}
+
+ul .contacts {
+  font-size: 18px;
+  color: grey;
+  letter-spacing: 0.5px;
+}
+
+ul .contacts img {
+  position: relative;
+  top: 5px;
+}
+
+ul li form {
+  display: inline-block;
+  height: 25px;
+  width: 495px;
+  font-size: 11px;
+  font-family: monospace;
+  border: -1px solid black;
+  border-radius: 5px;
+  background: rgb(32,105,136);
+  background: -moz-linear-gradient(top,  rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(15,58,94,1) 85%, rgba(12,50,86,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(32,105,136,1) 0%,rgba(17,65,101,1) 59%,rgba(15,58,94,1) 85%,rgba(12,50,86,1) 100%);
+  background: linear-gradient(to bottom,  rgba(32,105,136,1) 0%,rgba(17,65,101,1) 59%,rgba(15,58,94,1) 85%,rgba(12,50,86,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206988', endColorstr='#0c3256',GradientType=0 );
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+}
+
+ul li form img {
+  position: relative;
+  top: 5px;
+  margin-left: 5px;
+}
+
+ul li form input {
+  height: 12px;
+  width: 110px;
+  position: relative;
+  bottom: 1px;
+  margin-left: 2px;
+}
+
+ul li form a {
+  margin-left: 2px;
+  position: relative;
+  bottom: 1px;
+  color: white;
+  text-decoration: none;
+}
+
+ul li form .forget {
+  margin-left: 20px;
+  color: #bfbfbf;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+ul .home {
+  margin-left: 10px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 70px;
+  position: relative;
+  bottom: 2px;
+  vertical-align: middle;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+}
+
+ul .home a {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+header {
+  width: 910px;
+  height: 30px;
+  background: url(../img/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  font-size: 14px;
+  vertical-align: middle;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+}
+
+header a {
+  display: inline-block;
+  height: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  border: -1px solid black;
+  border-radius: 15px;
+  background: rgba(32,105,136,0.5);
+  background: -moz-linear-gradient(top,  rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(15,58,94,1) 85%, rgba(12,50,86,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(32,105,136,1) 0%,rgba(17,65,101,1) 59%,rgba(15,58,94,1) 85%,rgba(12,50,86,1) 100%);
+  background: linear-gradient(to bottom,  rgba(32,105,136,1) 0%,rgba(17,65,101,1) 59%,rgba(15,58,94,1) 85%,rgba(12,50,86,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206988', endColorstr='#0c3256',GradientType=0 );
+}
+
+header .company {
+  margin-left: 125px;
+}
+
+header .cart {
+  padding-left: 0px;
+  margin-left: 52px;
+  position: relative;
+  bottom: 1px;
+  font-size: 12px;
+  text-transform: none;
+}
+
+header .cart:hover {
+  background: none;
+}
+
+header .cart img {
+  position: relative;
+  top: 2px;
+}
+
+.firm {
+  color: #206988;
+  font-weight: bold;
+}
+
+.sum {
+  color: #294f6f;
+}
+
+.logo {
+  margin-top: -5px;
+}
+
+.search {
+  overflow: hidden;
+  margin-top: 12px;
+  font-size: 10px;
+}
+
+.search img {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+}
+
+.search .search1 {
+  position: relative;
+  bottom: 110px;
+  left: 95px;
+  padding-right: 35px;
+}
+
+.search .search2 {
+  position: relative;
+  bottom: 110px;
+  left: 189px;
+  padding-right: 35px;
+}
+
+.search .search3 {
+  position: relative;
+  bottom: 90px;
+  right: 128px;
+  padding-right: 35px;
+}
+
+.search .search4 {
+  position: relative;
+  bottom: 90px;
+  right: 34px;
+  padding-right: 35px;
+}
+
+.search .search5 {
+  position: relative;
+  bottom: 70px;
+  right: 351px;
+}
+
+.search .search6 {
+  position: relative;
+  bottom: 70px;
+  right: 222px;
+}
+
+.search .search7 {
+  position: relative;
+  bottom: 50px;
+  right: 504px;
+  padding-right: 35px;
+}
+
+.search .search8 {
+  position: relative;
+  bottom: 50px;
+  right: 410px;
+  padding-right: 35px;
+}
+
+.search .search9 {
+  position: relative;
+  bottom: 115px;
+  right: 334px;
+}
+
+.search .division{
+  position: relative;
+  bottom: 114px;
+  right: 325px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.search .search10 {
+  position: relative;
+  bottom: 136px;
+  left: 562px;
+}
+
+.search .search11 {
+  position: relative;
+  bottom: 110px;
+  left: 446px;
+}
+
+.search .search12 {
+  position: relative;
+  bottom: 138px;
+  left: 655px;
+}
+
+.search .search13 {
+  position: relative;
+  bottom: 108px;
+  left: 613px;
+}
+
+.search .search14 {
+  position: relative;
+  bottom: 78px;
+  left: 576px;
+}
+
+.search .search15 {
+  position: relative;
+  bottom: 112px;
+  left: 620px;
+}
+
+.search .search16 {
+  position: relative;
+  bottom: 68px;
+  left: 578px;
+}
+
+.search .summer {
+  position: relative;
+  bottom: 88px;
+  left: 190px;
+  cursor: pointer;
+}
+
+.search .summer2 {
+  position: relative;
+  bottom: 90px;
+  left: 186px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.search .winter {
+  position: relative;
+  bottom: 92px;
+  left: 487px;
+  cursor: pointer;
+}
+
+.search .winter2 {
+  position: relative;
+  bottom: 94px;
+  left: 484px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.search .all {
+  position: relative;
+  bottom: 94px;
+  left: 487px;
+  cursor: pointer;
+}
+
+.search .all2 {
+  position: relative;
+  bottom: 96px;
+  left: 483px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.search .poisk1 {
+  position: relative;
+  bottom: 90px;
+  left: 293px;
+  color: #154467;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.search .poisk2 {
+  position: relative;
+  bottom: 90px;
+  left: 443px;
+  color: #154467;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.search .poisk3 {
+  position: relative;
+  bottom: 90px;
+  left: 675px;
+  color: #154467;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.content {
+  overflow: hidden;
+  background: white;
+  margin-top: -77px;
+}
+
+section {
+  display: inline;
+  width: 140px;
+  float: left;
+  margin-right: 52px;
+  font-size: 14px;
+}
+
+.catalog p {
+  height: 30px;
+  width: 180px;
+  margin-bottom: -8px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  color: #294f6f;
+  text-transform: uppercase;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+}
+
+.catalog p img {
+  position: relative;
+  top: 4px;
+  left: 4px;
+  margin-right: 1px;
+}
+
+.product {
+  height: 30px;
+  width: 150px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  color: #294f6f;
+  text-transform: uppercase;
+  margin-bottom: -11px;
+  position: relative;
+  bottom: 1px;
+  top: 1px;
+}
+
+.product img {
+  position: relative;
+  top: 3px;
+  left: 3px;
+}
+
+.catalog li ul li {
+  position: relative;
+  left: 30px;
+  top: 10px;
+  line-height: 1.65;
+}
+
+.catalog li ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: grey;
+  position: relative;
+  left: 5px;
+}
+
+.catalog li ul li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  color: #294f6f;
+}
+
+main {
+  width: 525px;
+  height: 630px;
+  float: left;
+  margin-top: 10px;
+  text-align: center;
+  border: -1px solid grey;
+  background: rgb(35,75,93,0.5);
+  background: -moz-linear-gradient(top,  rgba(35,75,93,0.5) 0%, rgba(118,141,151,0.5) 57%, rgba(201,207,209,0.5) 100%);
+  background: -webkit-linear-gradient(top,  rgba(35,75,93,0.5) 0%,rgba(118,141,151,0.5) 57%,rgba(201,207,209,0.5) 100%);
+  background: linear-gradient(to bottom,  rgba(35,75,93,0.5) 0%,rgba(118,141,151,0.5) 57%,rgba(201,207,209,0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#234b5d', endColorstr='#c9cfd1',GradientType=0 );
+}
+
+.first-line li,
+.second-line li,
+.third-line li {
+  display: inline;
+  float: left;
+  margin-right: -30px;
+  margin-left: -22px;
+  margin-bottom: 7px;
+  margin-top: -12px;
+}
+
+.third-line li {
+  margin-bottom: 0px;
+  margin-top: -5px;
+}
+
+main a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+aside {
+  width: 180px;
+  float: left;
+}
+
+aside .product {
+  width: 135px;
+}
+
+aside li {
+  position: relative;
+  left: 20px;
+}
+
+aside li ul {
+  position: relative;
+  right: 28px;
+  font-size: 13px;
+  color: grey;
+  margin-top: 5px;
+}
+
+aside li ul input,
+aside li ul label {
+  cursor: pointer;
+  font-size: 13px;
+}
+
+aside li ul label:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  color: #294f6f;
+}
+
+.choose {
+  position: relative;
+  left: 35px;
+}
+
+.choose input {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 11px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 15px;
+  background: rgb(32,105,136);
+  background: -moz-linear-gradient(top,  rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(15,58,94,1) 85%, rgba(12,50,86,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(32,105,136,1) 0%,rgba(17,65,101,1) 59%,rgba(15,58,94,1) 85%,rgba(12,50,86,1) 100%);
+  background: linear-gradient(to bottom,  rgba(32,105,136,1) 0%,rgba(17,65,101,1) 59%,rgba(15,58,94,1) 85%,rgba(12,50,86,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206988', endColorstr='#0c3256',GradientType=0 );
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+}
+
+.icons {
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 40px;
+}
+
+.icons a {
+  margin-right: 10px;
+}
+
+.bridgestone {
+  position: relative;
+  bottom: 8px;
+}
+
+.avon {
+  position: relative;
+  bottom: 7px;
+}
+
+.pirelli {
+  position: relative;
+  bottom: 7px;
+}
+
+.dunlop {
+  position: relative;
+  bottom: 7px;
+}
+
+footer {
+  background: #213a4d;
+  height: 100px;
+  padding-top: 10px;
+  padding-left: 33%;
+  position: relative;
+  top: 18px;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  padding-left: 12px;
+  padding-right: 14px;
+  border-right: 1px solid white;
+}
+
+footer a:hover {
+  color: #3792d0;
+}
+
+.fcontacts {
+  border-right: none;
+}
+
+.copy {
+  font-size: 10px;
+  color: #7a4641;
+  padding-top: 3px;
+  padding-left: 75px;
+}
