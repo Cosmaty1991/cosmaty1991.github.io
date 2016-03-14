@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'League Gothic Regular';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,8 +16,7 @@
 
 body {
   width: auto;
-  font-family: sans-serif;
-  letter-spacing: 1px;
+  font-family: 'League Gothic Regular', sans-serif;
 }
 
 a {
@@ -28,7 +38,7 @@ h2 {
   color: #edbfff;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 30px;
   margin-bottom: -10px;
 }
 
@@ -44,7 +54,6 @@ header {
   width: 960px;
   margin: 0px auto;
   margin-top: -40px;
-  letter-spacing: -2px;
   list-style: none;
 }
 
@@ -56,6 +65,7 @@ header {
   display: inline;
   position: relative;
   top: -10px;
+  font-size: 20px;
 }
 
 .header__item {
@@ -104,7 +114,7 @@ header {
 
 .header__paragraph p {
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 15px;
   line-height: 1.5;
 }
@@ -179,14 +189,14 @@ header {
 .about__item3 h3 {
   text-transform: uppercase;
   margin-bottom: 15px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .about__item1 p,
 .about__item2 p,
 .about__item3 p {
   margin-bottom: 40px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .about__item1 a,
@@ -194,7 +204,6 @@ header {
 .about__item3 a {
   margin-left: 123px;
   color: rgba(255, 255, 255, 0.5);
-  letter-spacing: -0.5px;
 }
 
 .about__item1 a:hover,
@@ -248,7 +257,6 @@ main {
   right: 80px;
   float: right;
   width: 370px;
-  letter-spacing: -0.5px;
 }
 
 .main__right__section h3 {
@@ -259,7 +267,7 @@ main {
   margin-left: 65px;
   margin-top: -45px;
   margin-bottom: 25px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.3;
 }
 
@@ -268,8 +276,7 @@ main {
   position: relative;
   left: 65px;
   color: black;
-  font-size: 12px;
-  letter-spacing: -1.5px;
+  font-size: 16px;
 }
 
 .main__right__section .sentence {
@@ -329,7 +336,7 @@ aside {
 .aside__copy {
   color: #d1d1d1;
   font-style: italic;
-  font-size: 12px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -356,8 +363,7 @@ footer {
 
 .footer__list {
   list-style: none;
-  font-size: 12px;
-  letter-spacing: -1px;
+  font-size: 16px;
   width: 960px;
   margin: 0px auto;
 }
@@ -386,7 +392,7 @@ footer {
     margin-bottom: 50px;
   }
   .header__item {
-    font-size: 15px;
+    font-size: 18px;
     margin-right: 50px;
   }
   .header__middle {
@@ -400,16 +406,13 @@ footer {
   }
   .header__paragraph {
     width: 270px;
-    letter-spacing: -0.5px;
   }
   h1 {
     font-size: 30px;
-    letter-spacing: -2px;
     margin-top: 20px;
   }
   h2 {
-    font-size: 14px;
-    letter-spacing: -2px;
+    font-size: 20px;
     margin-bottom: 5px;
   }
   .sentence,
@@ -450,21 +453,10 @@ footer {
   .about__item3 {
     background: url(../img/about.png) -660px 2px no-repeat;
   }
-  .about__item1 h3,
-  .about__item2 h3,
-  .about__item3 h3 {
-    letter-spacing: -2px;
-  }
-  .about__item1 p,
-  .about__item2 p,
-  .about__item3 p {
-    letter-spacing: -0.5px;
-  }
   .about__item1 a,
   .about__item2 a,
   .about__item3 a {
     margin-left: 60px;
-    letter-spacing: -2px;
   }
   main {
     padding-left: 20px;
@@ -473,7 +465,6 @@ footer {
   .main__left__section {
     width: 325px;
     height: 310px;
-    letter-spacing: -0.5px;
   }
   .left__section__img {
     width: 325px;
@@ -496,7 +487,6 @@ footer {
     top: 10px;
     right: 195px;
     line-height: 1;
-    letter-spacing: 1px;
   }
   .main__right__section a {
     margin-left: 170px;
@@ -517,7 +507,6 @@ footer {
   .aside__item {
     width: 205px;
     margin-right: 25px;
-    letter-spacing: -0.5px;
   }
   .footer__list {
     padding-bottom: 30px;
@@ -554,7 +543,7 @@ footer {
     margin: 0px;
     margin-top: 0px;
     width: 240px;
-    font-size: 14px;
+    font-size: 18px;
     border-radius: 10px;
   }
   .header__item {
@@ -601,7 +590,7 @@ footer {
     margin-bottom: 5px;
   }
   h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .header__left {
     margin-left: -35px;
@@ -637,15 +626,9 @@ footer {
   .about__item3 {
     margin-left: 5px;
   }
-  .about__item1 h3
-  .about__item2 h3
-  .about__item3 h3 {
-    letter-spacing: normal;
-  }
   .about__item1 p,
   .about__item2 p,
   .about__item3 p {
-    letter-spacing: normal;
     text-align: justify;
   }
   .about__item1 a,
@@ -655,7 +638,6 @@ footer {
     position: relative;
     bottom: 25px;
     left: 60px;
-    letter-spacing: normal;
   }
   .about__item3 a {
     left: 70px;
@@ -682,7 +664,6 @@ footer {
   .main__right__section {
     top: 315px;
     right: 530px;
-    letter-spacing: normal;
   }
   .icons__list {
     width: 350px;
@@ -727,10 +708,10 @@ footer {
     text-decoration: underline;
   }
   h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   h2 {
-    font-size: 11px;
+    font-size: 14px;
   }
   .header__iphone {
     display: none;
@@ -785,7 +766,6 @@ footer {
     margin-left: 220px;
     right: 745px;
     width: 220px;
-    letter-spacing: -2px;
   }
   .main__right__section a {
     margin-left: 60px;
