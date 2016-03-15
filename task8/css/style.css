@@ -85,7 +85,7 @@ header {
 
 .header__item {
   list-style: none;
-  margin-right: 46px;
+  margin-right: 47px;
   display: inline;
 }
 
@@ -219,7 +219,7 @@ header {
 .about__item1 a,
 .about__item2 a,
 .about__item3 a {
-  margin-left: 162px;
+  margin-left: 163px;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -347,7 +347,7 @@ aside {
 .aside__item {
   display: inline-block;
   width: 270px;
-  margin-right: 60px;
+  margin-right: 65px;
 }
 
 .aside__item:last-child {
