@@ -347,7 +347,7 @@ aside {
 .aside__item {
   display: inline-block;
   width: 270px;
-  margin-right: 63px;
+  margin-right: 60px;
 }
 
 .aside__item:last-child {
