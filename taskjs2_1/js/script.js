@@ -19,6 +19,6 @@ if (b >= 1) {
   console.log( pow(a, b) );
 } else if (b <= -1) {
   console.log( 1 / pow(a, b) );
-} else if (b === 0) {
+} else if (b == 0) {
   console.log( 1 );
 }
