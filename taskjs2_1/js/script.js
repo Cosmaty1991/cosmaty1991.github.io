@@ -1,11 +1,11 @@
 function pow(a, b) {
   var result = a;
 
-  for (i = 1; i < b; i++) {
+  for (var i = 1; i < b; i++) {
     result = result * a;
   }
 
-  for (j = -1; j > b; j--) {
+  for (var j = -1; j > b; j--) {
     result = result * a;
   }
 
@@ -19,6 +19,6 @@ if (b >= 1) {
   console.log( pow(a, b) );
 } else if (b <= -1) {
   console.log( 1 / pow(a, b) );
-} else {
+} else if (b === 0) {
   console.log( 1 );
 }

@@ -5,11 +5,16 @@ for (var i = 0; i < 5; i++) {
 }
 
 var name = prompt('Введите имя пользователя:', '');
+var bool;
 
-for (var i = 0; i < 5; i++) {
-  if (arr[i] === name) {
-    alert( name + ', вы вошли' );
-  } else {
-    alert( 'Ошибка' );
+for (var j = 0; j < 5; j++) {
+  if (arr[j] === name) {
+    bool = true;
   }
+}
+
+if (bool === true) {
+  alert( name + ', вы вошли' );
+} else {
+  alert( 'Ошибка' );
 }
