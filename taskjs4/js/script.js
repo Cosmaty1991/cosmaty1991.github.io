@@ -24,10 +24,12 @@ var object = {
 
         var checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
+        checkbox.id = (i + 1) / (j + 3);
         li.appendChild(checkbox);
 
         var label = document.createElement('label');
         label.innerHTML = 'Вариант ответа №' + (j + 1);
+        label.htmlFor = (i + 1) / (j + 3);
         li.appendChild(label);
       }
     }
