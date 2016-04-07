@@ -1,5 +1,6 @@
-var time = 0;
+var timer;
 var run = 0;
+var time = 0;
 
 function start() {
   if (run == 0) {
@@ -13,6 +14,7 @@ function start() {
 }
 
 function reset() {
+  clearTimeout(timer);
   run = 0;
   time = 0;
   document.getElementById('start').innerHTML = '&#9654; Start';
@@ -21,7 +23,7 @@ function reset() {
 
 function increment() {
   if (run == 1) {
-    setTimeout(function() {
+    timer = setTimeout(function() {
       time++;
       var date = new Date();
       var hours = Math.floor(time / 10 / 60 / 60);
