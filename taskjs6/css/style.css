@@ -1,0 +1,48 @@
+body {
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  padding-left: 520px;
+  padding-top: 100px;
+}
+
+.stopwatch {
+  background: green;
+  border: 5px solid black;
+  border-radius: 10px;
+  color: black;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.start {
+  background: green;
+  border: 5px solid black;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: black;
+  padding: 20px;
+  margin-right: 80px;
+  width: 210px;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.reset {
+  background: red;
+  border: 5px solid black;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: black;
+  padding: 20px;
+  width: 210px;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
