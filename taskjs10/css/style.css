@@ -60,7 +60,7 @@ body {
   list-style: none;
   position: absolute;
   z-index: 2;
-  left: 317px;
+  left: 316px;
   padding: 0px;
   background: rgb(125, 126, 125);
   background: -moz-linear-gradient(top, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
@@ -71,7 +71,7 @@ body {
 
 .menu li ul li ul {
   left: 150px;
-  top: 177px;
+  top: 172px;
 }
 
 .menu li ul li ul li ul {
