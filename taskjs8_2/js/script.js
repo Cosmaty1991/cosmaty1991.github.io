@@ -1,8 +1,8 @@
 $(function() {
   $("input").hover(function() {
-    $(this).next("div").stop(true, true).animate({opacity: 'show', top: '25'}, 'slow');
+    $(this).next('div').stop(true, true).animate({opacity: 'show', top: '25'}, 'slow');
   }, function() {
-    $(this).next("div").stop(true, true).animate({opacity: 'hide'}, 'fast');
+    $(this).next('div').stop(true, true).animate({opacity: 'hide'}, 'fast');
   });
 
   $('.firstname').click(function() {

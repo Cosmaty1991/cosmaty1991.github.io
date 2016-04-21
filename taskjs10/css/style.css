@@ -1,0 +1,406 @@
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  padding-bottom: 10px;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(top,  rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(255, 255, 255, 1) 0%,rgba(229,229,229,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255, 255, 255, 1) 0%,rgba(229, 229, 229, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0 );
+}
+
+/* menu */
+
+.menu {
+  padding-left: 0px;
+  border-radius: 5px;
+  background: rgb(125, 126, 125);
+  background: -moz-linear-gradient(top, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(125, 126, 125, 1) 0%,rgba(14, 14, 14, 1) 100%);
+  background: linear-gradient(to bottom, rgba(125, 126, 125, 1) 0%,rgba(14, 14, 14, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0 );
+}
+
+.menu li {
+  list-style: none;
+  display: inline;
+  z-index: 1;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 150px;
+  text-align: center;
+}
+
+.menu a:hover {
+  color: black;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255 ,1) 0%,rgba(246, 246, 246, 1) 47%,rgba(237, 237, 237, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,rgba(246, 246, 246, 1) 47%,rgba(237, 237, 237, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+
+.menu ul li {
+  display: block;
+  border-bottom: 1px solid white;
+}
+
+.menu li ul {
+  display: none;
+  list-style: none;
+  position: absolute;
+  z-index: 2;
+  left: 317px;
+  padding: 0px;
+  background: rgb(125, 126, 125);
+  background: -moz-linear-gradient(top, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(125, 126, 125, 1) 0%,rgba(14, 14, 14, 1) 100%);
+  background: linear-gradient(to bottom, rgba(125, 126, 125, 1) 0%,rgba(14, 14, 14, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0 );
+}
+
+.menu li ul li ul {
+  left: 150px;
+  top: 177px;
+}
+
+.menu li ul li ul li ul {
+  top: 57px;
+}
+
+/* carousel */
+
+.jcarousel-wrapper {
+  margin: 50px auto;
+  position: relative;
+  border: 10px solid white;
+  width: 1000px;
+  height: 500px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999;
+}
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  width: 1000px;
+  height: 500px;
+}
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  top: 230px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: #4E443C;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 1px #000;
+  font: 24px/27px Arial, sans-serif;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-control-prev {
+  left: 15px;
+}
+
+.jcarousel-control-next {
+  right: 15px;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+  opacity: .5;
+}
+
+.jcarousel-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 450px;
+}
+
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 20px;
+  min-width: 20px;
+  background: #fff;
+  color: #4e443c;
+  border-radius: 20px;
+  padding: 3px;
+  text-align: center;
+  margin-right: 2px;
+  opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+  background: #4e443c;
+  color: #fff;
+  opacity: 1;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+/* select */
+
+form {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: auto;
+  height: 250px;
+  padding-left: 10px;
+  background: rgb(242, 249, 254);
+  background: -moz-linear-gradient(top,  rgba(242, 249, 254, 1) 0%, rgba(214, 240, 253, 1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(242, 249, 254, 1) 0%,rgba(214, 240, 253, 1) 100%);
+  background: linear-gradient(to bottom,  rgba(242, 249, 254, 1) 0%,rgba(214, 240, 253, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=0 );
+}
+
+.countries {
+  display: inline-block;
+  position: relative;
+  bottom: 117px;
+  width: 500px;
+  text-align: center;
+}
+
+.sbHolder {
+  background-color: #2d2d2d;
+  border: solid 1px #515151;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  height: 30px;
+  position: relative;
+  left: 40px;
+  width: 400px;
+}
+
+.sbSelector {
+  display: block;
+  height: 30px;
+  left: 0px;
+  line-height: 30px;
+  outline: none;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 10px;
+  top: 0;
+  width: 400px;
+}
+
+.sbSelector:link,
+.sbSelector:visited,
+.sbSelector:hover {
+  color: #ebb52d;
+  outline: none;
+  text-decoration: none;
+}
+
+.sbToggle {
+  background: url(../img/select-icons.png) 0 -116px no-repeat;
+  display: block;
+  height: 30px;
+  outline: none;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 30px;
+}
+
+.sbToggle:hover {
+  background: url(../img/select-icons.png) 0 -167px no-repeat;
+}
+
+.sbToggleOpen {
+  background: url(../img/select-icons.png) 0 -16px no-repeat;
+}
+
+.sbToggleOpen:hover {
+  background: url(../img/select-icons.png) 0 -66px no-repeat;
+}
+
+.sbHolderDisabled {
+  background-color: #3c3c3c;
+  border: solid 1px #515151;
+}
+
+.sbOptions {
+  background-color: #212121;
+  border: solid 1px #515151;
+  list-style: none;
+  left: -0.5px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  width: 400px;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.sbOptions li {
+  padding: 0 7px;
+}
+
+.sbOptions a {
+  border-bottom: dotted 1px #515151;
+  display: block;
+  outline: none;
+  padding: 7px 0 7px 3px;
+}
+
+.sbOptions a:link,
+.sbOptions a:visited {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus {
+  color: #ebb52d;
+}
+
+.sbOptions li.last a {
+  border-bottom: none;
+}
+
+.sbOptions .sbDisabled {
+  border-bottom: dotted 1px #515151;
+  color: #999;
+  display: block;
+  padding: 7px 0 7px 3px;
+}
+
+.sbOptions .sbGroup {
+  border-bottom: dotted 1px #515151;
+  color: #ebb52d;
+  display: block;
+  font-weight: bold;
+  padding: 7px 0 7px 3px;
+}
+
+.sbOptions .sbSub {
+  padding-left: 17px;
+}
+
+/* checkbox js */
+
+.cities {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  display: inline-block;
+  height: 240px;
+  width: 500px;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.custom-label {
+  display: inline-block;
+  margin-right: .8em;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.custom-check {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  top: -.15em;
+  margin: 0 .4em;
+  width: 20px;
+  height: 20px;
+  background: url(../img/checkbox.png) 0 0 no-repeat;
+}
+
+.custom-check.focus {
+  background-position: -20px 0;
+}
+.custom-check.checked {
+  background-position: -40px 0;
+}
+.custom-check.checked.focus {
+  background-position: -60px 0;
+}
+
+/* checkbox css */
+
+.sights {
+  display: inline-block;
+  height: 240px;
+  width: 400px;
+  padding-left: 10px;
+  position: relative;
+  bottom: 12px;
+  text-align: right;
+}
+
+.sights input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.sights label {
+  cursor: pointer;
+}
+
+.sights label:after {
+  content: " ";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/checkbox2.png);
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+}
+
+.sights input[type=checkbox]:checked + label:after {
+  background-position: 0 -17px;
+}
+
+.sights label:hover:after {
+  background-position: 0 -34px;
+}
+
+.sights input[type=checkbox]:checked + label:hover:after {
+  background-position: 0 -51px;
+}

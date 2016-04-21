@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>taskjs 10</title>
+  <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+
+  <!-- menu -->
+
+  <ul class="menu">
+    <li><a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0">Америка</a></li>
+    <li><a href="https://ru.wikipedia.org/wiki/%D0%90%D1%84%D1%80%D0%B8%D0%BA%D0%B0">Африка</a></li>
+    <li><a href="https://ru.wikipedia.org/wiki/%D0%95%D0%B2%D1%80%D0%B0%D0%B7%D0%B8%D1%8F">Евразия &#9660;</a>
+      <ul class="submenu">
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D1%8F">Англия</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F">Финляндия</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D1%80%D0%B2%D0%B5%D0%B3%D0%B8%D1%8F">Норвегия</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F">Япония &#9658;</a>
+          <ul class="list">
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BE%D1%82%D0%BE">Киото</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BA%D0%B8%D0%BE">Токио &#9658;</a>
+              <ul class="sublist">
+                <li><a href="http://www.nihon.ru/info/sights_tokyo.asp#tokyo1">Токийский вокзал, Императорский Дворец, Гинза</a></li>
+                <li><a href="http://www.nihon.ru/info/sights_tokyo.asp#tokyo5">Синдзюку</a></li>
+                <li><a href="http://www.nihon.ru/info/sights_tokyo.asp#tokyo6">Сибуя, Харадзюку, Аояма</a></li>
+                <li><a href="http://www.nihon.ru/info/sights_tokyo.asp#tokyo7">Икэбукуро</a></li>
+                <li><a href="http://www.nihon.ru/info/sights_tokyo.asp#tokyo11">Токийский залив</a></li>
+              </ul>
+            </li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%98%D0%BE%D0%BA%D0%BE%D0%B3%D0%B0%D0%BC%D0%B0">Йокогама</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D0%B0%D0%BA%D0%B0">Осака</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B3%D0%BE%D1%8F">Нагойа</a></li>
+          </ul>
+        </li>
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%9D%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F_%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0">Китай</a></li>
+      </ul>
+    </li>
+    <li><a href="https://ru.wikipedia.org/wiki/%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D1%8F_(%D0%BA%D0%BE%D0%BD%D1%82%D0%B8%D0%BD%D0%B5%D0%BD%D1%82)">Австралия</a></li>
+    <li><a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%B0%D1%80%D0%BA%D1%82%D0%B8%D0%B4%D0%B0">Антарктида</a></li>
+  </ul>
+
+  <!-- carousel -->
+
+  <div class="jcarousel-wrapper">
+    <div class="jcarousel">
+      <ul>
+        <li><img src="img\london.jpg" alt="Биг-Бен" title="Биг-Бен"></li>
+        <li><img src="img\helsinki.jpg" alt="Музей под открытым небом Сеурасаари" title="Музей под открытым небом Сеурасаари"></li>
+        <li><img src="img\oslo.jpg" alt="Замок и крепость Акерсхус" title="Замок и крепость Акерсхус"></li>
+        <li><img src="img\tokyo.jpg" alt="Токийская телебашня" title="Токийская телебашня"></li>
+        <li><img src="img\beijing.jpg" alt="Запретный город" title="Запретный город"></li>
+      </ul>
+    </div>
+    <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+    <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+    <p class="jcarousel-pagination"></p>
+  </div>
+
+  <!-- select -->
+
+  <form action="#">
+    <div class="countries"><b>Какую страну Вы хотели бы посетить?</b>
+    <br><br>
+    <select id="country" name="country">
+      <option value="Англия">Англия</option>
+      <option value="Финляндия">Финляндия</option>
+      <option value="Норвегия">Норвегия</option>
+      <option value="Япония">Япония</option>
+      <option value="Китай">Китай</option>
+    </select></div>
+
+    <!-- checkbox js -->
+
+    <div class="cities"><u>Какие города Вы хотели бы посетить?</u>
+    <br><br>
+    <div><label for="checkbox1"><input type="checkbox" class="checkbox" id="checkbox1">
+    Лондон</label></div>
+    <div><label for="checkbox2"><input type="checkbox" class="checkbox" id="checkbox2">
+    Хельсинки</label></div>
+    <div><label for="checkbox3"><input type="checkbox" class="checkbox" id="checkbox3">
+    Осло</label></div>
+    <div><label for="checkbox4"><input type="checkbox" class="checkbox" id="checkbox4">
+    Токио</label></div>
+    <div><label for="checkbox5"><input type="checkbox" class="checkbox" id="checkbox5">
+    Пекин</label></div>
+  </div>
+
+    <!-- checkbox css -->
+
+    <div class="sights"><i>Какие достопримечательности Вы хотели бы посетить?</i>
+    <br><br>
+    <div><input type="checkbox" id="big-ben">
+    <label for="big-ben">Биг-Бен</label></div>
+    <div><input type="checkbox" id="museum">
+    <label for="museum">Музей под открытым небом Сеурасаари</label></div>
+    <div><input type="checkbox" id="castle">
+    <label for="castle">Замок и крепость Акерсхус</label></div>
+    <div><input type="checkbox" id="tower">
+    <label for="tower">Токийская телебашня</label></div>
+    <div><input type="checkbox" id="city">
+    <label for="city">Запретный город</label></div></div>
+  </form>
+
+  <script src="js\jquery.min.js"></script>
+  <script src="js\jquery.color.min.js"></script>
+  <script src="js\jquery.jcarousel.min.js"></script>
+  <script src="js\jquery.selectbox.min.js"></script>
+  <script src="js\jquery.checkbox.js"></script>
+  <script src="js\script.js"></script>
+</body>
+</html>
