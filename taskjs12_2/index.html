@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>taskjs 12_2</title>
+  <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+  <script src="js\jquery.min.js"></script>
+  <script src="js\tmpl.js"></script>
+  <script src="js\script.js"></script>
+
+  <script type="text/html" id="page">
+    <div class="box">
+      <div class="name">
+        <h2><%= data[0].title %></h2>
+        <img <%= data[0].content %>>
+      </div>
+      <p><%= data[1].title %></p>
+      <hr>
+      <p><%= data[2].title %></p>
+      <ul>
+        <% for (var i = 2; i < 5; i++) { %>
+        <li><%= data[i].content %></li>
+        <% }; %>
+      </ul>
+      <hr>
+      <p><%= data[5].title %>
+        <br>
+        <%= data[5].content %></p>
+      <p><%= data[6].title %>
+        <br>
+        <a href="https://www.facebook.com/profile.php?id=100001441172206"><%= data[6].content %></a></p>
+      <hr>
+      <p><%= data[7].title %>
+        <br>
+        <%= data[7].content %></p>
+    </div>
+  </script>
+</body>
+</html>
