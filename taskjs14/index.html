@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>taskjs 14</title>
+  <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+  <script src="js\jquery.min.js"></script>
+  <script src="js\tmpl.js"></script>
+  <script src="js\script.js"></script>
+
+  <script type="text/html" id="page">
+    <form action="#">
+      <p>Тест по программированию</p>
+      <ol>
+        <% for (var i = 0; i < 3; i++) { %>
+        <li><%= data[i].question %>
+          <ul>
+            <% for (var j = 0; j < 3; j++) { %>
+            <li>
+              <input type="radio" name=<%= (i + 1) %> id=<%= (i + 1) / (j + 3) %>
+              <% if (data[i].answers[j].correct) { %> class="correct" <% } %>>
+              <label for=<%= (i + 1) / (j + 3) %>><%= data[i].answers[j].answer %></label>
+            </li>
+            <% }; %>
+          </ul>
+        </li>
+        <% }; %>
+      </ol>
+      <input type="submit" class="submit" value="Проверить мои результаты">
+    </form>
+    <div class="modal">
+      <div class="close">X</div>
+      <h1></h1>
+    </div>
+    <div class="overlay"></div>
+  </script>
+</body>
+</html>
