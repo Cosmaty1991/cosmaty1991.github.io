@@ -12,16 +12,16 @@
 
   <script type="text/html" id="page">
     <form action="#">
-      <p>Тест по программированию</p>
+      <p><%= data[0].paragraph %></p>
       <ol>
-        <% for (var i = 0; i < 3; i++) { %>
+        <% for (var i = 1; i < 4; i++) { %>
         <li><%= data[i].question %>
           <ul>
             <% for (var j = 0; j < 3; j++) { %>
             <li>
-              <input type="radio" name=<%= (i + 1) %> id=<%= (i + 1) / (j + 3) %>
+              <input type="radio" name=<%= (i + 1) %> id=<%= i / (j + 3) %>
               <% if (data[i].answers[j].correct) { %> class="correct" <% } %>>
-              <label for=<%= (i + 1) / (j + 3) %>><%= data[i].answers[j].answer %></label>
+              <label for=<%= i / (j + 3) %>><%= data[i].answers[j].answer %></label>
             </li>
             <% }; %>
           </ul>

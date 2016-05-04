@@ -5,6 +5,9 @@ $(function() {
 
   var form = [
     {
+      paragraph: 'Тест по программированию'
+    },
+    {
       question: 'Какая версия HTML поддерживает такие теги как: header, footer, main, nav, section?',
       answers: [
         {
@@ -73,7 +76,7 @@ $(function() {
 });
 
 $(function() {
-  function good() {
+  function showFirstModal() {
     $('.overlay').fadeIn(400, function() {
       $('.modal')
         .css('display', 'block')
@@ -83,7 +86,7 @@ $(function() {
     $('.modal h1').html('Поздравляю с успешным прохождением теста!');
   };
 
-  function bad() {
+  function showSecondModal() {
     $('.overlay').fadeIn(400, function() {
       $('.modal')
         .css('display', 'block')
@@ -93,7 +96,7 @@ $(function() {
     $('.modal h1').html('Тест не пройден!<br>Можете повторить попытку...');
   };
 
-  function close() {
+  function closeModal() {
     $('.close, .overlay').click(function() {
       $('.modal').animate({opacity: 0, top: '45%'}, 200, function() {
         $(this).css('display', 'none');
@@ -105,31 +108,29 @@ $(function() {
   $('.submit').click(function(e) {
     e.preventDefault();
 
-    var checked = $('input:checked');
+    var active = $('input:checked');
     var correct = $('.correct');
 
-    if (checked.length == correct.length) {
+    if (active.length == correct.length) {
       var counter = 0;
 
-      for (var i = 0; i < checked.length; i++) {
-        if (checked[i].getAttribute('class') == 'correct') {
+      for (var i = 0; i < active.length; i++) {
+        if (active[i].getAttribute('class') == 'correct') {
           counter++;
-          continue;
         }
-        break;
       }
 
       if (counter == correct.length) {
-        good();
-        close();
+        showFirstModal();
+
       } else {
-        bad();
-        close();
+        showSecondModal();
       }
 
     } else {
-      bad();
-      close();
+      showSecondModal();
     }
+
+    closeModal();
   });
 });
