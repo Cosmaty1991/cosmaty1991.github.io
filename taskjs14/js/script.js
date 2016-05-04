@@ -7,6 +7,7 @@ $(function() {
     {
       paragraph: 'Тест по программированию'
     },
+	
     {
       question: 'Какая версия HTML поддерживает такие теги как: header, footer, main, nav, section?',
       answers: [
