@@ -1,0 +1,14 @@
+.lightgrey {
+  color: lightgrey;
+  font-weight: bold;
+}
+
+.lightblue {
+  color: lightblue;
+  font-style: italic;
+}
+
+.lightgreen {
+  color: lightgreen;
+  text-decoration: underline;
+}
