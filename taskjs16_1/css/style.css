@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+
+form {
+  margin-top: 200px;
+  text-align: center;
+}
+
+#search {
+  width: 580px;
+  height: 35px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.submit {
+  height: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  background: #f2f2f2;
+  color: grey;
+}
+
+.submit:hover {
+  border: 1px solid grey;
+  color: black;
+}
