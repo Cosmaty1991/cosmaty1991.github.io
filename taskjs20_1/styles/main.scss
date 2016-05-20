@@ -1,0 +1,615 @@
+$elegant:    'Elegant Icons';
+$condenced:  'Ubuntu Condensed', sans-serif;
+$medium:     'Ubuntu Medium', sans-serif;
+$arial:      Arial, sans-serif;
+$font-size:  24px;
+$width:      1920px;
+$blue:       #248cec;
+$black:      #2a2d32;
+$yellow:     #f4b60d;
+$grey:       #f7f7f7;
+$lightblack: #35383c;
+
+@mixin rotate($deg) {
+   -webkit-transform: rotate($deg);
+   -moz-transform: rotate($deg);
+   -ms-transform: rotate($deg);
+   -o-transform: rotate($deg);
+   transform: rotate($deg);
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@font-face {
+  font-family: "Elegant Icons";
+  src: url('../fonts/ElegantIcons.eot');
+  src: url('../fonts/ElegantIcons.woff') format('woff'),
+       url('../fonts/ElegantIcons.ttf') format('truetype'),
+       url('../fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu Condensed";
+  src: url('../fonts/ubuntu-c-webfont.eot');
+  src: url('../fonts/ubuntu-c-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ubuntu-c-webfont.woff2') format('woff2'),
+       url('../fonts/ubuntu-c-webfont.woff') format('woff'),
+       url('../fonts/ubuntu-c-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu Medium";
+  src: url('../fonts/ubuntu-m-webfont.eot');
+  src: url('../fonts/ubuntu-m-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ubuntu-m-webfont.woff2') format('woff2'),
+       url('../fonts/ubuntu-m-webfont.woff') format('woff'),
+       url('../fonts/ubuntu-m-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: $width;
+}
+
+ul li {
+  list-style-type: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/* header */
+
+.header__list {
+  width: $width - 720px;
+  margin: 0px auto;
+  margin-top: 35px;
+}
+
+.header__image {
+  display: inline;
+  margin-right: 800px;
+}
+
+.header__item {
+  display: inline;
+  padding-right: 20px;
+}
+
+.header__item:last-child {
+  padding-right: 0px;
+}
+
+.header__link {
+  font-family: $elegant;
+  color: #cccccc;
+}
+
+.header__link:hover {
+  color: $blue;
+}
+
+/* menu */
+
+.menu__list {
+  width: $width - 720px;
+  margin: 0px auto;
+  margin-top: 38px;
+  background: $black;
+}
+
+.menu__item {
+  display: inline-block;
+}
+
+.menu__link {
+  font-family: $condenced;
+  font-size: $font-size - 10px;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  width: 120px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-right: 1px solid black;
+}
+
+.menu__link:hover {
+  color: $yellow;
+}
+
+.menu__link:focus {
+  background: $blue;
+}
+
+.menu__search {
+  font-family: $arial;
+  font-size: $font-size - 12px;
+  width: 240px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 10px;
+  margin-left: 330px;
+  background: $lightblack;
+  color: #5d6063;
+  border: 1px solid black;
+}
+
+.menu__submit {
+  position: absolute;
+  right: 360px;
+  top: 130px;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  color: #5d6063;
+  background: none;
+  border: none;
+}
+
+/* slider */
+
+.slider__wrapper {
+  margin: 50px auto;
+  position: relative;
+  width: $width - 720px;
+  height: 470px;
+}
+
+.slider__div {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__list {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.slider__item {
+  float: left;
+}
+
+.slider__image {
+  width: $width - 720px;
+  height: 470px;
+}
+
+.slider__page {
+  position: absolute;
+  bottom: 20px;
+  left: 550px;
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: $font-size - 13px;
+    line-height: 11px;
+    width: 11px;
+    background: white;
+    color: white;
+    margin-left: 15px;
+    text-align: center;
+    margin-right: 2px;
+    opacity: .75;
+    border: 4px solid white;
+  }
+}
+
+.slider__page .active {
+  background: black;
+  color: black;
+  opacity: 1;
+}
+
+/* articles */
+
+article {
+  overflow: hidden;
+  padding-left: 180px;
+  width: $width - 720px;
+  margin: 0px auto;
+  font-size: $font-size - 11px;
+}
+
+.articles__list1,
+.articles__list2,
+.articles__list3 {
+  display: inline;
+}
+
+.articles__item1,
+.articles__item2,
+.articles__item3 {
+  width: 230px;
+  float: left;
+  padding-left: 40px;
+}
+
+.articles__list1 {
+  list-style-image: url(../img/01.png);
+}
+
+.articles__item1 {
+  margin-right: 50px;
+  padding-right: 40px;
+}
+
+.articles__list2 {
+  list-style-image: url(../img/02.png);
+}
+
+.articles__item2 {
+  margin-left: 40px;
+  margin-right: 50px;
+  padding-right: 40px;
+}
+
+.articles__list3 {
+  list-style-image: url(../img/03.png);
+}
+
+.articles__item3 {
+  margin-left: 40px;
+}
+
+.articles__image {
+  position: relative;
+  bottom: 30px;
+}
+
+.articles__header {
+  font-family: $medium;
+  font-size: $font-size - 4px;
+}
+
+.articles__paragraph {
+  color: #8a8a8a;
+  font-family: $arial;
+  font-size: $font-size - 11px;
+}
+
+.articles__link {
+  font-family: $medium;
+  font-size: $font-size - 11px;
+  color: black;
+}
+
+.articles__link:hover {
+  color: $blue;
+}
+
+.articles__arrow {
+  font-family: $elegant;
+  color: $blue;
+  margin-left: 10px;
+  font-weight: bold;
+  position: relative;
+  top: 2px;
+  left: 5px;
+}
+
+.articles__arrow:hover {
+  color: #8a8a8a;
+}
+
+/* images */
+
+main {
+  width: $width + 35px;
+  margin-top: 90px;
+  padding-top: 45px;
+  padding-bottom: 70px;
+  background: $black;
+}
+
+.main__list {
+  width: $width - 720px;
+  margin: 0px auto;
+  overflow: hidden;
+  color: white;
+}
+
+.main__header {
+  font-family: $medium;
+  font-size: $font-size;
+}
+
+.main__link {
+  font-family: $medium;
+  font-size: $font-size - 8px;
+  display: inline;
+  float: left;
+  width: 260px;
+  margin-right: 40px;
+  color: white;
+  margin-top: 55px;
+}
+
+.main__link:hover {
+  color: $yellow;
+}
+
+.main__item:last-child .main__link {
+  margin-right: 0px;
+}
+
+.main__blue {
+  opacity: 0;
+  position: relative;
+  bottom: 264px;
+}
+
+.main__blue:hover {
+  opacity: 0.8;
+}
+
+.main__center {
+  text-align: center;
+  margin-top: -230px;
+}
+
+/* section */
+
+section {
+  width: $width - 345px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  padding-left: 380px;
+  overflow: hidden;
+  background: $grey;
+}
+
+.section__list {
+  width: 580px;
+  float: left;
+  margin-right: 45px;
+}
+
+.section__header {
+  font-family: $medium;
+  font-size: $font-size;
+  margin-bottom: 55px;
+  margin-left: 20px;
+}
+
+.section__item {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.section__image {
+  float: left;
+  margin-right: 30px;
+  margin-top: -10px;
+}
+
+.section__link {
+  font-family: $medium;
+  font-size: $font-size - 8px;
+  color: black;
+}
+
+.section__link:hover {
+  color: $blue;
+}
+
+.section__paragraph {
+  font-family: $arial;
+  font-size: $font-size - 11px;
+}
+
+.section__blue {
+  color: $blue;
+}
+
+/* accordion */
+
+.accordion__list {
+  width: 560px;
+  float: left;
+  padding: 0;
+}
+
+.accordion__header {
+  font-family: $medium;
+  font-size: $font-size;
+  margin-bottom: 50px;
+}
+
+.accordion__item {
+  padding: 0;
+}
+
+.accordion__button {
+  background: url(../img/accordion_white.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-bottom: solid 1px #F2F2F2;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  padding-left: 60px;
+  padding-right: 15px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  height: 35px;
+  font-family: $arial;
+  font-size: $font-size - 11px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.accordion__button:focus {
+  background: url(../img/accordion_yellow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.accordion__button:before {
+  background: #44596B;
+  content: '';
+  height: 2px;
+  margin-right: 37px;
+  position: absolute;
+  right: 88.5%;
+  top: 50%;
+  @include rotate(90deg);
+  @include transition(all 0.2s ease-in-out);
+  width: 14px;
+}
+
+.accordion__button:after {
+  background: #44596B;
+  content: '';
+  height: 2px;
+  margin-right: 37px;
+  position: absolute;
+  right: 88.5%;
+  top: 50%;
+  width: 14px;
+}
+
+.accordion__button.active:before {
+  @include rotate(0deg);
+}
+
+.accordion__button.active:after {
+  background: white;
+}
+
+.accordion__paragraph {
+  display: none;
+  overflow: hidden;
+  font-family: $arial;
+  font-size: $font-size - 11px;
+  line-height: 1.5;
+  width: 515px;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* icons */
+
+.icons__list {
+  width: $width - 720px;
+  margin: 0px auto;
+  padding-top: 95px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.icons__item {
+  display: inline;
+  float: left;
+  margin-left: 5px;
+  margin-right: 45px;
+}
+
+.icons__item:last-child {
+  margin-right: 0px;
+}
+
+/* nav */
+
+nav {
+  width: $width - 345px;
+  padding-left: 360px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  overflow: hidden;
+  background: $black;
+}
+
+.nav__list {
+  width: 265px;
+  float: left;
+  margin-left: 40px;
+}
+
+.nav__header {
+  font-family: $medium;
+  font-size: $font-size - 8px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 45px;
+}
+
+.nav__item {
+  border-bottom: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav__item:last-child {
+  border-bottom: none;
+}
+
+.nav__link {
+  color: grey;
+  font-family: $arial;
+  font-size: $font-size - 11px;
+}
+
+.nav__link:hover {
+  color: $blue;
+}
+
+/* footer */
+
+.footer__list {
+  width: $width - 365px;
+  padding-left: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  background: $lightblack;
+}
+
+.footer__item {
+  display: inline;
+  float: left;
+  margin-right: 30px;
+  color: grey;
+  font-family: $arial;
+  font-size: $font-size - 12px;
+}
+
+.footer__item:nth-child(3) {
+  margin-top: 5px;
+}
+
+.footer__item:last-child {
+  margin-left: 430px;
+  margin-top: 5px;
+}
+
+.footer__image {
+  margin-right: 10px;
+}
