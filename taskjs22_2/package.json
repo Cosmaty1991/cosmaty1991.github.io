@@ -1,0 +1,9 @@
+{
+  "name": "taskjs18",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-babel": "6.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
