@@ -1,7 +1,7 @@
 $(function() {
   $('form').submit(function() {
 
-    var urlFull = 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=large&q=' + encodeURIComponent($('#search').val()) + '&callback=GoogleCallback&context=?';
+    var urlFull = 'http://api.riffsy.com/v1/search?tag="+value+"&limit=50&output=json&callback=foo';
 
     $.ajax ({
       url: urlFull,
