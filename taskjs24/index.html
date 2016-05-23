@@ -6,8 +6,27 @@
   <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-  <script src="js\jquery.min.js"></script>
-  <script src="js\tmpl.js"></script>
-  <script src="js\script.js"></script>
+  <script data-main="js\app" src="js\require.js"></script>
+
+  <script type="text/template" id="wrapper__template">
+    <div class="wrapper">
+      <h2>ToDoList</h2>
+      <ul class="item__list"></ul>
+      <div class="item__controlls">
+        <input type="text" class="item__value">
+        <button type="button" class="item__add">+</button>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/template" id="list__template">
+    <% for (var i = 0; i < data.length; i++) { %>
+      <li class="item__element">
+        <input type="text" value="<%= data[i] %>" class="item__text" disabled>
+        <button type="checkbox" data-value="<%= data[i] %>" class="item__edit">&#128394;</button>
+        <button type="button" data-value="<%= data[i] %>" class="item__delete">&#128473;</button>
+      </li>
+    <% }; %>
+  </script>
 </body>
 </html>

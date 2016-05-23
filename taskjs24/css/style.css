@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+h2 {
+  margin-left: 200px;
+}
+
+.item__controlls {
+  margin-left: 25px;
+}
+
+.item__value {
+  width: 600px;
+  margin-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  font-size: 16px;
+}
+
+.item__add {
+  width: 110px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.item__add:hover {
+  background: azure;
+  border: 1px solid azure;
+}
+
+.item__element {
+  margin-bottom: 5px;
+}
+
+.item__text {
+  width: 600px;
+  margin-right: 20px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: black;
+}
+
+.item__edit,
+.item__delete {
+  width: 50px;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.item__add:active,
+.item__edit:active,
+.item__delete:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.item__edit:hover {
+  background: palegreen;
+  border: 1px solid palegreen;
+}
+
+.item__delete:hover {
+  background: crimson;
+  border: 1px solid crimson;
+}
