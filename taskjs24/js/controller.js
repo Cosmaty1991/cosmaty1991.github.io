@@ -4,7 +4,6 @@ define (
   function () {
     function Controller(model, view) {
       var self = this;
-	  
       view.elements.addBtn.on('click', addItem);
       view.elements.listContainer.on('click', '.item__delete', removeItem);
       view.elements.listContainer.on('click', '.item__edit', editItem);
