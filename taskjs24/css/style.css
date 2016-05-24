@@ -35,6 +35,7 @@ h2 {
 .item__add:hover {
   background: azure;
   border: 1px solid azure;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 .item__element {
@@ -73,9 +74,11 @@ h2 {
 .item__edit:hover {
   background: palegreen;
   border: 1px solid palegreen;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 .item__delete:hover {
   background: crimson;
   border: 1px solid crimson;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }

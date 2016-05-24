@@ -1,15 +1,16 @@
 define (
   'controller',
   ['jquery', 'model', 'view'],
-  function () {
+  function() {
     function Controller(model, view) {
       var self = this;
-      
+
       view.elements.addBtn.on('click', addItem);
       view.elements.listContainer.on('click', '.item__delete', removeItem);
       view.elements.listContainer.on('click', '.item__edit', editItem);
+      view.elements.listContainer.on('dblclick', '.item__text', editItem);
 
-      view.elements.input.keyup(function(e) {
+      $('.item__value').keypress(function(e) {
         if (e.keyCode == 13) {
           addItem();
         }
@@ -20,19 +21,22 @@ define (
         model.addItem(newItem);
         view.renderList(model.data);
         view.elements.input.val('');
-      }
+      };
 
       function removeItem() {
         var item = $(this).attr('data-value');
         model.removeItem(item);
         view.renderList(model.data);
-      }
+      };
 
       function editItem() {
         var item = $(this).attr('data-value');
         var input = $(this).parent().find('input');
         input.removeAttr('disabled').focus();
-        input.on('focusout', function() {
+        input.on('keypress', function(e) {
+          if (e.keyCode == 13) {
+            input.on('focusout');
+          }
           var newValue = $(this).val();
           correctItem(item, newValue, $(this));
           input.attr('disabled', 'disabled');
