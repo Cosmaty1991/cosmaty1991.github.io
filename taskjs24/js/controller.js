@@ -8,7 +8,6 @@ define (
       view.elements.addBtn.on('click', addItem);
       view.elements.listContainer.on('click', '.item__delete', removeItem);
       view.elements.listContainer.on('click', '.item__edit', editItem);
-      view.elements.listContainer.on('dblclick', '.item__text', editItem);
 
       $('.item__value').keypress(function(e) {
         if (e.keyCode == 13) {
@@ -34,8 +33,8 @@ define (
         var input = $(this).parent().find('input');
         input.removeAttr('disabled').focus();
         input.on('keypress', function(e) {
-          if (e.keyCode == 13) {
-            input.on('focusout');
+          if (e.keyCode !== 13) {
+            return
           }
           var newValue = $(this).val();
           correctItem(item, newValue, $(this));
