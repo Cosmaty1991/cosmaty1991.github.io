@@ -8,6 +8,7 @@
   /* header */
 
   header {
+    display: block;
     background: url(../../img/header_1440.jpg);
     background-repeat: no-repeat;
     height: 650px;
@@ -99,6 +100,7 @@
   /* slider */
 
   main {
+    display: block;
     width: $desktop - 500px;
     overflow: hidden;
     margin: 0px auto;
@@ -219,6 +221,7 @@
   /* article  */
 
   article {
+    display: block;
     width: $desktop - 520px;
     margin: 0px auto;
     margin-top: 95px;
@@ -283,6 +286,7 @@
   /* isotope */
 
   section {
+    display: block;
     width: $desktop - 500px;
     margin: 0px auto;
     margin-top: 96px;
@@ -369,6 +373,7 @@
   /* line */
 
   .line {
+    display: block;
     width: $desktop;
     margin-top: 100px;
     border-top: 5px solid $red;
@@ -377,6 +382,7 @@
   /* footer */
 
   footer {
+    display: block;
     width: $desktop - 495px;
     margin: 0px auto;
     margin-top: 25px;
@@ -448,6 +454,7 @@
   /* header */
 
   header {
+    display: block;
     background: url(../../img/header_1440.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -540,6 +547,7 @@
   /* slider */
 
   main {
+    display: block;
     width: $desktop - 500px;
     overflow: hidden;
     margin: 0px auto;
@@ -660,6 +668,7 @@
   /* article  */
 
   article {
+    display: block;
     width: $desktop - 520px;
     margin: 0px auto;
     margin-top: 95px;
@@ -724,6 +733,7 @@
   /* isotope */
 
   section {
+    display: block;
     width: $desktop - 500px;
     margin: 0px auto;
     margin-top: 96px;
@@ -810,6 +820,7 @@
   /* line */
 
   .line {
+    display: block;
     width: auto;
     margin-top: 100px;
     border-top: 5px solid $red;
@@ -818,6 +829,7 @@
   /* footer */
 
   footer {
+    display: block;
     width: $desktop - 495px;
     margin: 0px auto;
     margin-top: 25px;
