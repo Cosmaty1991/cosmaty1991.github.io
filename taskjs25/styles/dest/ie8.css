@@ -47,7 +47,8 @@
 
 body {
   background: url(../../img/header_1440.jpg) 0 0 no-repeat;
-  width: auto;
+  width: 1440px;
+  margin: 0px auto;
 }
 
 /* header */
@@ -55,7 +56,6 @@ body {
 .header {
   display: block;
   height: 650px;
-  width: 940px;
   text-align: center;
   color: white;
   padding-top: 50px;
