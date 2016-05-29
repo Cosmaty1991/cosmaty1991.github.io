@@ -46,8 +46,8 @@
 /* ie 8 */
 
 body {
-  max-width: auto;
   background: url (../../img/header_1440.jpg) 0 0 no-repeat;
+  width: 940px;
 }
 
 /* header */
@@ -55,7 +55,7 @@ body {
 .header {
   display: block;
   height: 650px;
-  width: 1440px;
+  width: 940px;
   text-align: center;
   color: white;
   padding-top: 50px;
