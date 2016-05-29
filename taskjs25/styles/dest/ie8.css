@@ -52,7 +52,7 @@ body {
 /* header */
 
 header {
-  background: url(../../img/header_1440.jpg);
+  background: url("../../img/header_1440.jpg");
   background-repeat: no-repeat;
   height: 650px;
   width: auto;
