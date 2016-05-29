@@ -45,16 +45,11 @@
 
 /* ie 8 */
 
-body {
-  max-width: auto;
-}
-
 /* header */
 
 header {
   display: block;
-  background: url("../../img/header_1440.jpg");
-  background-repeat: no-repeat;
+  background: url(../../img/header_1440.jpg);
   height: 650px;
   width: 1440px;
   text-align: center;
