@@ -47,13 +47,13 @@
 
 body {
   max-width: auto;
+  background: url (../../img/header_1440.jpg) 0 0 no-repeat;
 }
 
 /* header */
 
 .header {
   display: block;
-  background: url (../../img/header_1440.jpg) 0 0 no-repeat;
   height: 650px;
   width: 1440px;
   text-align: center;
