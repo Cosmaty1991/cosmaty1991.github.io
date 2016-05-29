@@ -47,7 +47,7 @@
 
 /* header */
 
-header {
+.header {
   display: block;
   background: url(../../img/header_1440.jpg) 0 0 no-repeat;
   height: 650px;
@@ -57,7 +57,7 @@ header {
   padding-top: 50px;
 }
 
-h3 {
+header h3 {
   text-transform: uppercase;
   font-size: 20px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
