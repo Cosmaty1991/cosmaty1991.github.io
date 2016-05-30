@@ -386,6 +386,7 @@ section {
 .section__item:first-child + * + *,
 .section__item:first-child + * + * + *,
 .section__item:last-child {
+  display: block;
   height: 310px;
 }
 
