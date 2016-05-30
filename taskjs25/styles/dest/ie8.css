@@ -334,7 +334,7 @@ article {
   margin-top: 40px;
   margin-right: 20px;
   position: relative;
-  left: 150px;
+  right: 150px;
   border: 2px solid #ff4e50;
   border-radius: 20px;
   background: none;
@@ -355,6 +355,8 @@ section {
 }
 
 .section__header {
+  position: relative;
+  right: 50px;
   text-align: center;
   margin-right: 150px;
   margin-bottom: 12px;
@@ -364,22 +366,20 @@ section {
 
 .section__list {
   position: relative;
+  left: 50px;
   overflow: hidden;
   margin: 0px auto;
   text-align: center;
 }
 
 .section__item {
-  position: relative;
   list-style: none;
   background-repeat: no-repeat;
-  text-align: center;
-  width: 700px;
-  display: inline;
-  float: left;
-  margin: 0px auto;
-  margin-top: 10px;
-  padding: 100px;
+  background-size: cover;
+  width: 300px;
+  height: 72px;
+  margin-bottom: 10px;
+  padding-top: 48px;
   color: white;
   border-radius: 5px;
   font-size: 22px;
