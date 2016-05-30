@@ -278,6 +278,8 @@ article {
 }
 
 .article__header {
+  position: relative;
+  margin-top: 40%;
   text-align: center;
   margin-left: -3px;
   font-size: 22px;
@@ -285,6 +287,9 @@ article {
 }
 
 .article__element {
+  position: relative;
+  margin-top: 5%;
+  text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: -7px;
