@@ -46,16 +46,15 @@
 /* ie 8 */
 
 body {
-  background: url(../../img/header_1440.jpg) 0 0 no-repeat;
   width: 940px;
   margin: 0px auto;
-  margin-left: 250px;
 }
 
 /* header */
 
 header {
   display: block;
+  background: url(../../img/header_1440.jpg) 0 0 no-repeat;
   height: 650px;
   width: 940px;
   text-align: center;
