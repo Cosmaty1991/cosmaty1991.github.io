@@ -383,8 +383,7 @@ section {
 }
 
 .section__item:first-child + * + * + * + * {
-  padding-left: 150px;
-  padding-right: 150px;
+  width: 150%;
 }
 
 .section__header2 {
