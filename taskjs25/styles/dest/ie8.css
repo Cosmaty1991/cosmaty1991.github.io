@@ -367,9 +367,10 @@ section {
   list-style: none;
   background-repeat: no-repeat;
   text-align: center;
-  width: 300px;
+  width: 700px;
   display: inline;
   float: left;
+  margin: 0px auto;
   margin-top: 10px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -377,7 +378,6 @@ section {
   border-radius: 5px;
   font-size: 22px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
-  zoom: 1.2;
 }
 
 .section__header2 {
