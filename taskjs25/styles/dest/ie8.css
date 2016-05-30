@@ -381,6 +381,7 @@ section {
 }
 
 .section__header2 {
+  text-align: center;
   margin-top: 96px;
 }
 
@@ -397,6 +398,7 @@ section {
   width: 225px;
   height: 38px;
   margin-top: 36px;
+  margin-left: 50px;
   margin-left: -3px;
   padding-left: 14px;
   border: 1px solid #cccccc;
@@ -411,11 +413,11 @@ section {
   width: 160px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 5px;
   border: none;
   border-radius: 20px;
-  background:#ff4e50;
+  background: #ff4e50;
   color: white;
   cursor: pointer;
   font-size: 14px;
@@ -428,7 +430,7 @@ section {
   display: block;
   width: auto;
   margin-top: 100px;
-  border-top: 5px solid#ff4e50;
+  border-top: 5px solid #ff4e50;
 }
 
 /* footer */
