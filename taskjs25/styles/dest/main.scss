@@ -247,6 +247,10 @@ $lightgrey:  #cccccc;
     display: none;
   }
 
+  .br {
+    display: none;
+  }
+
   /* article  */
 
   article {
@@ -658,6 +662,10 @@ $lightgrey:  #cccccc;
     margin-top: -194px;
   }
 
+  .br {
+    display: none;
+  }
+
   /* article  */
 
   article {
@@ -897,7 +905,6 @@ $lightgrey:  #cccccc;
   /* header */
 
   header {
-    display: block;
     background: url(../../img/header_1440.jpg);
     background-repeat: no-repeat;
     height: 650px;
@@ -989,7 +996,6 @@ $lightgrey:  #cccccc;
   /* slider */
 
   main {
-    display: block;
     width: $desktop - 500px;
     overflow: hidden;
     margin: 0px auto;
@@ -1107,10 +1113,13 @@ $lightgrey:  #cccccc;
     margin-top: -78px;
   }
 
+  .br {
+    display: none;
+  }
+
   /* article  */
 
   article {
-    display: block;
     width: $desktop - 520px;
     margin: 0px auto;
     margin-top: 95px;
@@ -1175,7 +1184,6 @@ $lightgrey:  #cccccc;
   /* isotope */
 
   section {
-    display: block;
     width: $desktop - 500px;
     margin: 0px auto;
     margin-top: 96px;
@@ -1262,7 +1270,6 @@ $lightgrey:  #cccccc;
   /* line */
 
   .line {
-    display: block;
     width: $desktop;
     margin-top: 100px;
     border-top: 5px solid $red;
@@ -1271,7 +1278,6 @@ $lightgrey:  #cccccc;
   /* footer */
 
   footer {
-    display: block;
     width: $desktop - 495px;
     margin: 0px auto;
     margin-top: 25px;
@@ -1343,7 +1349,6 @@ $lightgrey:  #cccccc;
   /* header */
 
   header {
-    display: block;
     background: url(../../img/header_1440.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1436,7 +1441,6 @@ $lightgrey:  #cccccc;
   /* slider */
 
   main {
-    display: block;
     width: $desktop - 500px;
     overflow: hidden;
     margin: 0px auto;
@@ -1557,7 +1561,6 @@ $lightgrey:  #cccccc;
   /* article  */
 
   article {
-    display: block;
     width: $desktop - 520px;
     margin: 0px auto;
     margin-top: 95px;
@@ -1622,7 +1625,6 @@ $lightgrey:  #cccccc;
   /* isotope */
 
   section {
-    display: block;
     width: $desktop - 500px;
     margin: 0px auto;
     margin-top: 96px;
@@ -1709,7 +1711,6 @@ $lightgrey:  #cccccc;
   /* line */
 
   .line {
-    display: block;
     width: auto;
     margin-top: 100px;
     border-top: 5px solid $red;
@@ -1718,7 +1719,6 @@ $lightgrey:  #cccccc;
   /* footer */
 
   footer {
-    display: block;
     width: $desktop - 495px;
     margin: 0px auto;
     margin-top: 25px;
