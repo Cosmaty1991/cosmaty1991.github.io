@@ -357,7 +357,7 @@ section {
 
 .section__header {
   position: relative;
-  left: 170px;
+  left: 140px;
   text-align: center;
   margin-right: 150px;
   margin-bottom: 12px;
@@ -377,9 +377,9 @@ section {
   text-align: center;
   list-style: none;
   background-repeat: no-repeat;
-  width: 310px;
-  height: 200px;
-  margin-bottom: 10px;
+  background-size: cover;
+  width: 300px;
+  height: 150px;
   padding-top: 50px;
   color: white;
   border-radius: 5px;
