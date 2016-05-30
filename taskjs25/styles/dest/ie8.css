@@ -234,7 +234,7 @@ main {
 
 .main__wrapper .main__step2 {
   padding-top: 40px;
-  height: 350px;
+  height: 360px;
 }
 
 .main__step1 {
@@ -278,6 +278,7 @@ article {
 }
 
 .article__header {
+  text-align: center;
   margin-left: -3px;
   font-size: 22px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
