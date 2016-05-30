@@ -46,7 +46,9 @@
 /* ie 8 */
 
 body {
-  width: 940px;
+  display: block;
+  background: url(../../img/header_1440.jpg) 0 0 no-repeat;
+  width: 1920px;
   margin: 0px auto;
 }
 
@@ -54,7 +56,6 @@ body {
 
 header {
   display: block;
-  background: url(../../img/header_1440.jpg) 0 0 no-repeat;
   height: 650px;
   width: 940px;
   text-align: center;
