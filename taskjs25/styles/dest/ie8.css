@@ -383,7 +383,8 @@ section {
 }
 
 .section__item:first-child + * + * + * + * {
-  width: 150%;
+  width: 620px;
+  zoom: 1;
 }
 
 .section__header2 {
