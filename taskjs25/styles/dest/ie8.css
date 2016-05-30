@@ -331,7 +331,7 @@ article {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-right: 11px;
-  margin-left: -170px;
+  margin-left: -190px;
   border: 2px solid #ff4e50;
   border-radius: 20px;
   background: none;
@@ -373,6 +373,8 @@ section {
   margin-right: 10px;
   margin-top: 10px;
   padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: -10px;
   color: white;
   border-radius: 5px;
   font-size: 22px;
