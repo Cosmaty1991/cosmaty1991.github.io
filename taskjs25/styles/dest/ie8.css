@@ -384,7 +384,7 @@ section {
 
 .section__item:first-child + * + * + * + * {
   width: 620px;
-  zoom: 1;
+  zoom: 2;
 }
 
 .section__header2 {
