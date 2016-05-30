@@ -151,7 +151,8 @@ main {
   overflow: hidden;
   margin: 0px auto;
   margin-top: 94px;
-  clear: both;
+  position: absolute;
+  top: 50%;
 }
 
 .main__header {
