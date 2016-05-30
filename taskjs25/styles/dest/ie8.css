@@ -266,6 +266,10 @@ text-align: center;
   margin-top: -78px;
 }
 
+br {
+  height: 100px;
+}
+
 /* article  */
 
 article {
