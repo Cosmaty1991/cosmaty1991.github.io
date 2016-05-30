@@ -162,14 +162,14 @@ main {
 }
 
 .main__wrapper {
-  position: absolute;
+  position: relative;
   width: 300px;
   height: 400px;
   color: white;
   display: inline;
   float: left;
   margin-right: 20px;
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 .main__wrapper2 div {
