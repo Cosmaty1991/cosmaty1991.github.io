@@ -382,6 +382,13 @@ section {
   font-family: 'Montserrat Bold', Arial, sans-serif;
 }
 
+.section__item:first-child + *,
+.section__item:first-child + * + *,
+.section__item:first-child + * + * + *,
+.section__item:last-child {
+  height: 310px;
+}
+
 .section__item:first-child + * + * + * + *,
 .section__item:first-child + * + * + * + * + * {
   zoom: 2;
