@@ -70,6 +70,8 @@ header h3 {
   margin-top: -145px;
   margin-left: -763px;
   letter-spacing: 1px;
+  position: relative;
+  bottom: 50px;
 }
 
 header h3 a {
@@ -78,20 +80,26 @@ header h3 a {
 }
 
 header h2 {
+  display: block;
   width: 500px;
   margin: 0px auto;
   text-transform: uppercase;
   font-size: 52px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
   margin-top: 144px;
+  position: relative;
+  top: 150px;
 }
 
 header p {
+  display: block;
   width: 500px;
   margin: 0px auto;
   margin-top: 19px;
   font-size: 24px;
   font-family: 'Roboto Light', Arial, sans-serif;
+  position: relative;
+  top: 150px;
 }
 
 .header__buttons {
@@ -102,7 +110,6 @@ header p {
 }
 
 .header__login {
-  display: block;
   border: none;
   background: none;
   color: white;
@@ -112,7 +119,6 @@ header p {
 }
 
 .header__signup {
-  display: block;
   border: 2px solid white;
   background: none;
   border-radius: 20px;
