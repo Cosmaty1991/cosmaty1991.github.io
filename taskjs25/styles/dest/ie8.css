@@ -63,6 +63,7 @@ header {
 }
 
 header h3 {
+  display: block;
   text-transform: uppercase;
   font-size: 20px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
@@ -101,6 +102,7 @@ header p {
 }
 
 .header__login {
+  display: block;
   border: none;
   background: none;
   color: white;
@@ -110,6 +112,7 @@ header p {
 }
 
 .header__signup {
+  display: block;
   border: 2px solid white;
   background: none;
   border-radius: 20px;
@@ -127,6 +130,7 @@ header p {
 }
 
 .header__button {
+  display: block;
   border: none;
   border-radius: 20px;
   background:#ff4e50;
