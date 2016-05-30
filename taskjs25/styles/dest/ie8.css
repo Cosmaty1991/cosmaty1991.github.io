@@ -172,10 +172,6 @@ main {
   margin-top: 5%;
 }
 
-.main__wrapper2 div {
-  padding-top: 50px;
-}
-
 .main__wrapper3 {
   margin-right: 0px;
 }
@@ -234,6 +230,11 @@ main {
   height: 400px;
   width: 280px;
   padding-left: 20px;
+}
+
+.main__wrapper .main__step2 {
+  padding-top: 50px;
+  height: 350px;
 }
 
 .main__step1 {
