@@ -380,18 +380,6 @@ section {
   font-family: 'Montserrat Bold', Arial, sans-serif;
 }
 
-.section__item:first-child + * + *,
-.section__item:first-child + * + * + * + *,
-.section__item:first-child + * + * + * + * + * + * {
-  margin-right: 0px;
-}
-
-.section__item:first-child + * + * + * + *,
-.section__item:first-child + * + * + * + * + * {
-  width: 200%;
-  height: 310px;
-}
-
 .section__header2 {
   margin-top: 96px;
 }
