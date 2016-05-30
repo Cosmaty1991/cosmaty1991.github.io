@@ -154,7 +154,7 @@ main {
 }
 
 .main__header {
-
+  position: relative;
   margin-left: -5px;
   margin-bottom: 34px;
   font-size: 22px;
@@ -164,7 +164,7 @@ main {
 }
 
 .main__wrapper {
-  
+  position: relative;
   width: 300px;
   height: 400px;
   color: white;
