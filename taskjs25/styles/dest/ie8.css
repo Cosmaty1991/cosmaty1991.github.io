@@ -357,7 +357,7 @@ section {
 
 .section__header {
   position: relative;
-  left: 140px;
+  left: 100px;
   text-align: center;
   margin-right: 150px;
   margin-bottom: 12px;
@@ -380,6 +380,7 @@ section {
   background-size: cover;
   width: 300px;
   height: 150px;
+  margin-bottom: 5px;
   padding-top: 50px;
   color: white;
   border-radius: 5px;
