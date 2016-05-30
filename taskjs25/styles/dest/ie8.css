@@ -60,7 +60,6 @@ header {
   text-align: center;
   color: white;
   padding-top: 50px;
-  overflow: hidden;
 }
 
 header h3 {
@@ -149,7 +148,7 @@ main {
   width: 940px;
   overflow: hidden;
   margin: 0px auto;
-  margin-top: 94px;
+  margin-top: 500px;
 }
 
 .main__header {
