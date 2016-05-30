@@ -400,13 +400,12 @@ section {
 }
 
 .section__search {
-  position: relative;
+  display: block;
   text-align: center;
   width: 225px;
   height: 38px;
   margin-top: 50px;
-  margin-left: 150px;
-  margin-left: -3px;
+  margin-left: 250px;
   padding-left: 14px;
   border: 1px solid #cccccc;
   border-radius: 5px;
@@ -416,6 +415,7 @@ section {
 }
 
 .section__submit {
+  display: block;
   text-align: center;
   width: 160px;
   padding-top: 10px;
