@@ -335,6 +335,7 @@ article {
   margin-right: 20px;
   position: relative;
   right: 340px;
+  top: 20px;
   border: 2px solid #ff4e50;
   border-radius: 20px;
   background: none;
@@ -356,7 +357,7 @@ section {
 
 .section__header {
   position: relative;
-  left: 200px;
+  left: 170px;
   text-align: center;
   margin-right: 150px;
   margin-bottom: 12px;
@@ -373,13 +374,13 @@ section {
 }
 
 .section__item {
+  text-align: center;
   list-style: none;
   background-repeat: no-repeat;
   width: 310px;
-  height: 310px;
+  height: 200px;
   margin-bottom: 10px;
-  padding-top: 100px;
-  padding-left: -20px;
+  padding-top: 50px;
   color: white;
   border-radius: 5px;
   font-size: 22px;
