@@ -354,7 +354,7 @@ section {
 
 .section__header {
   text-align: center;
-  margin-left: -50px;
+  margin-right: 150px;
   margin-bottom: 12px;
   font-size: 22px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
@@ -380,14 +380,7 @@ section {
   border-radius: 5px;
   font-size: 22px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
-}
-
-.section__item:first-child + *,
-.section__item:first-child + * + *,
-.section__item:first-child + * + * + *,
-.section__item:last-child {
-  display: block;
-  height: 310px;
+  zoom: 1.4;
 }
 
 .section__item:first-child + * + * + * + *,
