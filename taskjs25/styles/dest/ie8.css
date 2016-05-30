@@ -53,13 +53,14 @@ body {
 
 /* header */
 
-.header {
+header {
   display: block;
   height: 650px;
   width: 940px;
   text-align: center;
   color: white;
   padding-top: 50px;
+  overflow: hidden;
 }
 
 header h3 {
@@ -112,7 +113,7 @@ header p {
 .header__signup {
   border: 2px solid white;
   background: none;
-  @include border-radius(20px);
+  border-radius: 20px;
   color: white;
   margin-top: -20px;
   margin-left: 18px;
@@ -128,7 +129,7 @@ header p {
 
 .header__button {
   border: none;
-  @include border-radius(20px);
+  border-radius: 20px;
   background:#ff4e50;
   color: white;
   margin-top: 34px;
@@ -193,7 +194,7 @@ main {
 .main__list div {
   width: 70px;
   border: none;
-  @include border-radius(20px);
+  border-radius: 20px;
   background:#ff4e50;
   font-family: 'Montserrat Regular', Arial, sans-serif;
   font-size: 10px;
@@ -319,7 +320,7 @@ article {
   margin-right: 11px;
   margin-left: 10px;
   border: 2px solid#ff4e50;
-  @include border-radius(20px);
+  border-radius: 20px;
   background: none;
   color:#ff4e50;
   font-size: 14px;
@@ -359,7 +360,7 @@ section {
   margin-top: 20px;
   padding-top: 140px;
   color: white;
-  @include border-radius(5px);
+  border-radius: 5px;
   font-size: 22px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
 }
@@ -393,7 +394,7 @@ section {
   margin-left: -3px;
   padding-left: 14px;
   border: 1px solid #cccccc;
-  @include border-radius(5px);
+  border-radius: 5px;
   color: #999999;
   font-size: 14px;
   font-family: 'Roboto Light', Arial, sans-serif;
