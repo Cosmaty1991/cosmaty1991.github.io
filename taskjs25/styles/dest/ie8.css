@@ -70,7 +70,7 @@ header h3 {
   margin-top: -145px;
   margin-left: -763px;
   letter-spacing: 1px;
-  position: relative;
+  position: absolute;
   bottom: 250px;
   left: 150px;
 }
@@ -88,7 +88,7 @@ header h2 {
   font-size: 52px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
   margin-top: 200px;
-  position: relative;
+  position: absolute;
   top: 150px;
 }
 
@@ -99,7 +99,7 @@ header p {
   margin-top: 19px;
   font-size: 24px;
   font-family: 'Roboto Light', Arial, sans-serif;
-  position: relative;
+  position: absolute;
   top: 150px;
 }
 
