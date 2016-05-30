@@ -388,7 +388,7 @@ section {
 
 .section__item:first-child + * + * + * + *,
 .section__item:first-child + * + * + * + * + * {
-  width: 620px;
+  width: 200%;
   height: 310px;
 }
 
