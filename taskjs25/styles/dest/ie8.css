@@ -148,7 +148,9 @@ main {
   width: 940px;
   overflow: hidden;
   margin: 0px auto;
-  margin-top: 500px;
+  margin-top: 94px;
+  position: absolute;
+  bottom: 500px;
 }
 
 .main__header {
