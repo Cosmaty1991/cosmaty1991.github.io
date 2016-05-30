@@ -47,8 +47,9 @@
 
 body {
   background: url(../../img/header_1440.jpg) 0 0 no-repeat;
-  width: auto;
+  width: 940px;
   margin: 0px auto;
+  margin-left: 250px;
 }
 
 /* header */
