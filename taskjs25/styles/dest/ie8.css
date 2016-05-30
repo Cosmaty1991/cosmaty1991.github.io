@@ -386,9 +386,10 @@ section {
 }
 
 .section__header2 {
+  display: block;
   text-align: center;
   margin-top: 96px;
-  margin-left: 40px;
+  margin-left: 100px;
 }
 
 .section__paragraph {
@@ -400,7 +401,7 @@ section {
 }
 
 .section__search {
-  display: block;
+  display: inline-block;
   text-align: center;
   width: 225px;
   height: 38px;
@@ -415,7 +416,7 @@ section {
 }
 
 .section__submit {
-  display: block;
+  display: inline-block;
   text-align: center;
   width: 160px;
   padding-top: 10px;
