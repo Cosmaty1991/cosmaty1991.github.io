@@ -331,7 +331,7 @@ article {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-right: 11px;
-  margin-left: -180px;
+  margin-left: -170px;
   border: 2px solid #ff4e50;
   border-radius: 20px;
   background: none;
@@ -339,7 +339,6 @@ article {
   font-size: 14px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
   cursor: pointer;
-  text-align: center;
 }
 
 /* isotope */
@@ -369,23 +368,21 @@ section {
   background-repeat: no-repeat;
   text-align: center;
   width: 300px;
-  height: 100%;
   display: inline;
   float: left;
   margin-top: 10px;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: -30px;
   color: white;
   border-radius: 5px;
   font-size: 22px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
-  zoom: 1.4;
+  zoom: 1;
 }
 
 .section__item:first-child + * + * + * + *,
 .section__item:first-child + * + * + * + * + * {
-  zoom: 2;
+  zoom: 1.5;
 }
 
 .section__header2 {
