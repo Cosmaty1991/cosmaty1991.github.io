@@ -48,7 +48,6 @@
 body {
   background: url(../../img/header_1440.jpg) 0 0 no-repeat;
   width: 940px;
-  height: 100%;
   margin: 0px auto;
 }
 
@@ -61,7 +60,6 @@ header {
   text-align: center;
   color: white;
   padding-top: 50px;
-  margin-bottom: 50%;
 }
 
 header h3 {
@@ -154,11 +152,13 @@ main {
 }
 
 .main__header {
+  position: relative;
   margin-left: -5px;
   margin-bottom: 34px;
   font-size: 22px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
   text-align: center;
+  margin-top: 40%;
 }
 
 .main__wrapper {
@@ -169,7 +169,7 @@ main {
   display: inline;
   float: left;
   margin-right: 20px;
-  margin-top: 20%;
+  margin-top: 40%;
 }
 
 .main__wrapper2 div {
