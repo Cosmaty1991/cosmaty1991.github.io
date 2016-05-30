@@ -170,7 +170,7 @@ main {
   display: inline-block;
   float: left;
   margin-right: 20px;
-  margin: auto;
+  margin-top: 50%;
 }
 
 .main__wrapper2 div {
