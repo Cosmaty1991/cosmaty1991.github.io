@@ -366,7 +366,6 @@ section {
 .section__item {
   list-style: none;
   background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
   width: 300px;
   height: 310px;
@@ -390,6 +389,7 @@ section {
 .section__item:first-child + * + * + * + *,
 .section__item:first-child + * + * + * + * + * {
   width: 620px;
+  height: 310px;
 }
 
 .section__header2 {
