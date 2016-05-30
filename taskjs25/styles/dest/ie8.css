@@ -333,7 +333,8 @@ article {
   padding-bottom: 10px;
   margin-top: 40px;
   margin-right: 20px;
-  margin-left: -180px;
+  position: relative;
+  left: 150px;
   border: 2px solid #ff4e50;
   border-radius: 20px;
   background: none;
@@ -389,7 +390,7 @@ section {
   display: block;
   text-align: center;
   margin-top: 96px;
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 .section__paragraph {
@@ -416,6 +417,8 @@ section {
 }
 
 .section__submit {
+  position: relative;
+  top: 10px;
   display: inline-block;
   text-align: center;
   width: 160px;
@@ -452,11 +455,13 @@ footer {
 }
 
 footer h3 {
+  display: block;
   text-transform: uppercase;
   font-size: 16px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
   float: left;
   letter-spacing: 1px;
+  margin-top: 20px;
 }
 
 footer h3 a {
@@ -503,6 +508,6 @@ footer h4 {
 }
 
 .footer__image {
-  margin-left: 400px;
+  margin-left: 450px;
   margin-top: 3px;
 }
