@@ -96,6 +96,7 @@
     width: $mobile - 20px;
     margin: 0px auto;
     margin-top: 13px;
+    margin-left: 10px;
   }
 
   .main__header {
@@ -194,6 +195,7 @@
     width: $mobile - 60px;
     margin: 0px auto;
     margin-top: 39px;
+    margin-right: 10px;
     text-align: center;
   }
 
@@ -258,6 +260,7 @@
     width: $mobile - 20px;
     margin: 0px auto;
     margin-top: 33px;
+    margin-left: 10px;
     text-align: center;
   }
 
@@ -314,7 +317,8 @@
     margin-left: -3px;
     border: none;
     border-radius: 20px;
-    @include border-radius(5px);
+    @include border-radius(20px);
+    background: $red;
     color: white;
     cursor: pointer;
     font-size: $font-size - 10px;
@@ -335,14 +339,15 @@
     width: $mobile - 120px;
     margin: 0px auto;
     margin-top: 15px;
+    margin-right: 37px;
     text-align: center;
 
     h3 {
       margin-left: -5px;
-      letter-spacing: 1px;
       text-transform: uppercase;
       font-size: $font-size - 8px;
       font-family: $montserrat;
+      letter-spacing: 1px;
 
       a {
         color: $red;
@@ -351,7 +356,7 @@
     }
 
     h4 {
-      margin-top: 28px;
+      margin-top: 15px;
       margin-left: -2px;
       font-size: $font-size - 10px;
       font-family: $montserrat;
@@ -360,7 +365,8 @@
 
   .footer__list {
     width: 200px;
-    margin-top: -15px;
+    margin-top: 0px;
+    margin-left: -4px;
     overflow: hidden;
     font-size: $font-size - 10px;
     font-family: $roboto;
@@ -370,7 +376,7 @@
     float: left;
     list-style: none;
     margin-right: 14px;
-    margin-bottom: -15px;
+    margin-top: 0px;
   }
 
   .footer__item:last-child {
@@ -382,7 +388,13 @@
     color: $black;
   }
 
+  .footer__partners {
+    margin-top: 12px;
+    margin-left: -5px;
+  }
+
   .footer__image {
     margin-top: 16px;
+    margin-left: -5px;
   }
 }
