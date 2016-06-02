@@ -352,7 +352,7 @@
     margin-top: 0px; }
 
   .footer__item:last-child {
-    margin-right: 0px; }
+    margin-right: -1px; }
 
   .footer__link {
     text-decoration: none;
