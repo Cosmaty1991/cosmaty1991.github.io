@@ -47,9 +47,9 @@
 
 body {
   display: block;
-  background-size: 100% 100%;
+  background-size: 960px 100%;
   background-repeat: repeat;
-  background: url(../../img/header_1440.jpg) no-repeat center center;
+  background: url(../../img/header_1440.jpg) no-repeat center top;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/header_1440.jpg',sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/header_1440.jpg',sizingMethod='scale')";
 }
