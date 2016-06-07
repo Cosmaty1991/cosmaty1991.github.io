@@ -49,7 +49,7 @@ body {
   background: url(../../img/header_1440.jpg);
   background-repeat: no-repeat;
   background-size: auto;
-  width: 1440px;
+  width: 960px;
   margin: 0px auto;
 }
 
@@ -447,6 +447,7 @@ section {
 
 .line {
   display: block;
+  width: auto;
   margin-top: 100px;
   border-top: 5px solid #ff4e50;
 }
