@@ -51,8 +51,6 @@ body {
   width: 960px;
   margin: 0px auto;
   padding-top: 40px;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 /* header */
@@ -138,7 +136,7 @@ header p {
   background: #ff4e50;
   color: white;
   margin-top: 34px;
-  margin-left: 100px;
+  margin-left: 300px;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 12px;
