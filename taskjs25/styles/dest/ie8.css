@@ -443,6 +443,7 @@ section {
   display: block;
   width: auto;
   margin-top: 100px;
+  padding-left: 250px;
   border-top: 5px solid #ff4e50;
 }
 
@@ -464,10 +465,12 @@ footer h3 {
   float: left;
   letter-spacing: 1px;
   margin-top: 20px;
+  position: absolute;
+  top: 50px;
 }
 
 footer h3 a {
-  color:#ff4e50;
+  color: #ff4e50;
   text-decoration: none;
 }
 
