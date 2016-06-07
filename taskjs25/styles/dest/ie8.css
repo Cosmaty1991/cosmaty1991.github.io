@@ -50,6 +50,7 @@ body {
   background: url(../../img/header_1440.jpg) center top no-repeat;
   width: 960px;
   margin: 0px auto;
+  padding-left: 500px
 }
 
 /* header */
@@ -82,7 +83,6 @@ header h2 {
   display: block;
   width: 500px;
   margin: 0px auto;
-  margin-left: 250px;
   text-transform: uppercase;
   font-size: 52px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
