@@ -46,8 +46,13 @@
 /* ie 8 */
 
 body {
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/header_1440.jpg', sizingMethod='scale')";
-  width: 960px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background:url(../../img/header_1440.jpg);
+  background-size: 100% 100%;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/header_1440.jpg',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/header_1440.jpg',sizingMethod='scale')";
   margin: 0px auto;
 }
 
