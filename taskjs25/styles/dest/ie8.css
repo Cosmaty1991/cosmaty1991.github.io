@@ -47,6 +47,7 @@
 
 body {
   background: url(../../img/header_1440.jpg) 0 0 no-repeat;
+  width: 960px;
   margin: 0px auto;
 }
 
@@ -198,7 +199,7 @@ main {
   width: 70px;
   border: none;
   border-radius: 20px;
-  background:#ff4e50;
+  background: #ff4e50;
   font-family: 'Montserrat Regular', Arial, sans-serif;
   font-size: 10px;
   margin-top: 227px;
@@ -384,7 +385,8 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   width: 300px;
-  height: 150px;
+  height: 170px;
+  display: block;
   margin-bottom: 10px;
   padding-top: 60px;
   color: white;
