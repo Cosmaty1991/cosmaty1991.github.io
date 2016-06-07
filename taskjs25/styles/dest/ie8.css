@@ -50,7 +50,7 @@ body {
   background-repeat: no-repeat;
   width: 960px;
   margin: 0px auto;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 /* header */
@@ -159,7 +159,6 @@ main {
   width: 940px;
   overflow: hidden;
   margin: 0px auto;
-  margin-top: 94px;
 }
 
 .main__header {
