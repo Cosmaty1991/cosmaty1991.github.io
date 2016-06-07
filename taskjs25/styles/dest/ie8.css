@@ -69,7 +69,7 @@ header {
   text-transform: uppercase;
   font-size: 20px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
-  margin-left: -700px;
+  margin-left: -800px;
   margin-top: -150px;
   letter-spacing: 1px;
   text-align: center;
@@ -142,7 +142,7 @@ header {
   background: #ff4e50;
   color: white;
   margin-top: 50px;
-  margin-left: 350px;
+  margin-left: 370px;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 12px;
@@ -448,7 +448,7 @@ section {
 
 .line {
   display: block;
-  width: 1940px;
+  width: 1900px;
   margin-top: 100px;
   margin-left: -500px;
   border-top: 5px solid #ff4e50;
@@ -464,7 +464,7 @@ footer {
   padding-top: 10px;
 }
 
-footer h3 {
+.footer__header {
   display: block;
   text-transform: uppercase;
   font-size: 16px;
@@ -476,12 +476,12 @@ footer h3 {
   top: 50px;
 }
 
-footer h3 a {
+.footer__header a {
   color: #ff4e50;
   text-decoration: none;
 }
 
-footer h4 {
+.footer__list h4 {
   font-size: 14px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
   margin-bottom: 10px;
@@ -514,6 +514,9 @@ footer h4 {
 }
 
 .footer__partners {
+  font-size: 14px;
+  font-family: 'Montserrat Bold', Arial, sans-serif;
+  margin-bottom: 10px;
   margin-top: 1px;
   margin-left: -39px;
   float: left;
