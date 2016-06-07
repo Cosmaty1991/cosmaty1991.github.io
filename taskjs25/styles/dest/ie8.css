@@ -62,8 +62,7 @@ header {
   text-align: center;
   color: white;
   padding-top: 100px;
-  position: relative;
-  left: 100px;
+  position: absolute;
 }
 
 header h3 {
@@ -74,6 +73,8 @@ header h3 {
   margin-left: 0px;
   letter-spacing: 1px;
   text-align: center;
+  position: relative;
+  margin-left: 300px;
 }
 
 header h3 a {
