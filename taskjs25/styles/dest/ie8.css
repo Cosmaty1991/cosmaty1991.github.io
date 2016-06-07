@@ -59,10 +59,10 @@ header {
   display: block;
   width: 940px;
   margin: 0px auto;
+  margin-left: 1000px;
   text-align: center;
   color: white;
   padding-top: 100px;
-  padding-left: 1000px;
 }
 
 header h3 {
