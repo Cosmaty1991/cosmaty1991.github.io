@@ -51,6 +51,8 @@ body {
   width: 960px;
   margin: 0px auto;
   padding-top: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 /* header */
@@ -62,7 +64,6 @@ header {
   text-align: center;
   color: white;
   padding-top: 100px;
-  position: absolute;
 }
 
 header h3 {
@@ -73,9 +74,6 @@ header h3 {
   margin-left: 0px;
   letter-spacing: 1px;
   text-align: center;
-  position: relative;
-  left: 300px;
-  z-index: 9999;
 }
 
 header h3 a {
