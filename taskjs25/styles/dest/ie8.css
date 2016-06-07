@@ -448,9 +448,8 @@ section {
 
 .line {
   display: block;
-  width: 1900px;
+  width: auto;
   margin-top: 100px;
-  margin-left: -500px;
   border-top: 5px solid #ff4e50;
 }
 
@@ -472,8 +471,6 @@ footer {
   float: left;
   letter-spacing: 1px;
   margin-top: 20px;
-  position: absolute;
-  top: 50px;
 }
 
 .footer__header a {
