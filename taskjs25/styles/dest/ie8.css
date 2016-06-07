@@ -448,7 +448,7 @@ section {
 
 .line {
   display: block;
-  width: 960px;
+  width: 1440px;
   margin-top: 100px;
   border-top: 5px solid #ff4e50;
 }
@@ -520,6 +520,6 @@ footer {
 }
 
 .footer__image {
-  margin-left: 400px;
+  margin-left: 100px;
   margin-top: 3px;
 }
