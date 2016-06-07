@@ -400,7 +400,8 @@ ul > .section__item:first-child + li + li + li + li + li + li {
 
 ul > .section__item:first-child + li + li + li + li,
 ul > .section__item:first-child + li + li + li + li + li {
-  width: 620px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .section__header2 {
