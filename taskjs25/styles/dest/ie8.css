@@ -43,6 +43,10 @@
   padding: 0px;
 }
 
+img {
+  border: none;
+}
+
 /* ie 8 */
 
 body {
@@ -169,7 +173,7 @@ main {
   font-size: 22px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 40%;
 }
 
 .main__wrapper {
@@ -522,5 +526,5 @@ footer {
 
 .footer__image {
   margin-left: 350px;
-  margin-top: -20px;
+  margin-top: -25px;
 }
