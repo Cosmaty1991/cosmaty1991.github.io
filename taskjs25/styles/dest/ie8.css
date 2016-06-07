@@ -46,9 +46,9 @@
 /* ie 8 */
 
 body {
-  width: 100%;
+  width: 960px;
   display: block;
-  background:url(../../img/header_1440.jpg);
+  background: url(../../img/header_1440.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/header_1440.jpg',sizingMethod='scale');
