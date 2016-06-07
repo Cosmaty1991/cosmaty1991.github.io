@@ -75,6 +75,7 @@ header h3 {
   text-align: center;
   position: relative;
   left: 300px;
+  z-index: 9999;
 }
 
 header h3 a {
