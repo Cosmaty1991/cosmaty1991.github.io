@@ -47,7 +47,7 @@
 
 body {
   display: block;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   width: 960px;
   margin: 0px auto;
   background-repeat: repeat;
