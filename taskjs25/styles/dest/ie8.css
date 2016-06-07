@@ -74,7 +74,7 @@ header h3 {
   letter-spacing: 1px;
   text-align: center;
   position: relative;
-  margin-left: 300px;
+  left: 300px;
 }
 
 header h3 a {
