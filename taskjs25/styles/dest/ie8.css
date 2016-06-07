@@ -64,7 +64,7 @@ header {
   padding-top: 100px;
 }
 
-header h3 {
+.header__link {
   display: block;
   text-transform: uppercase;
   font-size: 20px;
@@ -75,12 +75,12 @@ header h3 {
   text-align: center;
 }
 
-header h3 a {
+.header__link a {
   color: white;
   text-decoration: none;
 }
 
-header h2 {
+.header__header {
   display: block;
   width: 500px;
   margin: 0px auto;
@@ -91,7 +91,7 @@ header h2 {
   text-align: center;
 }
 
-header p {
+.header__paragraph {
   display: block;
   width: 500px;
   margin: 0px auto;
