@@ -86,3 +86,12 @@ var $grid = $('.section__list').imagesLoaded(function() {
     layoutMode: 'fitRows'
   });
 });
+
+function nth_child() {
+  if (/msie [1-8]{1}[^0-9]/.test(navigator.userAgent.toLowerCase())) {
+    $('*:nth-child(3)').addClass('nth-child(3)');
+    $('*:nth-child(5)').addClass('nth-child(5)');
+    $('*:nth-child(6)').addClass('nth-child(6)');
+    $('*:nth-child(7)').addClass('nth-child(7)');
+  }
+}
