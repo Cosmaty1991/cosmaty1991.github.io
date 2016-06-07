@@ -67,7 +67,7 @@ header {
 header h3,
 header h2,
 header p {
-  display: none;
+  opacity: 0;
 }
 
 
