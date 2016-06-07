@@ -60,6 +60,7 @@ header {
   width: auto;
   text-align: center;
   color: white;
+  position: relative;
   padding-top: 150px;
 }
 
