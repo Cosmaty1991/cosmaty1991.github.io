@@ -47,7 +47,7 @@
 
 body {
   display: block;
-  background: url(../../img/header_ie8.jpg);
+  background: url(../../img/header_ie8.jpg) center top;
   width: 960px;
   margin: 0px auto;
   padding-top: 40px;
