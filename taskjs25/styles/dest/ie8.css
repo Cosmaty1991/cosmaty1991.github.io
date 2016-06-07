@@ -36,13 +36,18 @@
     font-style: normal;
 }
 
+/* reset */
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
 /* ie 8 */
 
 body {
   background: url(../../img/header_1440.jpg) 250px 0 no-repeat;
-  width: 940px;
+  width: 1000px;
   margin: 0px auto;
 }
 
