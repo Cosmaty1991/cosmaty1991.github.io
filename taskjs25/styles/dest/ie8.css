@@ -49,7 +49,6 @@ body {
   background: url(../../img/header_1440.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0px auto;
   padding-top: 50px;
 }
 
@@ -58,7 +57,8 @@ body {
 header {
   display: block;
   height: 650px;
-  width: auto;
+  width: 940px;
+  margin: 0px auto;
   text-align: center;
   color: white;
   position: absolute;
