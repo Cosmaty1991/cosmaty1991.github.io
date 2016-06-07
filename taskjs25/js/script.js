@@ -72,6 +72,7 @@ $(function() {
           $('<li class="section__item">')
             .attr({'style': 'background-image: url(' + item.media.m + ')'}).appendTo('.section__list')
             .html(item.title);
+            
           if (i === 6) {
             return false;
           }

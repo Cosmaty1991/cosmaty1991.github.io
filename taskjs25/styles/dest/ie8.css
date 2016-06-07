@@ -46,7 +46,7 @@
 /* ie 8 */
 
 body {
-  background: url(../../img/header_1440.jpg) 0 0 no-repeat;
+  background: url(../../img/header_1440.jpg);
   width: 960px;
   margin: 0px auto;
 }
@@ -56,7 +56,7 @@ body {
 header {
   display: block;
   height: 650px;
-  width: 940px;
+  width: auto;
   text-align: center;
   color: white;
   padding-top: 50px;
@@ -390,19 +390,6 @@ section {
   border-radius: 5px;
   font-size: 22px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
-}
-
-.section__list > .section__item + li + li,
-.section__list > .section__item + li + li + li + li,
-.section__list > .section__item + li + li + li + li + li + li {
-  margin-right: 0px;
-}
-
-.section__list > .section__item + li + li + li + li,
-.section__list > .section__item + li + li + li + li + li {
-  padding-left: 50px;
-  padding-right: 50px;
-  height: 170px;
 }
 
 .section__header2 {
