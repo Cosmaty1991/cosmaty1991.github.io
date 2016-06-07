@@ -66,6 +66,7 @@ header {
   color: white;
   position: absolute;
   padding-top: 100px;
+  top: 500px;
 }
 
 header h3 {
