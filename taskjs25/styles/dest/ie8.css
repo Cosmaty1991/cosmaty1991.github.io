@@ -47,13 +47,9 @@
 
 body {
   display: block;
-  background-size: auto 100%;
+  background: url(../../img/header_1440.jpg) center top no-repeat;
   width: 960px;
   margin: 0px auto;
-  background-repeat: repeat;
-  background: url(../../img/header_768.jpg) no-repeat center top;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/header_1440.jpg',sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/header_1440.jpg',sizingMethod='scale')";
 }
 
 /* header */
