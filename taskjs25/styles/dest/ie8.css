@@ -65,7 +65,7 @@ header {
   text-align: center;
   color: white;
   position: absolute;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 header h3 {
@@ -81,9 +81,6 @@ header h3 {
 header h3 a {
   color: white;
   text-decoration: none;
-  position: relative;
-  margin-top: -100px;
-  top: 500px;
 }
 
 header h2 {
