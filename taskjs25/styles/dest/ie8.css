@@ -74,8 +74,6 @@ header h3 {
   font-size: 20px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
   margin-left: 0px;
-  position: relative;
-  margin-top: -100px;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -83,6 +81,9 @@ header h3 {
 header h3 a {
   color: white;
   text-decoration: none;
+  position: relative;
+  margin-top: -100px;
+  top: 500px;
 }
 
 header h2 {
