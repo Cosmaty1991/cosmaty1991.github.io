@@ -60,8 +60,7 @@ header {
   width: auto;
   text-align: center;
   color: white;
-  position: relative;
-  top: 200px;
+  position: absolute;
   padding-top: 50px;
 }
 
@@ -72,6 +71,8 @@ header h3 {
   font-family: 'Montserrat Bold', Arial, sans-serif;
   margin-top: 0px;
   margin-left: 0px;
+  position: relative;
+  bottom: 200px;
   letter-spacing: 1px;
   text-align: center;
 }
