@@ -48,8 +48,8 @@
 body {
   background: url(../../img/header_1440.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 960px;
+  background-size: auto;
+  min-width: 1440px;
   margin: 0px auto;
 }
 
@@ -399,7 +399,6 @@ section {
 .section__header2 {
   display: block;
   text-align: center;
-  margin-top: 96px;
 }
 
 .section__paragraph {
