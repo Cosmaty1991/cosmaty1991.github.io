@@ -392,14 +392,14 @@ section {
   font-family: 'Montserrat Bold', Arial, sans-serif;
 }
 
-.nth-child(3),
-.nth-child(5),
-.nth-child(7) {
+ul > .section__item:first-child + li + li,
+ul > .section__item:first-child + li + li + li + li,
+ul > .section__item:first-child + li + li + li + li + li + li {
   margin-right: 0px;
 }
 
-.nth-child(5),
-.nth-child(6) {
+ul > .section__item:first-child + li + li + li + li,
+ul > .section__item:first-child + li + li + li + li + li {
   width: 620px;
 }
 
