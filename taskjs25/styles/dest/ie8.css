@@ -392,14 +392,14 @@ section {
   font-family: 'Montserrat Bold', Arial, sans-serif;
 }
 
-ul > .section__item:first-child + li + li,
-ul > .section__item:first-child + li + li + li + li,
-ul > .section__item:first-child + li + li + li + li + li + li {
+.section__list > .section__item + li + li,
+.section__list > .section__item + li + li + li + li,
+.section__list > .section__item + li + li + li + li + li + li {
   margin-right: 0px;
 }
 
-ul > .section__item:first-child + li + li + li + li,
-ul > .section__item:first-child + li + li + li + li + li {
+.section__list > .section__item + li + li + li + li,
+.section__list > .section__item + li + li + li + li + li {
   padding-left: 50px;
   padding-right: 50px;
   height: 170px;
