@@ -406,8 +406,8 @@ section {
 }
 
 .section__item + li + li + li + li + li + li {
-  margin-left: 550px;
-  margin-top: -550px;
+  margin-left: 250px;
+  margin-top: -250px;
 }
 
 .section__header2 {
