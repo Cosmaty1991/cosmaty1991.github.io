@@ -25,15 +25,14 @@
 }
 
 @font-face {
-    font-family: 'Roboto Light';
-    src: url('../../fonts/roboto-light-webfont.eot');
-    src: url('../../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/roboto-light-webfont.woff2') format('woff2'),
-         url('../../fonts/roboto-light-webfont.woff') format('woff'),
-         url('../../fonts/roboto-light-webfont.ttf') format('truetype'),
-         url('../../fonts/roboto-light-webfont.svg#robotolight') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Roboto Light';
+  src: url('../../fonts/roboto-light-webfont.eot');
+  src: url('../../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/roboto-light-webfont.woff2') format('woff2'),
+       url('../../fonts/roboto-light-webfont.woff') format('woff'),
+       url('../../fonts/roboto-light-webfont.svg#robotolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* reset */
@@ -395,10 +394,22 @@ section {
   margin-bottom: 10px;
   margin-right: 0px;
   padding-top: 60px;
+  padding-left: -10px;
   color: white;
   border-radius: 5px;
   font-size: 22px;
   font-family: 'Montserrat Bold', Arial, sans-serif;
+}
+
+.section__item + li + li,
+.section__item + li + li + li + li,
+.section__item + li + li + li + li + li + li {
+  margin-right: 0px;
+}
+
+.section__item + li + li + li + li,
+.section__item + li + li + li + li + li {
+  width: 620px;
 }
 
 .section__header2 {
