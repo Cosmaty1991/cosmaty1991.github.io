@@ -403,11 +403,12 @@ section {
 .section__item + li + li + li + li,
 .section__item + li + li + li + li + li {
   width: 620px;
+  height: 170px;
 }
 
 .section__item + li + li + li + li + li + li {
-  margin-left: 250px;
-  margin-top: -250px;
+  margin-left: 300px;
+  margin-top: -240px;
 }
 
 .section__header2 {
