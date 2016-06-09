@@ -400,21 +400,14 @@ section {
   font-family: 'Montserrat Bold', Arial, sans-serif;
 }
 
-.section__item + li + li,
-.section__item + li + li + li + li,
-.section__item + li + li + li + li + li + li {
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
 .section__item + li + li + li + li,
 .section__item + li + li + li + li + li {
   width: 620px;
 }
 
 .section__item + li + li + li + li + li + li {
-  margin-left: 50px;
-  margin-top: -50px;
+  margin-left: 550px;
+  margin-top: -550px;
 }
 
 .section__header2 {
