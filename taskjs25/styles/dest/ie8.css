@@ -412,7 +412,7 @@ section {
   width: 620px;
 }
 
-.section__item + li + li + li + li + li {
+.section__item + li + li + li + li + li + li {
   margin-left: 50px;
   margin-top: -50px;
 }
