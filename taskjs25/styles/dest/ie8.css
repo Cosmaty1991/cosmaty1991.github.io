@@ -386,7 +386,7 @@ section {
 .section__item {
   list-style: none;
   background-repeat: no-repeat;
-  width: 300px;
+  width: 30%;
   height: 170px;
   display: inline;
   float: left;
@@ -403,13 +403,13 @@ section {
 .section__item + li + li,
 .section__item + li + li + li + li,
 .section__item + li + li + li + li + li + li {
-  margin: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .section__item + li + li + li + li,
 .section__item + li + li + li + li + li {
-  width: 65%;
-  margin: 0px;
+  width: 62%;
 }
 
 .section__header2 {
