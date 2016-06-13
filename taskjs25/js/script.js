@@ -90,6 +90,7 @@ var $grid = $('.section__list').imagesLoaded(function() {
 
 // ie8
 
+$(function() {
 if ($.browser.msie) {
   $('input[placeholder]').each(function() {
     var input = $(this);
@@ -107,3 +108,4 @@ if ($.browser.msie) {
     });
   });
 }
+});
