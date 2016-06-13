@@ -94,7 +94,7 @@ $(function() {
   $('[placeholder]').focus(function() {
     var input = $(this);
     if (input.val() == input.attr('placeholder')) {
-      input.val('');
+      input.val('enter');
       input.removeClass('placeholder');
     }
   }).blur(function() {
