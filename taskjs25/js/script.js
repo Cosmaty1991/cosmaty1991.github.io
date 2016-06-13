@@ -90,6 +90,11 @@ var $grid = $('.section__list').imagesLoaded(function() {
 
 //  ie8
 
-$(function() {
-  $('input, textarea').placeholder();
+$('[placeholder]').parents('form').submit(function() {
+  $(this).find('[placeholder]').each(function() {
+    var input = $(this);
+    if (input.val() == input.attr('placeholder')) {
+      input.val('');
+    }
+  })
 });
