@@ -90,4 +90,6 @@ var $grid = $('.section__list').imagesLoaded(function() {
 
 //  ie8
 
-$('input, textarea').placeholder();
+$(function() {
+  $('input, textarea').placeholder();
+});
