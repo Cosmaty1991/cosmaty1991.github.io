@@ -90,4 +90,4 @@ var $grid = $('.section__list').imagesLoaded(function() {
 
 //  ie8
 
-$('.section__search').placeholder();
+$('input').placeholder();
