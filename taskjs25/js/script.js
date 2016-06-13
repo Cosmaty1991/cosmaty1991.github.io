@@ -91,21 +91,17 @@ var $grid = $('.section__list').imagesLoaded(function() {
 // ie8
 
 $(function() {
-if ($.browser.msie) {
-  $('input[placeholder]').each(function() {
+  $('[placeholder]').focus(function() {
     var input = $(this);
-    $(input).val(input.attr('placeholder'));
-    $(input).focus(function() {
-      if (input.val() == input.attr('placeholder')) {
-        input.val('Enter your interests');
-      }
-    });
-
-    $(input).blur(function() {
-      if (input.val() == '' || input.val() == input.attr('placeholder')) {
-        input.val(input.attr('placeholder'));
-      }
-    });
-  });
-}
+    if (input.val() == input.attr('placeholder')) {
+      input.val('');
+      input.removeClass('placeholder');
+    }
+  }).blur(function() {
+    var input = $(this);
+    if (input.val() == '' || input.val() == input.attr('placeholder')) {
+      input.addClass('placeholder');
+      input.val(input.attr('placeholder'));
+    }
+  }).blur();
 });
