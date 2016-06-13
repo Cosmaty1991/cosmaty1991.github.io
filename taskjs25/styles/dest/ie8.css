@@ -431,8 +431,8 @@ section {
   margin-left: 250px;
   padding-left: 14px;
   padding-top: 10px;
-  position: absolute;
-  top: 10px;
+  position: relative;
+  top: 500px;
   border: 1px solid #cccccc;
   border-radius: 5px;
   color: #999999;
