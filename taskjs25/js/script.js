@@ -87,3 +87,7 @@ var $grid = $('.section__list').imagesLoaded(function() {
     layoutMode: 'fitRows'
   });
 });
+
+// ie8
+
+$('input[placeholder], textarea[placeholder]').placeholder();
