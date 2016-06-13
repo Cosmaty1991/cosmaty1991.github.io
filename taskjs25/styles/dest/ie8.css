@@ -427,7 +427,7 @@ section {
   display: inline-block;
   width: 225px;
   height: 28px;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-left: 250px;
   padding-left: 14px;
   padding-top: 10px;
@@ -436,6 +436,11 @@ section {
   color: black;
   font-size: 14px;
   font-family: 'Roboto Light', Arial, sans-serif;
+}
+
+.section__search:after {
+  content: 'enter';
+  color: black;
 }
 
 .section__submit {
