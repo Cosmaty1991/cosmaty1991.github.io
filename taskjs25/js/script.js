@@ -96,7 +96,7 @@ if ($.browser.msie) {
     $(input).val(input.attr('placeholder'));
     $(input).focus(function() {
       if (input.val() == input.attr('placeholder')) {
-        input.val('');
+        input.val('Enter your interests');
       }
     });
 
