@@ -426,10 +426,11 @@ section {
 .section__search {
   display: inline-block;
   width: 225px;
-  height: 38px;
+  height: 28px;
   margin-top: 50px;
   margin-left: 250px;
   padding-left: 14px;
+  padding-top: 10px;
   border: 1px solid #cccccc;
   border-radius: 5px;
   color: black;
