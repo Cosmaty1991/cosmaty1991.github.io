@@ -36,9 +36,8 @@ header {
   background: url(../../img/header.jpg) no-repeat;
   background-size: cover;
 }
-.header__image {
+header img {
   width: 50px;
-  display: block;
 }
 header h1 {
   text-transform: uppercase;
