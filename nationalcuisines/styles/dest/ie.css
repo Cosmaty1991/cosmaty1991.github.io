@@ -22,13 +22,12 @@
 }
 
 /* internet explorer < 9 */
-
 body {
-  width: auto;
+  width: 1440px;
 }
 /* header */
 header {
-  width: auto;
+  width: 1440px;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #ffffff;
@@ -53,7 +52,7 @@ header p {
 }
 /* main */
 main {
-  width: auto;
+  width: 1440px;
 }
 .main__wrapper {
   border-bottom: 1px solid black;
@@ -76,7 +75,7 @@ main {
   display: inline;
   float: left;
   cursor: pointer;
-  margin-right: 65px;
+  margin-right: 60px;
   text-align: center;
 }
 .main__item a {
@@ -124,7 +123,7 @@ main {
 }
 /* section */
 section {
-  width: auto;
+  width: 1440px;
   margin: 150px auto;
 }
 section .active {
@@ -163,7 +162,7 @@ section .active {
 }
 /* footer */
 footer {
-  width: auto;
+  width: 1440px;
   margin-top: 20px;
   padding-top: 20px;
   background: #3b3b3b;
