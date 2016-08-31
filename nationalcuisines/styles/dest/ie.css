@@ -38,6 +38,7 @@ header {
 }
 header img {
   width: 50px;
+  display: block;
 }
 header h1 {
   text-transform: uppercase;
@@ -179,7 +180,7 @@ footer {
   width: 50px;
   display: inline;
   float: left;
-  margin-right: 60px;
+  margin-right: 70px;
   margin-bottom: 20px;
 }
 .footer__item:last-child {
