@@ -23,11 +23,12 @@
 
 /* internet explorer < 9 */
 body {
-  width: 1440px;
+  width: auto;
 }
 /* header */
 header {
   width: 1440px;
+  margin: 0px auto;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #ffffff;
@@ -53,6 +54,7 @@ header p {
 /* main */
 main {
   width: 1440px;
+  margin: 0px auto;
 }
 .main__wrapper {
   border-bottom: 1px solid black;
@@ -163,6 +165,7 @@ section .active {
 /* footer */
 footer {
   width: 1440px;
+  margin: 0px auto;
   margin-top: 20px;
   padding-top: 20px;
   background: #3b3b3b;
