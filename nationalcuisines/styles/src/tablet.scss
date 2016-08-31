@@ -188,9 +188,13 @@
     float: left;
     margin-right: 25px;
     margin-bottom: 20px;
-  }
 
-  .footer__item:last-child {
-    margin-right: 0px;
+    img {
+      width: 50px;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 }

@@ -154,7 +154,7 @@ main {
 .main__item:last-child {
   margin-right: 0px;
 }
-.main__item:active ul {
+.main__item:hover ul {
   display: block;
 }
 .main__subitem {

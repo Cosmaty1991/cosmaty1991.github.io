@@ -182,10 +182,14 @@
     float: left;
     margin-right: 80px;
     margin-bottom: 20px;
-  }
 
-  .footer__item:last-child {
-    margin-right: 0px;
+    img {
+      width: 50px;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 }
 
@@ -373,9 +377,13 @@
     float: left;
     margin-right: 80px;
     margin-bottom: 20px;
-  }
 
-  .footer__item:last-child {
-    margin-right: 0px;
+    img {
+      width: 50px;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 }

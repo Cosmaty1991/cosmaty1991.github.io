@@ -160,10 +160,13 @@
   }
 
   .footer__item {
-    width: 50px;
     display: inline;
     float: left;
     margin-left: 11px;
     margin-bottom: 20px;
+
+    .footer__item img {
+      width: 50px;
+    }
   }
 }
