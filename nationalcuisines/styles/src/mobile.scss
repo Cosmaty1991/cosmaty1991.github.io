@@ -1,0 +1,169 @@
+/* mobile */
+
+@media screen and (max-width: $mobile) {
+  body {
+    width: $mobile;
+  }
+
+  /* header */
+
+  header {
+    width: $mobile;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $white;
+    text-align: center;
+    background: url(../../img/header.jpg) no-repeat;
+    background-size: cover;
+
+    img {
+      width: 50px;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: $font-size;
+      font-family: $mano;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: $font-size - 8px;
+      font-family: $aleor;
+    }
+  }
+
+  /* main */
+
+  main {
+    width: $mobile;
+  }
+
+  .main__wrapper {
+    border-bottom: 1px solid black;
+    @include box-shadow(3px 3px 5px 0px rgba(0,0,0,0.75));
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+  }
+
+  .main__list {
+    list-style: none;
+    text-align: center;
+  }
+
+  .main__item {
+    display: block;
+    border-top: 1px solid black;
+    cursor: pointer;
+
+    a {
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-decoration: none;
+      color: $black;
+      font-family: $aleor;
+      font-size: $font-size - 4px;
+    }
+
+    ul {
+      display: none;
+      border-top: 1px solid black;
+      list-style: none;
+      @include box-shadow(3px 3px 5px 0px rgba(0,0,0,0.75));
+
+      li a {
+        text-decoration: none;
+        color: $black;
+      }
+    }
+
+    &:hover ul {
+      display: block;
+    }
+  }
+
+  .main__subitem {
+    border-bottom: 1px dotted #cccccc;
+
+    a:hover {
+      background: $black;
+      color: $white;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  /* section */
+
+  section {
+    width: $mobile;
+
+    .active {
+      display: block;
+    }
+  }
+
+  .section__list {
+    list-style: none;
+  }
+
+  .section__item {
+    width: $mobile;
+    display: none;
+    height: auto;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 20px;
+    font-family: $aleor;
+    font-size: $font-size - 4px;
+    color: $black;
+
+    img {
+      width: $mobile;
+      height: 220px;
+      padding-bottom: 20px;
+      border-bottom: 2px dashed $black;
+    }
+
+    h4 {
+      width: $mobile - 20px;
+      margin: 0px auto;
+    }
+
+    p {
+      padding-top: 3px;
+      width: $mobile - 20px;
+      margin: 0px auto;
+      font-style: italic;
+    }
+  }
+
+  /* footer */
+
+  footer {
+    width: $mobile;
+    margin-top: 20px;
+    padding-top: 20px;
+    background: $black;
+  }
+
+  .footer__list {
+    overflow: hidden;
+  }
+
+  .footer__item {
+    width: 50px;
+    display: inline;
+    float: left;
+    margin-left: 11px;
+    margin-bottom: 20px;
+  }
+}

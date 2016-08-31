@@ -1,0 +1,196 @@
+/* tablet */
+
+@media screen and (min-width: $mobile + 1px) and (max-width: $tablet) {
+  body {
+    width: $tablet;
+  }
+
+  /* header */
+
+  header {
+    width: $tablet;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $white;
+    text-align: center;
+    background: url(../../img/header.jpg) no-repeat;
+    background-size: cover;
+
+    img {
+      width: 50px;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: $font-size + 4px;
+      font-family: $mano;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: $font-size - 4px;
+      font-family: $aleor;
+    }
+  }
+
+  /* main */
+
+  main {
+    width: $tablet;
+  }
+
+  .main__wrapper {
+    border-bottom: 1px solid black;
+    @include box-shadow(3px 3px 5px 0px rgba(0,0,0,0.75));
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+  }
+
+  .main__list {
+    width: $tablet - 40px;
+    margin: 0px auto;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  .main__item {
+    display: inline;
+    float: left;
+    cursor: pointer;
+    margin-right: 8px;
+    text-align: center;
+
+    a {
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-decoration: none;
+      color: $black;
+      font-family: $aleor;
+      font-size: $font-size - 4px;
+    }
+
+    ul {
+      display: none;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      list-style: none;
+      position: absolute;
+      margin-left: -20px;
+      @include box-shadow(3px 3px 5px 0px rgba(0,0,0,0.75));
+
+      li a {
+        text-decoration: none;
+        color: $black;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:hover ul {
+      display: block;
+    }
+  }
+
+  .main__subitem {
+    border-bottom: 1px dotted #cccccc;
+
+    a:hover {
+      background: $black;
+      color: $white;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  /* section */
+
+  section {
+    width: $tablet;
+    margin: 150px auto;
+
+    .active {
+      display: block;
+    }
+  }
+
+  .section__list {
+    list-style: none;
+  }
+
+  .section__item {
+    width: $tablet - 40px;
+    margin: 0px auto;
+    overflow: hidden;
+    display: none;
+    height: auto;
+    text-align: justify;
+    line-height: 20px;
+    font-family: $aleor;
+    font-size: $font-size - 4px;
+    color: $black;
+
+    img {
+      width: $tablet - 428px;
+      height: 320px;
+      display: inline;
+      float: left;
+      padding-right: 20px;
+      border-right: 2px dashed $black;
+    }
+
+    h4 {
+      display: inline;
+      float: left;
+      padding-left: 20px;
+    }
+
+    p {
+      margin-top: 10px;
+      padding-left: 20px;
+      width: $tablet - 428px;
+      display: inline;
+      float: left;
+      font-style: italic;
+    }
+  }
+
+  /* footer */
+
+  footer {
+    width: $tablet;
+    margin-top: 20px;
+    padding-top: 20px;
+    background: $black;
+  }
+
+  .footer__list {
+    width: $tablet - 40px;
+    margin: 0px auto;
+    overflow: hidden;
+  }
+
+  .footer__item {
+    width: 50px;
+    display: inline;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+
+  .footer__item:last-child {
+    margin-right: 0px;
+  }
+}
