@@ -182,6 +182,9 @@ footer {
   margin-right: 70px;
   margin-bottom: 20px;
 }
+.footer__item img {
+  width: 50px;
+}
 .footer__item:last-child {
   margin-right: 0px;
 }
