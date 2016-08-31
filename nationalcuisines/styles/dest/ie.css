@@ -36,7 +36,7 @@ header {
   background: url(../../img/header.jpg) no-repeat;
   background-size: cover;
 }
-header img {
+.header__image {
   width: 50px;
   display: block;
 }
