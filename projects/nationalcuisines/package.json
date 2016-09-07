@@ -1,6 +1,7 @@
 {
   "name": "nationalcuisines",
   "version": "1.0.0",
+  "author": "Vladyslav Grygorenko",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.12",
