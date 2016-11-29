@@ -1,0 +1,84 @@
+/* tablet */
+
+@media screen and (min-width: $mobile + 1px) and (max-width: $tablet) {
+  body {
+    width: $tablet;
+    background: url(../../img/tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .header__img {
+    display: block;
+    text-align: center;
+    margin-top: 458px;
+    margin-bottom: 205px;
+  }
+
+  .main__img,
+  .main__img2 {
+    position: absolute;
+    left: 485px;
+    margin-top: 30px;
+    z-index: 2;
+  }
+
+  .main__img2 {
+    top: 1040px;
+    left: 488px;
+  }
+
+  .main__input {
+    width: 528px;
+    height: 109px;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    padding-left: 120px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    @include border-radius(55px);
+    font-family: $regular;
+    font-size: 26px;
+  }
+
+  @include placeholder {
+    color: white;
+  }
+
+  .main__submit {
+    width: 650px;
+    height: 109px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 80px;
+    margin-bottom: 52px;
+    background: #f96332;
+    color: white;
+    border: none;
+    @include border-radius(55px);
+    cursor: pointer;
+    font-family: $bold;
+    font-size: 26px;
+  }
+
+  footer {
+    width: 650px;
+    margin: 0px auto;
+    margin-bottom: 624px;
+  }
+
+  .footer__link,
+  .footer__link2 {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-family: $regular;
+    font-size: 22px;
+  }
+
+  .footer__link2 {
+    float: right;
+  }
+}
