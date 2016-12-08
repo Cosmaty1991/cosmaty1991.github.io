@@ -14,7 +14,7 @@ function generateTable(response) {
   var data = JSON.parse(response);
   var arr = data;
 
-  var table = '<table><tr><th id="th">#</th><th>Camper Name</th><th>Overall Score</th></tr>';
+  var table = '<table><tr><th>#</th><th>Camper Name</th><th>Overall Score</th></tr>';
 
   arr.forEach(function(i, item, arr) {
     table += '<tr><td>'+ (item + 1) + '</td><td>' + arr[item].username + '</td><td>' + arr[item].alltime + '</td></tr>';
