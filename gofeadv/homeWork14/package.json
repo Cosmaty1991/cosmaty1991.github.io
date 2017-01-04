@@ -1,7 +1,7 @@
 {
   "name": "homeWork14",
   "version": "1.0.0",
-  "description": "Articles with comments",
+  "description": "Articles and comments",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
