@@ -10,6 +10,6 @@
 
 > Want to learn AngularJS
 
-[Github]:https://github.com/Cosmaty1991
+[Github]: https://github.com/Cosmaty1991
 
 My favourite book: Haruki Murakami - 1Q84
