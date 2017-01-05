@@ -20,8 +20,6 @@ class CommentBox extends React.Component {
           <h2 className="text-center">Join The Discussion</h2>
           <div className="comment-box">
             <CommentForm addComment={ this._addComment.bind(this) } />
-            <CommentAvatarList avatars={ this._getAvatars() } />
-            { this._getPopularMessage(comments.length) }
             <h3 className="comment-count">{ this._getCommentsTitle(comments.length) }</h3>
             <div className="comment-list">
               {comments}
@@ -32,26 +30,12 @@ class CommentBox extends React.Component {
     );
   }
 
-  _getAvatars() {
-    return this.state.comments.map(comment => comment.avatarUrl);
-  }
-
-  _getPopularMessage(commentCount) {
-    const POPULAR_COUNT = 10;
-    if (commentCount > POPULAR_COUNT) {
-       return (
-         <div>This post is getting really popular, dont miss out!</div>
-       );
-    }
-  }
-
   _getComments() {
     return this.state.comments.map((comment) => {
       return <Comment
                id={ comment.id }
                author={ comment.author }
                body={ comment.body }
-               avatarUrl={ comment.avatarUrl }
                onDelete={ this._deleteComment.bind(this) }
                key={ comment.id } />
     });
@@ -100,14 +84,6 @@ class CommentBox extends React.Component {
 }
 
 class CommentForm extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      characters: 0
-    };
-  }
-
   render() {
     return (
       <form className="comment-form" onSubmit={ this._handleSubmit.bind(this) }>
@@ -115,7 +91,7 @@ class CommentForm extends React.Component {
         <div className="comment-form-fields">
           <input className="form-control" placeholder="Name:" ref={ c => this._author = c } required />
           <br />
-          <textarea className="form-control" placeholder="Comment:" ref={ c => this._body = c } onChange={ this._getCharacterCount.bind(this) } required></textarea>
+          <textarea className="form-control" placeholder="Comment:" ref={ c => this._body = c } required></textarea>
         </div>
         <br />
         <div className="comment-form-actions">
@@ -127,12 +103,6 @@ class CommentForm extends React.Component {
     );
   }
 
-  _getCharacterCount() {
-    this.setState({
-      characters: this._body.value.length
-    });
-  }
-
   _handleSubmit(event) {
     event.preventDefault();
     this.props.addComment(this._author.value, this._body.value);
@@ -141,33 +111,9 @@ class CommentForm extends React.Component {
   }
 }
 
-class CommentAvatarList extends React.Component {
-  render() {
-    const { avatars = [] } = this.props;
-
-    return (
-      <div className="comment-avatars"></div>
-    )
-  }
-}
-
 class Comment extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      isAbusive: false
-    };
-  }
-
   render() {
-    let commentBody;
-
-    if (!this.state.isAbusive) {
-      commentBody = this.props.body;
-    } else {
-      commentBody = <em>Content marked as abusive</em>;
-    }
+    let commentBody = this.props.body;
 
     return (
       <div className="comment">
