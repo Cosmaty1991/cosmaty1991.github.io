@@ -17,7 +17,7 @@ header {
 .header__logo a {
   display: inline;
   float: left;
-  margin-right: 780px;
+  margin-right: 700px;
   margin-top: 10px;
   color: white;
   text-decoration: none;
@@ -134,7 +134,7 @@ main {
   background-size: cover;
 }
 
-.main__item:last-child {
+.main__item2 {
   margin-right: 0px;
   background: url(../../img/image2b.png);
   background-size: cover;
@@ -219,7 +219,7 @@ footer {
 .footer__paragraph {
   display: inline;
   float: left;
-  margin-right: 660px;
+  margin-right: 600px;
   margin-top: 15px;
   color: white;
   text-decoration: none;
