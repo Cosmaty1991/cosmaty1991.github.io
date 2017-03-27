@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   width: 1440px;
 }
@@ -123,6 +128,7 @@ main {
 
 .main__list {
   overflow: hidden;
+  text-align: center;
 }
 
 .main__item {
