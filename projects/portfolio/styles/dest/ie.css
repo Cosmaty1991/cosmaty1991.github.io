@@ -4,7 +4,6 @@ body {
 
 header {
   width: 1440px;
-  margin: 0px auto;
   background: #87509c;
   overflow: hidden;
   padding-bottom: 140px;
@@ -18,7 +17,7 @@ header {
 .header__logo a {
   display: inline;
   float: left;
-  margin-right: 820px;
+  margin-right: 780px;
   margin-top: 10px;
   color: white;
   text-decoration: none;
@@ -141,21 +140,9 @@ main {
   background-size: cover;
 }
 
-.main__item:hover {
-  background: url(../../img/image1.png);
-  background-size: cover;
-  transition: 1s;
-}
-
-.main__item:last-child:hover {
-  background: url(../../img/image2.png);
-  background-size: cover;
-  transition: 1s;
-}
-
 .main__item a {
   display: block;
-  width: 680px;
+  width: 600px;
   height: 350px;
 }
 
