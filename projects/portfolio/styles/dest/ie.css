@@ -4,6 +4,7 @@ body {
 
 header {
   width: 1440px;
+  margin: 0px auto;
   background: #87509c;
   overflow: hidden;
   padding-bottom: 140px;
