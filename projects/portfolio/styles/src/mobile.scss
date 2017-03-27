@@ -1,0 +1,254 @@
+/* mobile */
+
+@media screen and (max-width: $mobile) {
+  body {
+    width: $mobile;
+  }
+
+  /* home */
+
+  header {
+    width: $mobile;
+    background: #87509c;
+    overflow: hidden;
+    padding-bottom: 40px;
+  }
+
+  .header__container {
+    width: $mobile - 20px;
+    margin: 0px auto;
+  }
+
+  .header__logo a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: $bold;
+    font-size: $font-size;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .header__paragraph {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 42px;
+    text-align: center;
+    font-family: $bold;
+    font-size: $font-size - 22px;
+  }
+
+  .header__button {
+    width: 205px;
+    height: 52px;
+    margin: 0px auto;
+    display: block;
+    text-shadow: 0 -1px rgba(0,0,0,.5);
+    user-select: none;
+    border: 1px solid rgb(80,32,0);
+    @include border-radius(5px);
+    outline: none;
+    background: #eb7d4b;
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+    @include transition(.2s);
+  }
+
+  .header__button:active {
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+    @include transform(translate(0, 4px));
+  }
+
+  .header__button a {
+    display: block;
+    font-family: $bold;
+    font-size: $font-size - 22px;
+    color: white;
+    text-decoration: none;
+  }
+
+  /* works */
+
+  main {
+    width: $mobile;
+    font-family: $bold;
+    font-size: $font-size - 22px;
+    background: #ffdd99;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .main__container {
+    width: $mobile - 20px;
+    margin: 0px auto;
+  }
+
+  .main__header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .main__paragraph {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .main__list {
+    overflow: hidden;
+  }
+
+  .main__item {
+    margin-bottom: 10px;
+    border: 5px solid black;
+    display: block;
+    background: url(../../img/image1b.png);
+    background-size: cover;
+  }
+
+  .main__item:last-child {
+    margin-bottom: 0px;
+    background: url(../../img/image2b.png);
+    background-size: cover;
+  }
+
+  .main__item:hover {
+    background: url(../../img/image1.png);
+    background-size: cover;
+    @include transition(1s);
+  }
+
+  .main__item:last-child:hover {
+    background: url(../../img/image2.png);
+    background-size: cover;
+  }
+
+  .main__item a {
+    display: block;
+    width: 280px;
+    height: 150px;
+  }
+
+  /* skills */
+
+  section {
+    width: $mobile;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: $bold;
+    font-size: $font-size - 22px;
+    background: #e7f1f8;
+  }
+
+  .section__container {
+    width: $mobile - 20px;
+    margin: 0px auto;
+  }
+
+  .section__header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .section__item {
+    margin-bottom: 20px;
+    list-style: none;
+  }
+
+  .section__item p {
+    font-size: $font-size - 22px;
+  }
+
+  .container {
+    width: 100%;
+    background-color: white;
+  }
+
+  .section__skills {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: $font-size - 20px;
+  }
+
+  .html {
+    width: 75%;
+    background-color: #ff791f;
+  }
+
+  .js {
+    width: 50%;
+    background-color: #f2c300;
+  }
+
+  .ps {
+    width: 50%;
+    background-color: #2a3778;
+  }
+
+  /* contacts */
+
+  footer {
+    width: $mobile;
+    background: #344b8e;
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+
+  .footer__container {
+    width: $mobile - 20px;
+    margin: 0px auto;
+  }
+
+  .footer__paragraph {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: $regular;
+    font-size: $font-size - 10px;
+    cursor: pointer;
+  }
+
+  .footer__list {
+    overflow: hidden;
+  }
+
+  .footer__item {
+    display: inline;
+    float: left;
+    margin-right: 5px;
+  }
+
+  .footer__item:last-child {
+    margin-right: 0px;
+  }
+
+  .footer__item a {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $icons;
+    font-size: $font-size;
+  }
+
+  .footer__item a:hover {
+    background: white;
+    color: black;
+  }
+}

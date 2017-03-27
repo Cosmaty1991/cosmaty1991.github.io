@@ -96,7 +96,7 @@ table {
     width: $mobile;
   }
 
-  /* header */
+  /* logo */
 
   header {
     width: $mobile;
@@ -126,7 +126,7 @@ table {
     }
   }
 
-  /* main */
+  /* menu */
 
   main {
     width: $mobile;
@@ -192,7 +192,7 @@ table {
     }
   }
 
-  /* section */
+  /* information */
 
   section {
     width: $mobile;
@@ -237,7 +237,7 @@ table {
     }
   }
 
-  /* footer */
+  /* icons */
 
   footer {
     width: $mobile;
@@ -247,18 +247,7 @@ table {
   }
 
   .footer__list {
-    overflow: hidden;
-  }
-
-  .footer__item {
-    display: inline;
-    float: left;
-    margin-left: 11px;
-    margin-bottom: 20px;
-
-    .footer__item img {
-      width: 50px;
-    }
+    display: none;
   }
 }
 
@@ -269,7 +258,7 @@ table {
     width: $tablet;
   }
 
-  /* header */
+  /* logo */
 
   header {
     width: $tablet;
@@ -299,7 +288,7 @@ table {
     }
   }
 
-  /* main */
+  /* menu */
 
   main {
     width: $tablet;
@@ -379,7 +368,7 @@ table {
     }
   }
 
-  /* section */
+  /* information */
 
   section {
     width: $tablet;
@@ -431,7 +420,7 @@ table {
     }
   }
 
-  /* footer */
+  /* icons */
 
   footer {
     width: $tablet;
@@ -470,7 +459,7 @@ table {
     width: $desktop;
   }
 
-  /* header */
+  /* logo */
 
   header {
     width: $desktop;
@@ -500,7 +489,7 @@ table {
     }
   }
 
-  /* main */
+  /* menu */
 
   main {
     width: $desktop;
@@ -580,7 +569,7 @@ table {
     }
   }
 
-  /* section */
+  /* information */
 
   section {
     width: $desktop;
@@ -626,7 +615,7 @@ table {
     }
   }
 
-  /* footer */
+  /* icons */
 
   footer {
     width: $desktop;
@@ -665,7 +654,7 @@ table {
     width: auto;
   }
 
-  /* header */
+  /* logo */
 
   header {
     width: auto;
@@ -695,7 +684,7 @@ table {
     }
   }
 
-  /* main */
+  /* menu */
 
   main {
     width: auto;
@@ -775,7 +764,7 @@ table {
     }
   }
 
-  /* section */
+  /* information */
 
   section {
     width: auto;
@@ -821,7 +810,7 @@ table {
     }
   }
 
-  /* footer */
+  /* icons */
 
   footer {
     width: auto;

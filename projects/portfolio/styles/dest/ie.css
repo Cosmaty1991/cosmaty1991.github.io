@@ -1,0 +1,269 @@
+body {
+  width: 1440px;
+}
+
+header {
+  width: 1440px;
+  background: #87509c;
+  overflow: hidden;
+  padding-bottom: 140px;
+}
+
+.header__container {
+  width: 1400px;
+  margin: 0px auto;
+}
+
+.header__logo a {
+  display: inline;
+  float: left;
+  margin-right: 820px;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Titillium Bold';
+  font-size: 42px;
+}
+
+.header__list {
+  overflow: hidden;
+  list-style: none;
+}
+
+.header__item {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.header__item:last-child {
+  margin-right: 0px;
+}
+
+.header__item a {
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Titillium Regular';
+  font-size: 16px;
+}
+
+.header__item a:hover {
+  background: white;
+  color: black;
+}
+
+.header__paragraph {
+  color: white;
+  margin-top: 140px;
+  margin-bottom: 62px;
+  text-align: center;
+  font-family: 'Titillium Bold';
+  font-size: 42px;
+}
+
+.header__button {
+  width: 275px;
+  height: 92px;
+  margin: 0px auto;
+  display: block;
+  text-shadow: 0 -1px rgba(0,0,0,.5);
+  user-select: none;
+  border: 1px solid rgb(80,32,0);
+  border-radius: 5px;
+  outline: none;
+  background: #eb7d4b;
+  box-shadow: 0 6px rgb(86,38,6), 0 3px 15px rgba(0,0,0,.4), inset 0 1px rgba(255,255,255,.3), inset 0 0 3px rgba(255,255,255,.5);
+  transition: .2s;
+}
+
+.header__button:active {
+  box-shadow: 0 2px rgb(86,38,6), 0 1px 6px rgba(0,0,0,.4), inset 0 1px rgba(255,255,255,.3), inset 0 0 3px rgba(255,255,255,.5);
+  -webkit-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+}
+
+.header__button a {
+  display: block;
+  font-family: 'Titillium Bold';
+  font-size: 42px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  width: 1440px;
+  font-family: 'Titillium Bold';
+  font-size: 42px;
+  background: #ffdd99;
+  padding-top: 50px;
+  padding-bottom: 120px;
+}
+
+.main__container {
+  width: 1400px;
+  margin: 0px auto;
+}
+
+.main__header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.main__paragraph {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main__list {
+  overflow: hidden;
+}
+
+.main__item {
+  border: 5px solid black;
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  background: url(../../img/image1b.png);
+  background-size: cover;
+}
+
+.main__item:last-child {
+  margin-right: 0px;
+  background: url(../../img/image2b.png);
+  background-size: cover;
+}
+
+.main__item:hover {
+  background: url(../../img/image1.png);
+  background-size: cover;
+  transition: 1s;
+}
+
+.main__item:last-child:hover {
+  background: url(../../img/image2.png);
+  background-size: cover;
+  transition: 1s;
+}
+
+.main__item a {
+  display: block;
+  width: 680px;
+  height: 350px;
+}
+
+section {
+  width: 1440px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  font-family: 'Titillium Bold';
+  font-size: 42px;
+  background: #e7f1f8;
+}
+
+.section__container {
+  width: 1400px;
+  margin: 0px auto;
+}
+
+.section__header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section__item {
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.section__item p {
+  font-size: 42px;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+}
+
+.section__skills {
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 32px;
+}
+
+.html {
+  width: 75%;
+  background-color: #ff791f;
+}
+
+.js {
+  width: 50%;
+  background-color: #f2c300;
+}
+
+.ps {
+  width: 50%;
+  background-color: #2a3778;
+}
+
+footer {
+  width: 1440px;
+  background: #344b8e;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.footer__container {
+  width: 1400px;
+  margin: 0px auto;
+}
+
+.footer__paragraph {
+  display: inline;
+  float: left;
+  margin-right: 660px;
+  margin-top: 15px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Titillium Regular';
+  font-size: 42px;
+  cursor: pointer;
+}
+
+.footer__list {
+  overflow: hidden;
+}
+
+.footer__item {
+  display: inline;
+  float: left;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.footer__item:last-child {
+  margin-right: 0px;
+}
+
+.footer__item a {
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Mono Social Icons Font';
+  font-size: 42px;
+}
