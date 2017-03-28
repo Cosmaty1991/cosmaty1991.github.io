@@ -216,7 +216,7 @@ footer span {
   color: white;
   text-decoration: none;
   font-family: 'Titillium Regular';
-  font-size: 42px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -246,4 +246,9 @@ footer span {
   text-transform: uppercase;
   font-family: 'Titillium Regular';
   font-size: 16px;
+}
+
+.footer__item a:hover {
+  background: white;
+  color: black;
 }
