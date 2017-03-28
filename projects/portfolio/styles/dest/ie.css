@@ -65,7 +65,7 @@ header {
 .header__logo a {
   display: inline;
   float: left;
-  margin-right: 780px;
+  margin-right: 790px;
   margin-top: 10px;
   color: white;
   text-decoration: none;
@@ -240,9 +240,7 @@ footer {
   padding-bottom: 20px;
 }
 
-footer span {
-  display: none;
-}
+
 
 .footer__container {
   width: 1400px;
@@ -285,8 +283,8 @@ footer span {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Titillium Regular';
-  font-size: 16px;
+  font-family: 'Mono Social Icons Font';
+  font-size: 42px;
 }
 
 .footer__item a:hover {
