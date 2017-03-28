@@ -74,32 +74,7 @@ header {
 }
 
 .header__button {
-  width: 275px;
-  height: 92px;
-  margin: 0px auto;
-  display: block;
-  text-shadow: 0 -1px rgba(0,0,0,.5);
-  user-select: none;
-  border: 1px solid rgb(80,32,0);
-  border-radius: 5px;
-  outline: none;
-  background: #eb7d4b;
-  box-shadow: 0 6px rgb(86,38,6), 0 3px 15px rgba(0,0,0,.4), inset 0 1px rgba(255,255,255,.3), inset 0 0 3px rgba(255,255,255,.5);
-  transition: .2s;
-}
-
-.header__button:active {
-  box-shadow: 0 2px rgb(86,38,6), 0 1px 6px rgba(0,0,0,.4), inset 0 1px rgba(255,255,255,.3), inset 0 0 3px rgba(255,255,255,.5);
-  -webkit-transform: translate(0, 4px);
-  transform: translate(0, 4px);
-}
-
-.header__button a {
-  display: block;
-  font-family: 'Titillium Bold';
-  font-size: 42px;
-  color: white;
-  text-decoration: none;
+  display: none;
 }
 
 main {
@@ -128,6 +103,7 @@ main {
 
 .main__list {
   overflow: hidden;
+  display: block;
   text-align: center;
 }
 
@@ -136,14 +112,16 @@ main {
   display: inline;
   float: left;
   margin-right: 20px;
-  background: url(../../img/image1b.png);
-  background-size: cover;
+  background: url(../../img/image1bie.png);
 }
 
 .main__item2 {
   margin-right: 0px;
-  background: url(../../img/image2b.png);
-  background-size: cover;
+  background: url(../../img/image2bie.png);
+}
+
+.main__item:hover {
+  background: url(../../img/image1ie.png);
 }
 
 .main__item a {
@@ -217,6 +195,10 @@ footer {
   padding-bottom: 20px;
 }
 
+footer span {
+  display: none;
+}
+
 .footer__container {
   width: 1400px;
   margin: 0px auto;
@@ -258,6 +240,5 @@ footer {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Mono Social Icons Font';
   font-size: 42px;
 }
