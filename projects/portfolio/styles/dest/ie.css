@@ -7,6 +7,8 @@ body {
   width: 1440px;
 }
 
+/* home */
+
 header {
   width: 1440px;
   background: #87509c;
@@ -77,6 +79,8 @@ header {
   display: none;
 }
 
+/* works */
+
 main {
   width: 1440px;
   font-family: 'Titillium Bold';
@@ -122,9 +126,11 @@ main {
 
 .main__item a {
   display: block;
-  width: 650px;
+  width: 700px;
   height: 350px;
 }
+
+/*skills */
 
 section {
   width: 1440px;
@@ -183,6 +189,8 @@ section {
   width: 50%;
   background-color: #2a3778;
 }
+
+/* contacts */
 
 footer {
   width: 1440px;
