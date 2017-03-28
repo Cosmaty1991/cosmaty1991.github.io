@@ -207,7 +207,7 @@ footer span {
 .footer__paragraph {
   display: inline;
   float: left;
-  margin-right: 600px;
+  margin-right: 400px;
   margin-top: 15px;
   color: white;
   text-decoration: none;
@@ -239,6 +239,6 @@ footer span {
   display: block;
   color: white;
   text-decoration: none;
-  text-transform: uppercase;
+  font-family: 'Titillium Regular';
   font-size: 42px;
 }
