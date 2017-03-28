@@ -56,7 +56,7 @@ header {
 .header__logo a {
   display: inline;
   float: left;
-  margin-right: 800px;
+  margin-right: 795px;
   margin-top: 10px;
   color: white;
   text-decoration: none;
@@ -243,7 +243,7 @@ footer span {
 .footer__paragraph {
   display: inline;
   float: left;
-  margin-right: 450px;
+  margin-right: 470px;
   margin-top: 15px;
   color: white;
   text-decoration: none;
