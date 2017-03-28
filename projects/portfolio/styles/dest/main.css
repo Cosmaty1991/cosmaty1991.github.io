@@ -214,6 +214,8 @@ table {
   .footer__container {
     width: 300px;
     margin: 0px auto; }
+  .footer__container .ie {
+    display: none; }
   .footer__paragraph {
     text-align: center;
     margin-top: 15px;
@@ -398,6 +400,8 @@ table {
   .footer__container {
     width: 748px;
     margin: 0px auto; }
+  .footer__container .ie {
+    display: none; }
   .footer__paragraph {
     text-align: center;
     margin-top: 15px;
@@ -608,6 +612,8 @@ table {
   .footer__container {
     width: 1400px;
     margin: 0px auto; }
+  .footer__container .ie {
+    display: none; }
   .footer__paragraph {
     display: inline;
     float: left;
@@ -814,6 +820,8 @@ table {
   .footer__container {
     width: 1440px;
     margin: 0px auto; }
+  .footer__container .ie {
+    display: none; }
   .footer__paragraph {
     display: inline;
     float: left;

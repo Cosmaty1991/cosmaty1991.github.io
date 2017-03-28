@@ -208,6 +208,10 @@
     width: $mobile - 20px;
     margin: 0px auto;
   }
+  
+  .footer__container .ie {
+    display: none;
+  }
 
   .footer__paragraph {
     text-align: center;

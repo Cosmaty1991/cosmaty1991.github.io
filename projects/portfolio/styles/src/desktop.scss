@@ -240,6 +240,10 @@
     width: $desktop - 40px;
     margin: 0px auto;
   }
+  
+  .footer__container .ie {
+    display: none;
+  }
 
   .footer__paragraph {
     display: inline;
@@ -524,6 +528,10 @@
   .footer__container {
     width: $desktop;
     margin: 0px auto;
+  }
+  
+  .footer__container .ie {
+    display: none;
   }
 
   .footer__paragraph {

@@ -231,14 +231,14 @@ footer {
   padding-bottom: 20px;
 }
 
-footer span {
-  display: none;
-}
-
 .footer__container {
   width: 1400px;
   margin: 0px auto;
 }
+
+.footer__container .cross {
+    display: none;
+  }
 
 .footer__paragraph {
   display: inline;

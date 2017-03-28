@@ -322,6 +322,10 @@ table {
     width: $mobile - 20px;
     margin: 0px auto;
   }
+  
+  .footer__container .ie {
+    display: none;
+  }
 
   .footer__paragraph {
     text-align: center;
@@ -576,6 +580,10 @@ table {
   .footer__container {
     width: $tablet - 20px;
     margin: 0px auto;
+  }
+  
+  .footer__container .ie {
+    display: none;
   }
 
   .footer__paragraph {
@@ -867,6 +875,10 @@ table {
     width: $desktop - 40px;
     margin: 0px auto;
   }
+  
+  .footer__container .ie {
+    display: none;
+  }
 
   .footer__paragraph {
     display: inline;
@@ -1151,6 +1163,10 @@ table {
   .footer__container {
     width: $desktop;
     margin: 0px auto;
+  }
+  
+  .footer__container .ie {
+    display: none;
   }
 
   .footer__paragraph {
