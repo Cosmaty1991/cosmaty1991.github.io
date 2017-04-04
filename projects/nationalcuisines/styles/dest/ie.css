@@ -1,4 +1,5 @@
 /* fonts */
+
 @font-face {
   font-family: 'Aleor Regular';
   src: url("../../fonts/aleo-regular-webfont.eot");
@@ -16,6 +17,7 @@
 }
 
 /* reset */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -65,11 +67,18 @@ table {
   border-spacing: 0;
 }
 
-/* internet explorer < 9 */
-body {
-  width: auto;
+img {
+  border: none;
 }
-/* header */
+
+/* internet explorer < 9 */
+
+body {
+  width: 1440px;
+}
+
+/* logo */
+
 header {
   width: 1440px;
   margin: 0px auto;
@@ -80,9 +89,11 @@ header {
   background: url(../../img/header.jpg) no-repeat;
   background-size: cover;
 }
+
 header img {
   width: 50px;
 }
+
 header h1 {
   text-transform: uppercase;
   margin-top: 20px;
@@ -90,16 +101,20 @@ header h1 {
   font-size: 32px;
   font-family: "WC Mano Negra Bta", Arial, sans-serif;
 }
+
 header p {
   margin-bottom: 20px;
   font-size: 20px;
   font-family: "Aleor Regular", Arial, sans-serif;
 }
-/* main */
+
+/* menu */
+
 main {
   width: 1440px;
   margin: 0px auto;
 }
+
 .main__wrapper {
   border-bottom: 1px solid black;
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -111,12 +126,14 @@ main {
   background: linear-gradient(to bottom, white 0%, #f6f6f6 47%, #ededed 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
 }
+
 .main__list {
   width: 1240px;
   margin: 0px auto;
   list-style: none;
   overflow: hidden;
 }
+
 .main__item {
   display: inline;
   float: left;
@@ -124,6 +141,7 @@ main {
   margin-right: 55px;
   text-align: center;
 }
+
 .main__item a {
   display: block;
   padding-top: 10px;
@@ -133,6 +151,7 @@ main {
   font-family: "Aleor Regular", Arial, sans-serif;
   font-size: 16px;
 }
+
 .main__item ul {
   display: none;
   margin-left: -30px;
@@ -145,39 +164,50 @@ main {
   -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
 .main__item ul li a {
   text-decoration: none;
   color: #3b3b3b;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .main__item:last-child {
   margin-right: 0px;
 }
+
 .main__item:hover ul {
   display: block;
 }
+
 .main__subitem {
   border-bottom: 1px dotted #cccccc;
 }
+
 .main__subitem a:hover {
   background: #3b3b3b;
   color: #ffffff;
 }
+
 .main__subitem:last-child {
   border-bottom: none;
 }
-/* section */
+
+/* information */
+
 section {
   width: 1440px;
   margin: 150px auto;
 }
+
 section .active {
   display: block;
 }
+
 .section__list {
   list-style: none;
 }
+
 .section__item {
   width: 1240px;
   margin: 0px auto;
@@ -190,6 +220,7 @@ section .active {
   font-size: 16px;
   color: #3b3b3b;
 }
+
 .section__item img {
   width: 590px;
   height: 420px;
@@ -199,6 +230,7 @@ section .active {
   padding-right: 20px;
   border-right: 2px dashed #3b3b3b;
 }
+
 .section__item p {
   margin-top: 10px;
   width: 590px;
@@ -206,7 +238,9 @@ section .active {
   float: left;
   font-style: italic;
 }
-/* footer */
+
+/* icons */
+
 footer {
   width: 1440px;
   margin: 0px auto;
@@ -214,11 +248,13 @@ footer {
   padding-top: 20px;
   background: #3b3b3b;
 }
+
 .footer__list {
   width: 1240px;
   margin: 0px auto;
   overflow: hidden;
 }
+
 .footer__item {
   width: 50px;
   display: inline;
@@ -226,9 +262,11 @@ footer {
   margin-right: 72px;
   margin-bottom: 20px;
 }
+
 .footer__item img {
   width: 50px;
 }
+
 .footer__item:last-child {
   margin-right: 0px;
 }

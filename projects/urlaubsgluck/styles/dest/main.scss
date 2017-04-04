@@ -969,7 +969,7 @@ table {
   }
 }
 
-/* desktop */
+/* desktop < 1440px */
 
 @media screen and (min-width: $tablet + 1px) and (max-width: $desktop) {
   body {
@@ -1410,6 +1410,8 @@ table {
     margin-top: 3px;
   }
 }
+
+/* desktop > 1440px */
 
 @media screen and (min-width: $desktop + 1px) {
   body {

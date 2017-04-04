@@ -171,21 +171,18 @@ table {
     -moz-box-shadow: $box-shadow;
     box-shadow: $box-shadow;
     @include transition(.2s);
-  }
 
-  .header__button:active {
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
-    @include transform(translate(0, 4px));
-  }
+    &:active {
+      @include transform(translate(0, 4px));
+    }
 
-  .header__button a {
-    display: block;
-    font-family: $bold;
-    font-size: $font-size - 22px;
-    color: white;
-    text-decoration: none;
+    a {
+      display: block;
+      font-family: $bold;
+      font-size: $font-size - 22px;
+      color: white;
+      text-decoration: none;
+    }
   }
 
   /* works */
@@ -224,29 +221,29 @@ table {
     display: block;
     background: url(../../img/image1b.png);
     background-size: cover;
-  }
 
-  .main__item:last-child {
-    margin-bottom: 0px;
-    background: url(../../img/image2b.png);
-    background-size: cover;
-  }
+    &:hover {
+      background: url(../../img/image1.png);
+      background-size: cover;
+      @include transition(1s);
+    }
 
-  .main__item:hover {
-    background: url(../../img/image1.png);
-    background-size: cover;
-    @include transition(1s);
-  }
+    &:last-child {
+      margin-bottom: 0px;
+      background: url(../../img/image2b.png);
+      background-size: cover;
 
-  .main__item:last-child:hover {
-    background: url(../../img/image2.png);
-    background-size: cover;
-  }
+      &:hover {
+        background: url(../../img/image2.png);
+        background-size: cover;
+      }
+    }
 
-  .main__item a {
-    display: block;
-    width: 280px;
-    height: 150px;
+    a {
+      display: block;
+      width: 280px;
+      height: 150px;
+    }
   }
 
   /* skills */
@@ -274,10 +271,10 @@ table {
   .section__item {
     margin-bottom: 20px;
     list-style: none;
-  }
 
-  .section__item p {
-    font-size: $font-size - 22px;
+    p {
+      font-size: $font-size - 22px;
+    }
   }
 
   .container {
@@ -321,10 +318,10 @@ table {
   .footer__container {
     width: $mobile - 20px;
     margin: 0px auto;
-  }
-  
-  .footer__container .ie {
-    display: none;
+
+    .ie {
+      display: none;
+    }
   }
 
   .footer__paragraph {
@@ -346,28 +343,28 @@ table {
     display: inline;
     float: left;
     margin-right: 5px;
-  }
 
-  .footer__item:last-child {
-    margin-right: 0px;
-  }
+    &:last-child {
+      margin-right: 0px;
+    }
 
-  .footer__item a {
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $icons;
-    font-size: $font-size;
-  }
+    a {
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $icons;
+      font-size: $font-size;
 
-  .footer__item a:hover {
-    background: white;
-    color: black;
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
   }
 }
 
@@ -430,21 +427,18 @@ table {
     -moz-box-shadow: $box-shadow;
     box-shadow: $box-shadow;
     @include transition(.2s);
-  }
 
-  .header__button:active {
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
-    @include transform(translate(0, 4px));
-  }
+    &:active {
+      @include transform(translate(0, 4px));
+    }
 
-  .header__button a {
-    display: block;
-    font-family: $bold;
-    font-size: $font-size - 22px;
-    color: white;
-    text-decoration: none;
+    a {
+      display: block;
+      font-family: $bold;
+      font-size: $font-size - 22px;
+      color: white;
+      text-decoration: none;
+    }
   }
 
   /* works */
@@ -483,29 +477,29 @@ table {
     display: block;
     background: url(../../img/image1b.png);
     background-size: cover;
-  }
 
-  .main__item:last-child {
-    margin-bottom: 0px;
-    background: url(../../img/image2b.png);
-    background-size: cover;
-  }
+    &:hover {
+      background: url(../../img/image1.png);
+      background-size: cover;
+      @include transition(1s);
+    }
 
-  .main__item:hover {
-    background: url(../../img/image1.png);
-    background-size: cover;
-    @include transition(1s);
-  }
+    &:last-child {
+      margin-bottom: 0px;
+      background: url(../../img/image2b.png);
+      background-size: cover;
 
-  .main__item:last-child:hover {
-    background: url(../../img/image2.png);
-    background-size: cover;
-  }
+      &:hover {
+        background: url(../../img/image2.png);
+        background-size: cover;
+      }
+    }
 
-  .main__item a {
-    display: block;
-    width: $tablet - 20px;
-    height: 400px;
+    a {
+      display: block;
+      width: $tablet - 20px;
+      height: 400px;
+    }
   }
 
   /* skills */
@@ -533,10 +527,10 @@ table {
   .section__item {
     margin-bottom: 20px;
     list-style: none;
-  }
 
-  .section__item p {
-    font-size: $font-size - 22px;
+    p {
+      font-size: $font-size - 22px;
+    }
   }
 
   .container {
@@ -580,10 +574,10 @@ table {
   .footer__container {
     width: $tablet - 20px;
     margin: 0px auto;
-  }
-  
-  .footer__container .ie {
-    display: none;
+
+    .ie {
+      display: none;
+    }
   }
 
   .footer__paragraph {
@@ -608,28 +602,27 @@ table {
     float: left;
     margin-right: 5px;
 
-  }
+    &:last-child {
+      margin-right: 0px;
+    }
 
-  .footer__item:last-child {
-    margin-right: 0px;
-  }
+    a {
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $icons;
+      font-size: $font-size;
 
-  .footer__item a {
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $icons;
-    font-size: $font-size;
-  }
-
-  .footer__item a:hover {
-    background: white;
-    color: black;
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
   }
 }
 
@@ -675,28 +668,28 @@ table {
     float: left;
     margin-right: 20px;
     margin-top: 20px;
-  }
 
-  .header__item:last-child {
-    margin-right: 0px;
-  }
+    &:last-child {
+      margin-right: 0px;
+    }
 
-  .header__item a {
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $regular;
-    font-size: $font-size - 26px;
-  }
+    a {
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $regular;
+      font-size: $font-size - 26px;
 
-  .header__item a:hover {
-    background: white;
-    color: black;
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
   }
 
   .header__paragraph {
@@ -723,21 +716,18 @@ table {
     -moz-box-shadow: $box-shadow;
     box-shadow: $box-shadow;
     @include transition(.2s);
-  }
 
-  .header__button:active {
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
-    @include transform(translate(0, 4px));
-  }
+    &:active {
+      @include transform(translate(0, 4px));
+    }
 
-  .header__button a {
-    display: block;
-    font-family: $bold;
-    font-size: $font-size;
-    color: white;
-    text-decoration: none;
+    a {
+      display: block;
+      font-family: $bold;
+      font-size: $font-size;
+      color: white;
+      text-decoration: none;
+    }
   }
 
   /* works */
@@ -777,29 +767,29 @@ table {
     margin-right: 20px;
     background: url(../../img/image1b.png);
     background-size: cover;
-  }
 
-  .main__item:last-child {
-    margin-right: 0px;
-    background: url(../../img/image2b.png);
-    background-size: cover;
-  }
+    &:hover {
+      background: url(../../img/image1.png);
+      background-size: cover;
+      @include transition(1s);
+    }
 
-  .main__item:hover {
-    background: url(../../img/image1.png);
-    background-size: cover;
-    @include transition(1s);
-  }
+    &:last-child {
+      margin-right: 0px;
+      background: url(../../img/image2b.png);
+      background-size: cover;
 
-  .main__item:last-child:hover {
-    background: url(../../img/image2.png);
-    background-size: cover;
-  }
+      &:hover {
+        background: url(../../img/image2.png);
+        background-size: cover;
+      }
+    }
 
-  .main__item a {
-    display: block;
-    width: 680px;
-    height: 350px;
+    a {
+      display: block;
+      width: 680px;
+      height: 350px;
+    }
   }
 
   /* skills */
@@ -827,10 +817,10 @@ table {
   .section__item {
     margin-bottom: 40px;
     list-style: none;
-  }
 
-  .section__item p {
-    font-size: $font-size;
+    p {
+      font-size: $font-size;
+    }
   }
 
   .container {
@@ -874,10 +864,10 @@ table {
   .footer__container {
     width: $desktop - 40px;
     margin: 0px auto;
-  }
-  
-  .footer__container .ie {
-    display: none;
+
+    .ie {
+      display: none;
+    }
   }
 
   .footer__paragraph {
@@ -901,28 +891,28 @@ table {
     float: left;
     margin-right: 40px;
     margin-top: 20px;
-  }
 
-  .footer__item:last-child {
-    margin-right: 0px;
-  }
+    &:last-child {
+      margin-right: 0px;
+    }
 
-  .footer__item a {
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $icons;
-    font-size: $font-size;
-  }
+    a {
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $icons;
+      font-size: $font-size;
 
-  .footer__item a:hover {
-    background: white;
-    color: black;
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
   }
 }
 
@@ -967,28 +957,28 @@ table {
     float: left;
     margin-right: 20px;
     margin-top: 20px;
-  }
 
-  .header__item:last-child {
-    margin-right: 0px;
-  }
+    &:last-child {
+      margin-right: 0px;
+    }
 
-  .header__item a {
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $regular;
-    font-size: $font-size - 26px;
-  }
+    a {
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $regular;
+      font-size: $font-size - 26px;
 
-  .header__item a:hover {
-    background: white;
-    color: black;
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
   }
 
   .header__paragraph {
@@ -1015,21 +1005,18 @@ table {
     -moz-box-shadow: $box-shadow;
     box-shadow: $box-shadow;
     @include transition(.2s);
-  }
 
-  .header__button:active {
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
-    @include transform(translate(0, 4px));
-  }
+    &:active {
+      @include transform(translate(0, 4px));
+    }
 
-  .header__button a {
-    display: block;
-    font-family: $bold;
-    font-size: $font-size;
-    color: white;
-    text-decoration: none;
+    a {
+      display: block;
+      font-family: $bold;
+      font-size: $font-size;
+      color: white;
+      text-decoration: none;
+    }
   }
 
   /* works */
@@ -1068,29 +1055,29 @@ table {
     margin-right: 20px;
     background: url(../../img/image1b.png);
     background-size: cover;
-  }
 
-  .main__item:last-child {
-    margin-right: 0px;
-    background: url(../../img/image2b.png);
-    background-size: cover;
-  }
+    &:hover {
+      background: url(../../img/image1.png);
+      background-size: cover;
+      @include transition(1s);
+    }
 
-  .main__item:hover {
-    background: url(../../img/image1.png);
-    background-size: cover;
-    @include transition(1s);
-  }
+    &:last-child {
+      margin-right: 0px;
+      background: url(../../img/image2b.png);
+      background-size: cover;
 
-  .main__item:last-child:hover {
-    background: url(../../img/image2.png);
-    background-size: cover;
-  }
+      &:hover {
+        background: url(../../img/image2.png);
+        background-size: cover;
+      }
+    }
 
-  .main__item a {
-    display: block;
-    width: 700px;
-    height: 350px;
+    a {
+      display: block;
+      width: 700px;
+      height: 350px;
+    }
   }
 
   /* skills */
@@ -1117,10 +1104,10 @@ table {
   .section__item {
     margin-bottom: 40px;
     list-style: none;
-  }
 
-  .section__item p {
-    font-size: $font-size;
+    p {
+      font-size: $font-size;
+    }
   }
 
   .container {
@@ -1163,10 +1150,10 @@ table {
   .footer__container {
     width: $desktop;
     margin: 0px auto;
-  }
-  
-  .footer__container .ie {
-    display: none;
+
+    .ie {
+      display: none;
+    }
   }
 
   .footer__paragraph {
@@ -1190,27 +1177,27 @@ table {
     float: left;
     margin-right: 40px;
     margin-top: 20px;
-  }
 
-  .footer__item:last-child {
-    margin-right: 0px;
-  }
+    &:last-child {
+      margin-right: 0px;
+    }
 
-  .footer__item a {
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $icons;
-    font-size: $font-size;
-  }
+    a {
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $icons;
+      font-size: $font-size;
 
-  .footer__item a:hover {
-    background: white;
-    color: black;
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
   }
 }

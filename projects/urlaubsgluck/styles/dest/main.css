@@ -715,7 +715,7 @@ table {
     margin-left: 154px;
     margin-top: -25px; } }
 
-/* desktop */
+/* desktop < 1440px */
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   body {
     max-width: 1440px; }
@@ -1048,6 +1048,7 @@ table {
     margin-left: 370px;
     margin-top: 3px; } }
 
+/* desktop > 1440px */
 @media screen and (min-width: 1441px) {
   body {
     max-width: auto; }

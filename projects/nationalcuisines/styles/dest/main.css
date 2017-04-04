@@ -308,7 +308,7 @@ table {
     .footer__item:last-child {
       margin-right: 0px; } }
 
-/* desktop */
+/* desktop < 1440px */
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   body {
     width: 1440px; }
