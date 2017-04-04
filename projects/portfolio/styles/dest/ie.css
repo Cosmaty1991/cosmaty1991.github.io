@@ -90,8 +90,8 @@ body {
 /* home */
 
 header {
-  width: 1440px;
-  margin: 0px auto;
+  display: block;
+  width: auto;
   background: #87509c;
   overflow: hidden;
   padding-bottom: 140px;
