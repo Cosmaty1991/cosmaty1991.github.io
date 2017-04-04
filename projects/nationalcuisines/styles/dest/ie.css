@@ -74,7 +74,7 @@ img {
 /* internet explorer < 9 */
 
 body {
-  width: 1440px;
+  width: auto;
 }
 
 /* logo */
