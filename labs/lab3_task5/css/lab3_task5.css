@@ -1,0 +1,137 @@
+body {
+  width: 1440px;
+  margin: 0px auto;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  text-align: right;
+}
+
+main {
+  overflow: hidden;
+}
+
+table {
+  width: 1440px;
+  border-collapse: collapse;
+  z-index: 1;
+  overflow: hidden;
+}
+
+tr:nth-child(odd) {
+  background-color: grey;
+  color: white;
+}
+
+td,
+th {
+  padding: 8px;
+  position: relative;
+  border: 1px solid black;
+  border-left: none;
+  text-align: center;
+}
+
+th {
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  border-top: none;
+}
+
+td:hover {
+  background-color: orange;
+  color: white;
+}
+
+td:hover::before {
+  background-color: yellow;
+  content: "";
+  height: 100%;
+  left: -5000px;
+  position: absolute;
+  top: 0;
+  width: 10000px;
+  z-index: -1;
+}
+
+td:hover::after {
+  background-color: yellow;
+  content: "";
+  height: 10000px;
+  left: 0;
+  position: absolute;
+  top: -5000px;
+  width: 100%;
+  z-index: -2;
+}
+
+main h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main input {
+  margin-left: 400px;
+  margin-bottom: 40px;
+}
+
+main label {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+main label:hover {
+  font-weight: bold;
+}
+
+#three:checked ~ table tr:nth-child(even) {
+  display: none;
+}
+
+#three:checked ~ table tr:nth-child(2) {
+  display: table-row;
+}
+
+#four:checked ~ table tr:nth-child(odd) {
+  display: none;
+}
+
+#four:checked ~ table tr:first-child {
+  display: table-row;
+}
+
+#first:checked ~ table tr:nth-child(even) {
+  display: none;
+}
+
+#first:checked ~ table tr:nth-child(2) {
+  display: table-row;
+}
+
+#second:checked ~ table tr:nth-child(odd) {
+  display: none;
+}
+
+#second:checked ~ table tr:first-child {
+  display: table-row;
+}
+
+footer input {
+  width: 300px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 570px;
+}
+
+.submit {
+  cursor: pointer;
+  width: 305px;
+}

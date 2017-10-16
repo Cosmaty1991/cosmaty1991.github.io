@@ -1,0 +1,24 @@
+ul li [href^="http"] {
+  color: #f70;
+}
+
+ul li [href$="google.com"] {
+  color: #666;
+}
+
+ul li [target="_blank"] {
+  display: block;
+  width: 100px;
+}
+
+ul li [target="_blank"]:after {
+  content: "\21F1";
+  position: absolute;
+  padding-left: 8px;
+  padding-right: 5px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(900deg);
+  transform: rotate(90deg);
+}

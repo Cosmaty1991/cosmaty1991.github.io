@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lab3_task5</title>
+  <link rel="stylesheet" href="css\lab3_task5.css">
+</head>
+<body>
+  <header>
+    <h1>Розклад роботи лікарів у поліклініці</h1>
+  </header>
+
+  <p>
+    <input type="search" id="text-to-find" value="">
+    <input type="button" onclick="javascript: FindOnPage('text-to-find'); return false;" value="Пошук">
+ </p>
+
+  <form action="#" method="POST">
+    <main>
+      <table>
+        <h3>Обрати категорію:</h3>
+        <input type="radio" name="level" id="three"><label for="three">3 категорія</label>
+        <input type="radio" name="level" id="four"><label for="four">4 категорія</label>
+        <h3>Обрати зміну</h3>
+        <input type="radio" name="schedule" id="first"><label for="first">Перша зміна</label>
+        <input type="radio" name="schedule" id="second"><label for="second">Друга зміна</label>
+        <tr>
+          <th rowspan="2">Спеціальність</th>
+          <th rowspan="2">ПІБ</th>
+          <th rowspan="2">Рівень фахівця</th>
+          <th rowspan="2">Номер кабінету</th>
+          <th colspan="5">Години прийому</th>
+        </tr>
+        <tr>
+          <th>Понеділок</th>
+          <th>Вівторок</th>
+          <th>Середа</th>
+          <th>Четвер</th>
+          <th>П'ятниця</th>
+        </tr>
+        <tr>
+          <td>Алерголог</td>
+          <td>Ярошенко Василій Петрович</td>
+          <td>3</td>
+          <td>200</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+        </tr>
+        <tr>
+          <td>Гастроентеролог</td>
+          <td>Василенко Іван Олександрович</td>
+          <td>4</td>
+          <td>203</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+        </tr>
+        <tr>
+          <td>Дерматолог</td>
+          <td>Коваленко Ганна Миколаївна</td>
+          <td>3</td>
+          <td>206</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+        </tr>
+        <tr>
+          <td>Дієтолог</td>
+          <td>Липовенко Олена Станиславівна</td>
+          <td>4</td>
+          <td>209</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+        </tr>
+        <tr>
+          <td>Інфекціоніст</td>
+          <td>Бондаренко Максим Максимович</td>
+          <td>3</td>
+          <td>212</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+        </tr>
+        <tr>
+          <td>Кардіолог</td>
+          <td>Євенко Миколай Микитович</td>
+          <td>4</td>
+          <td>215</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+        </tr>
+        <tr>
+          <td>Логопед</td>
+          <td>Пєтренко Соломія Володимирівна</td>
+          <td>3</td>
+          <td>218</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+        </tr>
+        <tr>
+          <td>Невропатолог</td>
+          <td>Лученко Олександр Олександрович</td>
+          <td>4</td>
+          <td>221</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+        </tr>
+        <tr>
+          <td>Отоларинголог</td>
+          <td>Саєнко Валерій Іванович</td>
+          <td>3</td>
+          <td>224</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+        </tr>
+        <tr>
+          <td>Офтальмолог</td>
+          <td>Галаєнко Петро Олександрович</td>
+          <td>4</td>
+          <td>227</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+        </tr>
+        <tr>
+          <td>Сімейний Лікар</td>
+          <td>Гойко Валерія Дмитрівна</td>
+          <td>3</td>
+          <td>230</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+        </tr>
+        <tr>
+          <td>Стоматолог</td>
+          <td>Дмитрук Ігор Владиславович</td>
+          <td>4</td>
+          <td>233</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+          <td>13:00 - 17:00</td>
+        </tr>
+        <tr>
+          <td>Хірург</td>
+          <td>Приймак Олексій Олексійович</td>
+          <td>3</td>
+          <td>236</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+          <td>09:00 - 13:00</td>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      <input type="text" pattern="+380[0-9]{10}" name="text" placeholder="Введіть телефон у форматі: +380xxxxxxxxx" required>
+      <input type="email" name="email" placeholder="Введіть email" required>
+      <input class="submit" type="submit" name="submit" value="Надіслати дані на телефон">
+    </footer>
+  </form>
+
+  <!-- script for search -->
+
+  <script type="text/javascript">
+    var lastResFind="";
+    var copy_page="";
+    function TrimStr(s) {
+      s = s.replace( /^\s+/g, '');
+      return s.replace( /\s+$/g, '');
+    }
+    function FindOnPage(inputId) {
+      var obj = window.document.getElementById(inputId);
+      var textToFind;
+
+      if (obj) {
+        textToFind = TrimStr(obj.value);
+      } else {
+        alert("Введенная фраза не найдена");
+        return;
+      }
+      if (textToFind == "") {
+        alert("Вы ничего не ввели");
+        return;
+      }
+
+      if(document.body.innerHTML.indexOf(textToFind)=="-1")
+      alert("Ничего не найдено, проверьте правильность ввода!");
+
+      if(copy_page.length>0)
+        document.body.innerHTML=copy_page;
+      else copy_page=document.body.innerHTML;
+
+      document.body.innerHTML = document.body.innerHTML.replace(eval("/name="+lastResFind+"/gi")," ");
+      document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" style='background:red'>"+textToFind+"</a>");
+      lastResFind=textToFind;
+      window.location = '#'+textToFind;
+    }
+  </script>
+</body>
+</html>
