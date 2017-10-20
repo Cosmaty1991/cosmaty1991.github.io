@@ -1,0 +1,179 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../fonts/opensans-bold-webfont.eot');
+  src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-bold-webfont.woff') format('woff'),
+       url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
+       url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* reset */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* style */
+
+body {
+  width: 95%;
+  margin: 0px auto;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: dimgrey;
+  font-family: 'Open Sans Bold', Arial, sans-serif;
+}
+
+main {
+  overflow: hidden;
+}
+
+/* buttons for view */
+
+#normal,
+#list {
+  display: none;
+}
+
+label[for="normal"],
+label[for="list"] {
+  display: block;
+  text-align: right;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Open Sans Bold', Arial, sans-serif;
+}
+
+label:hover,
+#normal:checked ~ label[for="normal"],
+#list:checked ~ label[for="list"] {
+  text-decoration: underline;
+  color: steelblue;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+#normal:checked ~ .section__div {
+  display: inline-block;
+}
+
+#list:checked ~ .section__div {
+  display: list-item;
+  list-style: none;
+  width: 330px;
+  margin: 10px auto;
+}
+
+/* goods */
+
+section {
+  margin-bottom: 100px;
+}
+
+.section__div {
+  display: inline-block;
+  width: 330px;
+  margin-top: 100px;
+  margin-right: 5px;
+  padding: 10px;
+}
+
+.section__div:hover {
+  border: 1px solid black;
+  padding: 9px;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.section__img {
+  display: block;
+  width: 250px;
+  height: 200px;
+  margin: 0px auto;
+}
+
+section h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+section h3 a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Open Sans Bold', Arial, sans-serif;
+}
+
+section h5 {
+  color: grey;
+  margin-bottom: 20px;
+  font-family: 'Open Sans Bold', Arial, sans-serif;
+}
+
+/* stars */
+
+.stars {
+  margin-bottom: 20px;
+}
+
+.stars:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.stars__input {
+  position: relative;
+  float: right;
+  width: 0px;
+  height: 0px;
+  margin: 0px 20px 20px 5px;
+  cursor: pointer;
+}
+
+.stars__input:before {
+  content: "\2606";
+  font-size: 32px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: 195px;
+}
+
+.stars__input:hover:before,
+.stars__input:hover ~ .stars__input:before {
+  content: "\2605";
+  color: #FFD779;
+}
+
+.stars__input:checked:before,
+.stars__input:checked ~ .stars__input:before {
+  content: "\2605";
+  color: #FFB300;
+}
+
+section h4 {
+  color: red;
+  margin-bottom: 20px;
+  font-family: 'Open Sans Bold', Arial, sans-serif;
+}
+
+section small {
+  font-weight: bold;
+  line-height: 1.5;
+  font-family: 'Open Sans Bold', Arial, sans-serif;
+}
