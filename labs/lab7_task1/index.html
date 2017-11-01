@@ -11,10 +11,10 @@
   <!-- logo -->
 
   <header>
-    <img src="img\logo.png" alt="Industrial Design" width="294" height="72">
-    <form action="#" method="POST">
-      <input type="submit" name="submit" value="&#8981;">
-      <input type="search" name="search" placeholder="Search">
+    <img class="header__logo" src="img\logo.png" alt="Industrial Design" width="294" height="72">
+    <form class="header__form" action="#" method="POST">
+      <input class="form__submit" type="submit" name="submit" value="&#8981;">
+      <input class="form__input" type="search" name="search" placeholder="Search" required>
     </form>
   </header>
 
@@ -23,35 +23,35 @@
   <main>
     <ul class="main__list">
       <li class="main__item">
-        <a href="#"><img src="img\kickstarter.png" alt="KICKSTARTER" width="112" height="115"></a>
-        <h2>Gina</h2>
-        <p>A coffee instrument combining classic coffee techniques with the latest technology</p>
-        <button>Shop Now</button>
+        <a href="#"><img class="item__logo" src="img\kickstarter.png" alt="KICKSTARTER" width="112" height="115"></a>
+        <h2 class="item__header">Gina</h2>
+        <p class="item__paragraph">A coffee instrument combining classic coffee techniques with the latest technology</p>
+        <a class="item__link" href="#">Shop Now</a>
       </li>
       <li class="main__item">
-        <h2>Beoplay A1</h2>
-        <p>The ultra-portable Bluetooth speaker that will travel with you anywhere</p>
-        <button>Buy</button>
+        <h2 class="item__header">Beoplay A1</h2>
+        <p class="item__paragraph">The ultra-portable Bluetooth speaker that will travel with you anywhere</p>
+        <a class="item__link" href="#">Buy</a>
       </li>
       <li class="main__item">
-        <h2>Leica MP</h2>
-        <p>Focused technology for focused photography</p>
-        <button>Buy</button>
+        <h2 class="item__header">Leica MP</h2>
+        <p class="item__paragraph">Focused technology for focused photography</p>
+        <a class="item__link" href="#">Buy</a>
       </li>
       <li class="main__item">
-        <p>The world’s first molecular air purifier.</p>
-        <h2>Molekule</h2>
-        <button>Details</button>
+        <p class="item__paragraph">The world’s first molecular air purifier.</p>
+        <h2 class="item__header">Molekule</h2>
+        <a class="item__link" href="#">Details</a>
       </li>
       <li class="main__item">
-        <p>Bowers & Wilkins</p>
-        <h2>P9 Signature</h2>
-        <button>Details</button>
+        <p class="item__paragraph">Bowers & Wilkins</p>
+        <h2 class="item__header">P9 Signature</h2>
+        <a class="item__link" href="#">Details</a>
       </li>
       <li class="main__item">
-        <p>An homage to Dieter Rams</p>
-        <h2>DR-II</h2>
-        <button>Details</button>
+        <p class="item__paragraph">An homage to Dieter Rams</p>
+        <h2 class="item__header">DR-II</h2>
+        <a class="item__link" href="#">Details</a>
       </li>
     </ul>
   </main>
@@ -63,9 +63,9 @@
       <li class="section__item">Get our freshest content delivered to your inbox</li>
       <li class="section__item">For the latest stories, news, events, promotions and exclusive offers, sign up today. We know you get a lot of emails, but we promise... ours is the one you want.</li>
       <li class="section__item">
-        <form action="#" method="POST">
-          <input type="email" name="email" placeholder="Your email">
-          <button type="submit">Subscribe</button>
+        <form class="item__form" action="#" method="POST">
+          <input class="item__input" type="email" name="email" placeholder="Your email" required>
+          <button class="item__button" type="submit">Subscribe</button>
         </form>
       </li>
     </ul>
@@ -75,13 +75,13 @@
 
   <footer>
     <ul class="footer__list">
-      <li class="footer__item"><a href="#">About</a></li>
-      <li class="footer__item"><a href="#">Search</a></li>
-      <li class="footer__item"><a href="#">Contact</a></li>
-      <li class="footer__item"><a href="#">Facebook</a></li>
-      <li class="footer__item"><a href="#">Twitter</a></li>
+      <li class="footer__item"><a class="item__link" href="#">About</a></li>
+      <li class="footer__item"><a class="item__link" href="#">Search</a></li>
+      <li class="footer__item"><a class="item__link" href="#">Contact</a></li>
+      <li class="footer__item"><a class="item__link" href="#">Facebook</a></li>
+      <li class="footer__item"><a class="item__link" href="#">Twitter</a></li>
     </ul>
-    <p>&copy; Industrial Design Magazine</p>
+    <p class="footer__paragraph">&copy; Industrial Design Magazine</p>
   </footer>
 </body>
 </html>
