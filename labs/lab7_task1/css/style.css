@@ -44,6 +44,19 @@ header {
   overflow: hidden;
 }
 
+header h1 {
+  font-size: 0px;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 .header__form {
   width: 176px;
   border-bottom: 2px solid #63757e;
@@ -342,7 +355,7 @@ header {
   margin: 54px auto;
 }
 
-.section__item:nth-child(3) .item__input {
+.section__item:nth-child(3) .form__input {
   width: 354px;
   height: 56px;
   margin-left: -18px;
@@ -355,13 +368,13 @@ header {
   font-size: 24px;
 }
 
-.section__item:nth-child(3) .item__input:focus {
+.section__item:nth-child(3) .form__input:focus {
   outline: none;
   border: 2px solid #82c9d8;
   color: white;
 }
 
-.section__item:nth-child(3) .item__button {
+.section__item:nth-child(3) .form__button {
   width: 359px;
   height: 58px;
   margin-left: -18px;
@@ -375,7 +388,7 @@ header {
   font-size: 18px;
 }
 
-.section__item:nth-child(3) .item__button:hover {
+.section__item:nth-child(3) .form__button:hover {
   background: #82c9d8;
 }
 
