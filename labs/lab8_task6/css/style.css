@@ -1,0 +1,16 @@
+body {
+  font-family: monospace;
+  font-size: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  display: inline-table;
+}
+
+table tr,
+table td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
