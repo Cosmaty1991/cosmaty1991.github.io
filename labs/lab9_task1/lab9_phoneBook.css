@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+table {
+  width: 800px;
+  border-collapse: collapse;
+}
+
+table tr,
+table th,
+table td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
+
+table th {
+  background: lightgrey;
+}
+
+.find {
+  color: indigo;
+}
+
+.find tr:hover {
+  background: indigo;
+  color: white;
+}
+
+.find tr:first-child:hover {
+  background: white;
+  color: indigo;
+}
+
+.remove {
+  color: crimson;
+}
+
+.remove tr:hover {
+  background: crimson;
+  color: white;
+}
+
+.remove tr:first-child:hover {
+  background: white;
+  color: crimson;
+}
+
+.show {
+  color: teal;
+}
+
+.show tr:hover {
+  background: teal;
+  color: white;
+}
+
+.show tr:first-child:hover {
+  background: white;
+  color: teal;
+}
