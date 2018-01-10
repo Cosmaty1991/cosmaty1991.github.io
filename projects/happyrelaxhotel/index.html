@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Relax Hotel</title>
+  <link rel="shortcut icon" href="img\favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles\dest\style.min.css">
+</head>
+<body>
+
+  <!-- header -->
+
+  <header>
+
+    <!-- menu -->
+
+    <ul class="header-menu__list">
+      <li class="header-menu__item"><a href="#section-home" data-tab="section-home" class="header-menu__link active">Home</a></li>
+      <li class="header-menu__item"><span class="header-menu__link">Rooms&#9660;</span>
+        <ul class="rooms__list">
+          <li class="rooms__item"><a href="#section-rooms-classic" data-tab="section-rooms-classic" class="header-menu__link">Classic</a></li>
+          <li class="rooms__item"><a href="#section-rooms-luxe" data-tab="section-rooms-luxe" class="header-menu__link">Luxe</a></li>
+          <li class="rooms__item"><a href="#section-rooms-deluxe" data-tab="section-rooms-deluxe" class="header-menu__link">Deluxe</a></li>
+        </ul>
+      </li>
+      <li class="header-menu__item"><a href="#section-restaurant" data-tab="section-restaurant" class="header-menu__link">Restaurant</a></li>
+      <li class="header-menu__item"><a href="#" class="header-menu__link"><img src="img\logo.svg" alt="Happy relax hotel" class="header-menu__logo"><img src="img\logo2.svg" alt="Happy relax hotel" class="header-menu__logo header-menu__logo2"></a></li>
+      <li class="header-menu__item"><a href="#section-gallery" data-tab="section-gallery" class="header-menu__link">Gallery</a></li>
+      <li class="header-menu__item"><a href="#section-about" data-tab="section-about" class="header-menu__link">About</a></li>
+      <li class="header-menu__item"><a href="#section-contact" data-tab="section-contact" class="header-menu__link">Contact</a></li>
+      <li class="header-menu__item"><a href="#modal" class="header-menu__link">&#9776;Menu</a>
+        <div id="modal" class="header-menu__modal-window">
+          <div>
+            <a href="#close" title="close" class="header-menu__modal-close">X</a>
+            <ul class="header-menu__modal-list">
+              <li class="header-menu__modal-item"><a href="#section-home" data-tab="section-home" class="header-menu__modal-link">Home</a></li>
+              <li class="header-menu__modal-item"><a href="#section-rooms-classic" data-tab="section-rooms-classic" class="header-menu__modal-link">Classic Rooms</a></li>
+              <li class="header-menu__modal-item"><a href="#section-rooms-luxe" data-tab="section-rooms-luxe" class="header-menu__modal-link">Luxe Rooms</a></li>
+              <li class="header-menu__modal-item"><a href="#section-rooms-deluxe" data-tab="section-rooms-deluxe" class="header-menu__modal-link">Deluxe Rooms</a></li>
+              <li class="header-menu__modal-item"><a href="#section-restaurant" data-tab="section-restaurant" class="header-menu__modal-link">Restaurant</a></li>
+              <li class="header-menu__modal-item"><a href="#section-gallery" data-tab="section-gallery" class="header-menu__modal-link">Gallery</a></li>
+              <li class="header-menu__modal-item"><a href="#section-about" data-tab="section-about" class="header-menu__modal-link">About</a></li>
+              <li class="header-menu__modal-item"><a href="#section-contact" data-tab="section-contact" class="header-menu__modal-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- search -->
+
+    <div class="header-search">
+      <div class="gcse-search" data-newWindow="true" data-queryParameterName="search"></div>
+    </div>
+
+    <!-- slider -->
+
+    <ul class="header-slider__list">
+      <li class="header-slider__item"><img src="img\view1.jpg" alt="photo1" title="hotel building" class="header-slider__image"></li>
+      <li class="header-slider__item"><img src="img\view2.jpg" alt="photo2" title="view from window" class="header-slider__image"></li>
+      <li class="header-slider__item"><img src="img\view3.jpg" alt="photo3" title="view from window" class="header-slider__image"></li>
+      <li class="header-slider__item"><img src="img\view4.jpg" alt="photo5" title="reception" class="header-slider__image"></li>
+      <li class="header-slider__item"><img src="img\view5.jpg" alt="photo6" title="corridor" class="header-slider__image"></li>
+    </ul>
+    <a class="header-slider__item-prev">&#8592;</a>
+    <a class="header-slider__item-next">&#8594;</a>
+  </header>
+
+  <!-- content -->
+
+  <main>
+
+    <!-- home -->
+
+    <section class="section-home tabs active" id="section-home">
+      <h1 class="section-home__title">Happy Relax Hotel</h1>
+      <h2 class="section-home__header1">Welcome to our Happy Relax Hotel</h2>
+      <p class="section-home__text">Imagine yourself at the floor-to-ceiling windows of your 5-star hotel room, drinking in magnificent views of London’s glittering city district or swimming in the world’s highest and longest infinity pool with its unrivalled panoramic views – a once-in-a-lifetime experience available exclusively to guests of our hotel.</p>
+      <a href="#section-rooms-classic" data-tab="section-rooms-classic" class="section-home__button">Book Now</a>
+      <h3 class="section-home__header2">Reviews</h3>
+      <ul class="section-home__list">
+        <li class="section-home__item">
+          <p class="section-home__text1">"Suitable for people who love to dream..."</p>
+          <p class="section-home__text2">- John Benson</p>
+        </li>
+        <li class="section-home__item">
+          <p class="section-home__text1">"Fantastic location - close to everything..."</p>
+          <p class="section-home__text2">- Ann Thompson</p>
+        </li>
+        <li class="section-home__item">
+          <p class="section-home__text1">"Easy to get too and get out off..."</p>
+          <p class="section-home__text2">- George Adkins</p>
+        </li>
+        <li class="section-home__item">
+          <p class="section-home__text1">"Most friendly and helpful receptionist ever, so lovely and great first impression of hotel..."</p>
+          <p class="section-home__text2">- Helen Bell</p>
+        </li>
+        <li class="section-home__item">
+          <p class="section-home__text1">"Excellent hotel of this class, newer property and kept extremely clean..."</p>
+          <p class="section-home__text2">- Bill Cobb</p>
+        </li>
+        <li class="section-home__item">
+          <p class="section-home__text1">"Have enjoyed our stay here more and more..."</p>
+          <p class="section-home__text2">- Mary Normanson</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- rooms -->
+
+    <section class="section-rooms tabs" id="section-rooms-classic">
+      <h2 class="section-rooms__title">Classic Rooms</h2>
+      <input type="radio" name="section-rooms__classic-input" class="section-rooms__radio" id="section-rooms-classic__all" checked>
+      <label for="section-rooms-classic__all" class="section-rooms__label">All Rooms</label>
+      <input type="radio" name="section-rooms__classic-input" class="section-rooms__radio" id="section-rooms-classic__available">
+      <label for="section-rooms-classic__available" class="section-rooms__label">Available Rooms</label>
+      <input type="radio" name="section-rooms__classic-input" class="section-rooms__radio" id="section-rooms-classic__booked">
+      <label for="section-rooms-classic__booked" class="section-rooms__label">Booked Rooms</label>
+      <h2 class="section-rooms__title">Available Rooms</h2>
+      <ul class="section-rooms__list available"></ul>
+      <h2 class="section-rooms__title">Booked Rooms</h2>
+      <ul class="section-rooms__list booked"></ul>
+      <ul class="section-rooms__list pagination">
+        <li class="section-rooms__item"><a href="#section-rooms-deluxe" data-tab="section-rooms-deluxe" class="section-rooms__link">&#8656; Deluxe Rooms</a></li>
+        <li class="section-rooms__item"><a href="#section-rooms-luxe" data-tab="section-rooms-luxe" class="section-rooms__link">Luxe Rooms &#8658;</a></li>
+      </ul>
+      <div class="section-rooms__modal-window">
+        <div>
+          <a href="#" title="close" class="section-rooms__modal-close">X</a>
+          <form action="#" method="POST" class="section-rooms__modal-form">
+            <input type="text" name="section-rooms__modal-input" placeholder="Your Name" pattern="[A-Za-z]{5,}" title="please enter at least 5 letters" class="section-rooms__modal-input" required>
+            <span class="section-rooms__modal-number"></span>
+            <input type="submit" name="section-rooms__modal-submit" class="section-rooms__modal-button" value="Book Now">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-rooms tabs" id="section-rooms-luxe">
+      <h2 class="section-rooms__title">Luxe Rooms</h2>
+      <input type="radio" name="section-rooms__luxe-input" class="section-rooms__radio" id="section-rooms-luxe__all" checked>
+      <label for="section-rooms-luxe__all" class="section-rooms__label">All Rooms</label>
+      <input type="radio" name="section-rooms__luxe-input" class="section-rooms__radio" id="section-rooms-luxe__available">
+      <label for="section-rooms-luxe__available" class="section-rooms__label">Available Rooms</label>
+      <input type="radio" name="section-rooms__luxe-input" class="section-rooms__radio" id="section-rooms-luxe__booked">
+      <label for="section-rooms-luxe__booked" class="section-rooms__label">Booked Rooms</label>
+      <h2 class="section-rooms__title">Available Rooms</h2>
+      <ul class="section-rooms__list available"></ul>
+      <h2 class="section-rooms__title">Booked Rooms</h2>
+      <ul class="section-rooms__list booked"></ul>
+      <ul class="section-rooms__list pagination">
+        <li class="section-rooms__item"><a href="#section-rooms-classic" data-tab="section-rooms-classic" class="section-rooms__link">&#8656; Classic Rooms</a></li>
+        <li class="section-rooms__item"><a href="#section-rooms-deluxe" data-tab="section-rooms-deluxe" class="section-rooms__link">Deluxe Rooms &#8658;</a></li>
+      </ul>
+      <div class="section-rooms__modal-window">
+        <div>
+          <a href="#" title="close" class="section-rooms__modal-close">X</a>
+          <form action="#" method="POST" class="section-rooms__modal-form">
+            <input type="text" name="section-rooms__modal-input" placeholder="Your Name" pattern="[A-Za-z]{5,}" title="please enter at least 5 letters" class="section-rooms__modal-input" required>
+            <span class="section-rooms__modal-number"></span>
+            <input type="submit" name="section-rooms__modal-submit" class="section-rooms__modal-button" value="Book Now">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-rooms tabs" id="section-rooms-deluxe">
+      <h2 class="section-rooms__title">Deluxe Rooms</h2>
+      <input type="radio" name="section-rooms__deluxe-input" class="section-rooms__radio" id="section-rooms-deluxe__all" checked>
+      <label for="section-rooms-deluxe__all" class="section-rooms__label">All Rooms</label>
+      <input type="radio" name="section-rooms__deluxe-input" class="section-rooms__radio" id="section-rooms-deluxe__available">
+      <label for="section-rooms-deluxe__available" class="section-rooms__label">Available Rooms</label>
+      <input type="radio" name="section-rooms__deluxe-input" class="section-rooms__radio" id="section-rooms-deluxe__booked">
+      <label for="section-rooms-deluxe__booked" class="section-rooms__label">Booked Rooms</label>
+      <h2 class="section-rooms__title">Available Rooms</h2>
+      <ul class="section-rooms__list available"></ul>
+      <h2 class="section-rooms__title">Booked Rooms</h2>
+      <ul class="section-rooms__list booked"></ul>
+      <ul class="section-rooms__list pagination">
+        <li class="section-rooms__item"><a href="#section-rooms-luxe" data-tab="section-rooms-luxe" class="section-rooms__link">&#8656; Luxe Rooms</a></li>
+        <li class="section-rooms__item"><a href="#section-rooms-classic" data-tab="section-rooms-classic" class="section-rooms__link">Classic Rooms &#8658;</a></li>
+      </ul>
+      <div class="section-rooms__modal-window">
+        <div>
+          <a href="#" title="close" class="section-rooms__modal-close">X</a>
+          <form action="#" method="POST" class="section-rooms__modal-form">
+            <input type="text" name="section-rooms__modal-input" placeholder="Your Name" pattern="[A-Za-z]{5,}" title="please enter at least 5 letters" class="section-rooms__modal-input" required>
+            <span class="section-rooms__modal-number"></span>
+            <input type="submit" name="section-rooms__modal-submit" class="section-rooms__modal-button" value="Book Now">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- restaurant -->
+
+    <section class="section-restaurant tabs" id="section-restaurant">
+      <h2 class="section-restaurant__title">Restaurant</h2>
+      <img src="img\restaurant.jpg" alt="Happy Relax Restaurant" class="section-restaurant__image">
+      <h3 class="section-restaurant__header">Fresh and seasonal british fare</h3>
+      <p class="section-restaurant__text">Happy Relax Restaurant celebrates the Great British kitchen showcasing the breadth of Britain’s culinary strengths. The menu focuses on seasonality, sustainability, and traceability through close relationships with artisan producers.</p>
+      <p class="section-restaurant__text">The breathtaking dining room sees plush burnt orange leather offset by glittering mirrored panels and expansive picture windows, whilst two private dining areas offer privacy for special celebrations and corporate events.</p>
+      <p class="section-restaurant__text">Happy Relax Bar, featuring a marble island, offers the epitome of chic socialising in London. It's the ideal place to meet for a glass of Champagne, wine or beer, to sip an aperitif or classic cocktail, and it offers an all-day light lunch and dinner menu for the casual diner.</p>
+    </section>
+
+    <!-- gallery -->
+
+    <section class="section-gallery tabs" id="section-gallery">
+      <h2 class="section-gallery__title">Gallery</h2>
+      <ul class="section-gallery__list">
+        <li class="section-gallery__item"><a href="#photo1" class="section-gallery__link"><img src="img\photo1.jpg" alt="Photo1" title="room interior" class="section-gallery__image"><a>
+          <div id="photo1" class="section-gallery__modal-window">
+            <div>
+              <a href="#close" title="close" class="section-gallery__modal-close">X</a>
+              <img src="img\photo1.jpg" alt="Photo1" title="room interior" class="section-gallery__modal-image">
+            </div>
+          </div>
+        </li>
+        <li class="section-gallery__item"><a href="#photo2" class="section-gallery__link"><img src="img\photo2.jpg" alt="Photo2" title="room interior" class="section-gallery__image"><a>
+          <div id="photo2" class="section-gallery__modal-window">
+            <div>
+              <a href="#close" title="close" class="section-gallery__modal-close">X</a>
+              <img src="img\photo2.jpg" alt="Photo2" title="room interior" class="section-gallery__modal-image">
+            </div>
+          </div>
+        </li>
+        <li class="section-gallery__item"><a href="#photo3" class="section-gallery__link"><img src="img\photo3.jpg" alt="Photo3" title="room interiorroom interior" class="section-gallery__image"><a>
+          <div id="photo3" class="section-gallery__modal-window">
+            <div>
+              <a href="#close" title="close" class="section-gallery__modal-close">X</a>
+              <img src="img\photo3.jpg" alt="Photo3" title="room interior" class="section-gallery__modal-image">
+            </div>
+          </div>
+        </li>
+        <li class="section-gallery__item"><a href="#photo4" class="section-gallery__link"><img src="img\photo4.jpg" alt="Photo4" title="room interior" class="section-gallery__image"><a>
+          <div id="photo4" class="section-gallery__modal-window">
+            <div>
+              <a href="#close" title="close" class="section-gallery__modal-close">X</a>
+              <img src="img\photo4.jpg" alt="Photo4" title="room interior" class="section-gallery__modal-image">
+            </div>
+          </div>
+        </li>
+        <li class="section-gallery__item"><a href="#photo5" class="section-gallery__link"><img src="img\photo5.jpg" alt="Photo5" title="room interior" class="section-gallery__image"><a>
+          <div id="photo5" class="section-gallery__modal-window">
+            <div>
+              <a href="#close" title="close" class="section-gallery__modal-close">X</a>
+              <img src="img\photo5.jpg" alt="Photo5" title="room interior" class="section-gallery__modal-image">
+            </div>
+          </div>
+        </li>
+        <li class="section-gallery__item"><a href="#photo6" class="section-gallery__link"><img src="img\photo6.jpg" alt="Photo6" title="bathroom" class="section-gallery__image"><a>
+          <div id="photo6" class="section-gallery__modal-window">
+            <div>
+              <a href="#close" title="close" class="section-gallery__modal-close">X</a>
+              <img src="img\photo6.jpg" alt="Photo6" title="bathroom" class="section-gallery__modal-image">
+            </div>
+          </div>
+        </li>
+        <li class="section-gallery__item"><a href="#photo7" class="section-gallery__link"><img src="img\photo7.jpg" alt="Photo7" title="meeting room" class="section-gallery__image"><a>
+          <div id="photo7" class="section-gallery__modal-window">
+            <div>
+              <a href="#close" title="close" class="section-gallery__modal-close">X</a>
+              <img src="img\photo7.jpg" alt="Photo7" title="meeting room" class="section-gallery__modal-image">
+            </div>
+          </div>
+        </li>
+        <li class="section-gallery__item"><a href="#photo8" class="section-gallery__link"><img src="img\photo8.jpg" alt="Photo8" title="restaurant" class="section-gallery__image"><a>
+          <div id="photo8" class="section-gallery__modal-window">
+            <div>
+              <a href="#close" title="close" class="section-gallery__modal-close">X</a>
+              <img src="img\photo8.jpg" alt="Photo8" title="restaurant" class="section-gallery__modal-image">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- about -->
+
+    <section class="section-about tabs" id="section-about">
+      <h2 class="section-about__title">About</h2>
+      <h3 class="section-about__header">Happy Relax Hotel offers the perfect setting for rare moments of romance, adventure, and excitement</h3>
+      <p class="section-about__text">Happy Relax Hotel is an established and well known hotel in the heart of London. The hotel has a good reputation due to the outstanding customer service, great location and luxurious rooms.</p>
+      <p class="section-about__text">Our guests are well received by our multi-lingual employees.  We strive to make your stay at Happy Relax Hotel a memorable and an enjoyable one.</p>
+      <p class="section-about__text">Happy Relax Hotel is a beautiful hotel, located in a quaint little street close to the citycenter.</p>
+      <p class="section-about__text">The rooms at Happy Relax Hotel are comfortable and clean.  In addition, the rooms have all the standard amenities to enhance your "home-away-from-home" feeling.</p>
+      <p class="section-about__text">There are several options when it comes to booking a room at Happy Relax Hotel. Feel free to browse the website for the perfect option that suits you and your family.</p>
+      <p class="section-about__text">We recommend that you view some of the reviews our guests have written about us, on Tripadvisor and Facebook.</p>
+      <p class="section-about__text">The employees of Happy Relax Hotel look forward to meeting you and welcome you to our hotel, and we hope you have an enjoyable and memorable stay in London. If you have any questions, please feel free to contact us.</p>
+      <h2 class="section-about__title">History</h2>
+      <p class="section-about__text">Happy Relax Hotel was built in 1997 by Tom Smith in the center of London.</p>
+      <p class="section-about__text">For twenty years Happy Relax Hotel has undergone many changes and soon became the place for relax for many tourists.</p>
+    </section>
+
+    <!-- contact -->
+
+    <section class="section-contact tabs" id="section-contact">
+      <h2 class="section-contact__title">Contact</h2>
+      <form action="#" method="POST" class="section-contact__form">
+        <h3 class="section-contact__header">Get in touch</h3>
+        <input type="text" name="section-contact__name" placeholder="Your Name" pattern="[A-Za-z]{5,}" title="please enter at least 5 letters" class="section-contact__input" required>
+        <input type="text" name="section-contact__number" placeholder="Phone Number" pattern="+[0-9]{12}" title="please enter phone number in the format: +XXXXXXXXXXXX" class="section-contact__input" required>
+        <input type="text" name="section-contact__email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="please enter email in the format: name@email.com" class="section-contact__input" required>
+        <textarea name="section-contact__message" placeholder="Message" class="section-contact__textarea" required></textarea>
+        <input type="submit" name="section-contact__send" value="Send" class="section-contact__submit">
+      </form>
+      <div class="section-contact__paragraph">
+        <h3 class="section-contact__header">Contacts</h3>
+        <p class="section-contact__text"><strong>Address</strong>: Happy Relax Hotel, 45 Welbeck St, Marylebone, London W1G 8DN, Great Britain</p>
+        <p class="section-contact__text"><strong>Phone</strong>: +44 20 7474 0000</p>
+        <p class="section-contact__text"><a href="mailto:hrh@london.com" class="section-contact__link"><strong>Email</strong>: hrh@london.com</a></p>
+      </div>
+      <div class="section-contact__map"></div>
+    </section>
+  </main>
+
+  <!-- footer -->
+
+  <footer>
+    <p class="footer__text">&#x2706; +44 20 7474 0000</p>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a href="mailto:hrh@london.com" class="footer__link">&#xe424;</a>
+      </li>
+      <li class="footer__item">
+        <a href="skype:happy.relax.hotel" class="footer__link">&#xe474;</a>
+      </li>
+      <li class="footer__item">
+        <a href="https://www.facebook.com/happyrelaxhotel/" class="footer__link">&#xe427;</a>
+      </li>
+      <li class="footer__item">
+        <a href="https://twitter.com/happyrelaxhotel/" class="footer__link">&#xe486;</a>
+      </li>
+      <li class="footer__item">
+        <a href="https://www.instagram.com/happyrelaxhotel/" class="footer__link">&#xe500;</a>
+      </li>
+      <li class="footer__item">
+        <a href="https://www.youtube.com/user/happyrelaxhotel/" class="footer__link">&#xe499;</a>
+      </li>
+      <li class="footer__item facebook-share">&#xe027;Share On Facebook</li>
+      <li class="footer__item twitter-share">&#xe086;Share On Twitter</li>
+      <li class="footer__item google-share">&#xe039;Share On Google+</li>
+    </ul>
+    <p class="footer__copy">&copy; 2018. Happy Relax Hotel. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js\dest\jquery-3.2.1.min.js"></script>
+  <script src="js\dest\script.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2PvX2cEUEyzCv7gbAwDSaAp8ybBZxqsg&callback=initMap"></script>
+</body>
+</html>
