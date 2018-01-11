@@ -47,7 +47,7 @@ $text-shadow2: 2px 4px 3px rgba(0,0,0,0.3);
 
 @font-face {
   font-family: 'Rubik Black';
-  src: url('../../rubik-black-webfont.eot');
+  src: url('../../fonts/rubik-black-webfont.eot');
   src: url('../../fonts/rubik-black-webfont.eot?#iefix') format('embedded-opentype'),
        url('../../fonts/rubik-black-webfont.woff2') format('woff2'),
        url('../../fonts/rubik-black-webfont.woff') format('woff'),
@@ -160,14 +160,16 @@ table {
     overflow: hidden;
   }
 
+  /* menu */
+
   .header-menu__list {
     width: 95%;
     margin: 20px auto;
 
-    .header-menu__item {
+    .header-menu__item { /* menu for desktop */
       display: none;
 
-      &:nth-child(4) {
+      &:nth-child(4) { /* logo */
         display: block;
         width: 100%;
         text-decoration: none;
@@ -179,7 +181,7 @@ table {
         }
       }
 
-      &:last-child {
+      &:last-child { /* menu for mobile and tablet */
         display: block;
         width: 100%;
         margin: 20px auto;
@@ -191,6 +193,7 @@ table {
           text-transform: uppercase;
           font-family: $bold;
           font-size: 60px;
+          font-weight: bold;
           color: black;
         }
 
@@ -230,7 +233,7 @@ table {
           font-weight: bold;
         }
 
-        .header-menu__modal-list {
+        .header-menu__modal-list { /* sub-menu for mobile and tablet */
           position: absolute;
           left: 20px;
 
@@ -243,6 +246,7 @@ table {
             color: white;
             font-family: $bold;
             font-size: 28px;
+            font-weight: bold;
           }
         }
       }
@@ -374,11 +378,14 @@ table {
     @include transition(0.2s);
     font-family: $bold;
     font-size: 18px;
+    font-weight: bold;
 
     &:active {
       @include transform(translate(0, 4px));
     }
   }
+
+  /* reviews */
 
   .section-home__header2 {
     width: 100%;
@@ -406,12 +413,14 @@ table {
 
       .section-home__text1 {
         font-family: $italic;
+        font-style: italic;
         margin-top: 10px;
         margin-bottom: 20px;
       }
 
       .section-home__text2 {
         font-family: $bold;
+        font-weight: bold;
         margin-top: 10px;
         margin-bottom: 10px;
       }
@@ -434,7 +443,10 @@ table {
     text-transform: uppercase;
     font-family: $bold;
     font-size: 26px;
+    font-weight: bold;
   }
+
+  /* filter */
 
   .section-rooms__radio {
     display: none;
@@ -446,6 +458,7 @@ table {
     text-transform: uppercase;
     margin: 0px auto;
     font-family: $bold;
+    font-weight: bold;
     margin-left: 0.9%;
     margin-top: 20px;
     padding-top: 20px;
@@ -493,6 +506,8 @@ table {
     color: white;
     text-shadow: $text-shadow;
   }
+
+  /* available and booked rooms */
 
   .section-rooms__list {
     width: 98%;
@@ -563,6 +578,7 @@ table {
         @include transition(0.2s);
         font-family: $bold;
         font-size: 18px;
+        font-weight: bold;
 
         &:active {
           @include transform(translate(0, 4px));
@@ -590,9 +606,18 @@ table {
         background: black;
         font-family: $bold;
         font-size: 18px;
+        font-weight: bold;
       }
     }
   }
+
+  /* pagination */
+
+  .section-rooms__list.pagination .section-rooms__item {
+    border: none;
+  }
+
+  /* modal window for booking */
 
   .section-rooms__modal-window {
     position: fixed;
@@ -660,6 +685,7 @@ table {
     @include transition(0.2s);
     font-family: $bold;
     font-size: 18px;
+    font-weight: bold;
 
     &:active {
       @include transform(translate(0, 4px));
@@ -843,6 +869,13 @@ table {
     font-size: 26px;
   }
 
+  /* contact form */
+
+  .section-contact__form {
+    width: 98%;
+    margin: 20px auto;
+  }
+
   .section-contact__header {
     width: 100%;
     margin: 20px auto;
@@ -850,11 +883,6 @@ table {
     font-family: $bold;
     font-size: 18px;
     text-transform: capitalize;
-  }
-
-  .section-contact__form {
-    width: 98%;
-    margin: 20px auto;
   }
 
   .section-contact__input {
@@ -905,7 +933,10 @@ table {
     color: white;
     font-family: $bold;
     font-size: 18px;
+    font-weight: bold;
   }
+
+  /* contacts */
 
   .section-contact__paragraph {
     width: 98%;
@@ -926,6 +957,8 @@ table {
     font-family: $regular;
   }
 
+  /* map */
+
   .section-contact__map {
     width: 95%;
     margin: 20px auto;
@@ -941,6 +974,8 @@ table {
     overflow: hidden;
   }
 
+  /* phone number */
+
   .footer__text {
     width: 100%;
     text-align: center;
@@ -949,7 +984,10 @@ table {
     text-decoration: none;
     font-family: $bold;
     font-size: 28px;
+    font-weight: bold;
   }
+
+  /* social buttons */
 
   .footer__list {
     width: 98%;
@@ -982,7 +1020,7 @@ table {
 
     .footer__item.facebook-share,
     .footer__item.twitter-share,
-    .footer__item.google-share {
+    .footer__item.google-share { /* share */
       width: 92%;
       display: block;
       margin-right: 10px;
@@ -997,6 +1035,8 @@ table {
     }
   }
 
+  /* copyright */
+
   .footer__copy {
     width: 100%;
     margin: 20px auto;
@@ -1005,6 +1045,7 @@ table {
     text-align: center;
     font-family: $bold;
     font-size: 12px;
+    font-weight: bold;
   }
 }
 
@@ -1025,14 +1066,16 @@ table {
     overflow: hidden;
   }
 
+  /* menu */
+
   .header-menu__list {
     width: 304px;
     margin: 20px auto;
 
-    .header-menu__item {
+    .header-menu__item { /* menu for desktop */
       display: none;
 
-      &:nth-child(4) {
+      &:nth-child(4) { /* logo */
         display: block;
         width: 100%;
         text-decoration: none;
@@ -1044,7 +1087,7 @@ table {
         }
       }
 
-      &:last-child {
+      &:last-child { /* menu for mobile and tablet */
         display: block;
         width: 100%;
         margin: 20px auto;
@@ -1056,6 +1099,7 @@ table {
           text-transform: uppercase;
           font-family: $bold;
           font-size: 62px;
+          font-weight: bold;
           color: black;
         }
 
@@ -1095,7 +1139,7 @@ table {
           font-weight: bold;
         }
 
-        .header-menu__modal-list {
+        .header-menu__modal-list { /* sub-menu for mobile and tablet */
           position: absolute;
           left: 40px;
 
@@ -1108,6 +1152,7 @@ table {
             color: white;
             font-family: $bold;
             font-size: 36px;
+            font-weight: bold;
           }
         }
       }
@@ -1238,11 +1283,14 @@ table {
     @include transition(0.2s);
     font-family: $bold;
     font-size: 18px;
+    font-weight: bold;
 
     &:active {
       @include transform(translate(0, 4px));
     }
   }
+
+  /* reviews */
 
   .section-home__header2 {
     text-align: center;
@@ -1269,12 +1317,14 @@ table {
 
       .section-home__text1 {
         font-family: $italic;
+        font-style: italic;
         margin-top: 10px;
         margin-bottom: 20px;
       }
 
       .section-home__text2 {
         font-family: $bold;
+        font-weight: bold;
         margin-top: 10px;
         margin-bottom: 10px;
       }
@@ -1299,6 +1349,8 @@ table {
     font-size: 26px;
   }
 
+  /* filter */
+
   .section-rooms__radio {
     display: none;
   }
@@ -1312,6 +1364,7 @@ table {
     margin: 20px auto;
     font-family: $bold;
     font-size: 14px;
+    font-weight: bold;
     margin-left: 0.9%;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -1361,6 +1414,8 @@ table {
     text-shadow: $text-shadow;
   }
 
+  /* available and booked rooms */
+
   .section-rooms__list {
     width: 98%;
     margin: 20px auto;
@@ -1379,7 +1434,7 @@ table {
         margin-bottom: 20px;
         text-align: center;
         text-transform: uppercase;
-        font-family: $black;
+        font-family: $bold;
         font-size: 18px;
         text-align: center;
       }
@@ -1395,7 +1450,7 @@ table {
         margin-bottom: 20px;
         padding-left: 5px;
         text-align: center;
-        font-family: $black;
+        font-family: $bold;
         font-size: 18px;
       }
 
@@ -1430,6 +1485,7 @@ table {
         @include transition(0.2s);
         font-family: $bold;
         font-size: 18px;
+        font-weight: bold;
 
         &:active {
           @include transform(translate(0, 4px));
@@ -1457,9 +1513,18 @@ table {
         background: black;
         font-family: $bold;
         font-size: 18px;
+        font-weight: bold;
       }
     }
   }
+
+  /* pagination */
+
+  .section-rooms__list.pagination .section-rooms__item {
+    border: none;
+  }
+
+  /* modal window for booking */
 
   .section-rooms__modal-window {
     position: fixed;
@@ -1527,6 +1592,7 @@ table {
     @include transition(0.2s);
     font-family: $bold;
     font-size: 18px;
+    font-weight: bold;
 
     &:active {
       @include transform(translate(0, 4px));
@@ -1709,6 +1775,13 @@ table {
     font-size: 26px;
   }
 
+  /* contact form */
+
+  .section-contact__form {
+    width: 98%;
+    margin: 20px auto;
+  }
+
   .section-contact__header {
     width: 100%;
     margin: 20px auto;
@@ -1716,11 +1789,6 @@ table {
     font-family: $bold;
     font-size: 18px;
     text-transform: capitalize;
-  }
-
-  .section-contact__form {
-    width: 98%;
-    margin: 20px auto;
   }
 
   .section-contact__input {
@@ -1771,7 +1839,10 @@ table {
     color: white;
     font-family: $bold;
     font-size: 18px;
+    font-weight: bold;
   }
+
+  /* contacts */
 
   .section-contact__paragraph {
     width: 98%;
@@ -1792,6 +1863,8 @@ table {
     font-family: $regular;
   }
 
+  /* map */
+
   .section-contact__map {
     width: 95%;
     margin: 20px auto;
@@ -1806,6 +1879,8 @@ table {
     margin: 20px auto;
   }
 
+  /* phone number */
+
   .footer__text {
     width: 100%;
     text-align: center;
@@ -1814,7 +1889,10 @@ table {
     text-decoration: none;
     font-family: $bold;
     font-size: 28px;
+    font-weight: bold;
   }
+
+  /* social buttons */
 
   .footer__list {
     width: 304px;
@@ -1847,7 +1925,7 @@ table {
 
     .footer__item.facebook-share,
     .footer__item.twitter-share,
-    .footer__item.google-share {
+    .footer__item.google-share { /* share */
       width: 280px;
       display: block;
       margin-right: 10px;
@@ -1862,6 +1940,8 @@ table {
     }
   }
 
+  /* copyright */
+
   .footer__copy {
     width: 100%;
     margin: 20px auto;
@@ -1870,6 +1950,7 @@ table {
     text-align: center;
     font-family: $bold;
     font-size: 12px;
+    font-weight: bold;
   }
 }
 
@@ -1888,18 +1969,20 @@ table {
     padding-bottom: 20px;
   }
 
+  /* menu */
+
   .header-menu__list {
     width: 729px;
     margin: 20px auto;
 
-    .header-menu__item {
+    .header-menu__item { /* menu for desktop */
       display: inline;
       float: left;
       z-index: 1;
       position: relative;
       margin-top: 15px;
 
-      &:nth-child(4) .header-menu__logo {
+      &:nth-child(4) .header-menu__logo { /* logo */
         width: 200px;
         margin-top: -18px;
         margin-bottom: 20px;
@@ -1934,6 +2017,7 @@ table {
         color: black;
         font-family: $bold;
         font-size: 16px;
+        font-weight: bold;
         cursor: pointer;
       }
 
@@ -1944,7 +2028,7 @@ table {
         border-right: 1px solid black;
       }
 
-      .rooms__list {
+      .rooms__list { /* sub-menu for desktop */
         display: none;
         padding-bottom: 10px;
         position: absolute;
@@ -2129,6 +2213,7 @@ table {
     @include transition(0.2s);
     font-family: $bold;
     font-size: 24px;
+    font-weight: bold;
 
     &:hover {
       opacity: $opacity;
@@ -2138,6 +2223,8 @@ table {
       @include transform(translate(0, 4px));
     }
   }
+
+  /* reviews */
 
   .section-home__header2 {
     text-align: center;
@@ -2160,12 +2247,14 @@ table {
 
       .section-home__text1 {
         font-family: $italic;
+        font-style: italic;
         margin-top: 10px;
         margin-bottom: 20px;
       }
 
       .section-home__text2 {
         font-family: $bold;
+        font-weight: bold;
         margin-top: 10px;
         margin-bottom: 10px;
       }
@@ -2190,6 +2279,8 @@ table {
     font-size: 24px;
   }
 
+  /* filter */
+
   .section-rooms__radio {
     display: none;
   }
@@ -2202,6 +2293,7 @@ table {
     text-transform: uppercase;
     margin: 20px auto;
     font-family: $bold;
+    font-weight: bold;
     cursor: pointer;
     margin-left: 0.9%;
     margin-top: 20px;
@@ -2257,6 +2349,8 @@ table {
     color: white;
     text-shadow: $text-shadow;
   }
+
+  /* available and booked rooms */
 
   .section-rooms__list {
     width: 98%;
@@ -2333,6 +2427,7 @@ table {
         @include transition(0.2s);
         font-family: $bold;
         font-size: 24px;
+        font-weight: bold;
 
         &:hover {
           opacity: $opacity;
@@ -2364,6 +2459,7 @@ table {
         background: black;
         font-family: $bold;
         font-size: 24px;
+        font-weight: bold;
 
         &:hover {
           opacity: $opacity;
@@ -2372,9 +2468,13 @@ table {
     }
   }
 
+  /* pagination */
+
   .section-rooms__list.pagination .section-rooms__item {
     border: none;
   }
+
+  /* modal window for booking */
 
   .section-rooms__modal-window {
     position: fixed;
@@ -2445,6 +2545,7 @@ table {
     @include transition(0.2s);
     font-family: $bold;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer;
 
     &:hover {
@@ -2634,14 +2735,7 @@ table {
     font-size: 24px;
   }
 
-  .section-contact__header {
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
-    font-family: $bold;
-    font-size: 24px;
-    text-transform: capitalize;
-  }
+  /* contact form */
 
   .section-contact__form {
     width: 49%;
@@ -2650,6 +2744,15 @@ table {
     display: inline;
     float: left;
     border-right: 4px solid black;
+  }
+
+  .section-contact__header {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: $bold;
+    font-size: 24px;
+    text-transform: capitalize;
   }
 
   .section-contact__input {
@@ -2701,8 +2804,11 @@ table {
     color: white;
     font-family: $bold;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer;
   }
+
+  /* contacts */
 
   .section-contact__paragraph {
     width: 49%;
@@ -2725,6 +2831,8 @@ table {
     font-family: $regular;
   }
 
+  /* map */
+
   .section-contact__map {
     width: 98%;
     margin: 20px auto;
@@ -2739,6 +2847,8 @@ table {
     margin: 20px auto;
   }
 
+  /* phone number */
+
   .footer__text {
     text-align: center;
     margin: 10px auto;
@@ -2746,7 +2856,10 @@ table {
     text-decoration: none;
     font-family: $bold;
     font-size: 28px;
+    font-weight: bold;
   }
+
+  /* social buttons */
 
   .footer__list {
     width: 731px;
@@ -2782,7 +2895,7 @@ table {
 
     .footer__item.facebook-share,
     .footer__item.twitter-share,
-    .footer__item.google-share {
+    .footer__item.google-share { /* share */
       display: block;
       margin-right: 10px;
       padding: 10px;
@@ -2803,6 +2916,8 @@ table {
     }
   }
 
+  /* copyright */
+
   .footer__copy {
     width: 100%;
     margin: 20px auto;
@@ -2811,6 +2926,7 @@ table {
     text-align: center;
     font-family: $bold;
     font-size: 14px;
+    font-weight: bold;
   }
 }
 
@@ -2824,23 +2940,25 @@ table {
   /* header */
 
   header {
-    width: 1440px;
+    width: $desktop;
     margin: 0px auto;
     padding-bottom: 20px;
   }
+
+  /* menu */
 
   .header-menu__list {
     width: 95%;
     margin: 20px auto;
 
-    .header-menu__item {
+    .header-menu__item { /* menu for desktop */
       display: inline;
       float: left;
       z-index: 1;
       position: relative;
       margin-top: 15px;
 
-      &:nth-child(4) .header-menu__logo {
+      &:nth-child(4) .header-menu__logo { /* logo */
         width: 200px;
         margin-top: -18px;
         margin-bottom: 20px;
@@ -2878,6 +2996,7 @@ table {
         color: black;
         font-family: $bold;
         font-size: 16px;
+        font-weight: bold;
         cursor: pointer;
       }
 
@@ -2888,7 +3007,7 @@ table {
         border-right: 1px solid black;
       }
 
-      .rooms__list {
+      .rooms__list { /* sub-menu for desktop */
         display: none;
         padding-bottom: 10px;
         position: absolute;
@@ -3008,7 +3127,7 @@ table {
   /* content */
 
   main {
-    width: 1440px;
+    width: $desktop;
     margin: 0px auto;
   }
 
@@ -3075,6 +3194,7 @@ table {
     @include transition(0.2s);
     font-family: $bold;
     font-size: 24px;
+    font-weight: bold;
 
     &:hover {
       opacity: $opacity;
@@ -3084,6 +3204,8 @@ table {
       @include transform(translate(0, 4px));
     }
   }
+
+  /* reviews */
 
   .section-home__header2 {
     text-align: center;
@@ -3106,12 +3228,14 @@ table {
 
       .section-home__text1 {
         font-family: $italic;
+        font-style: italic;
         margin-top: 10px;
         margin-bottom: 20px;
       }
 
       .section-home__text2 {
         font-family: $bold;
+        font-weight: bold;
         margin-top: 10px;
         margin-bottom: 10px;
       }
@@ -3136,6 +3260,8 @@ table {
     font-size: 24px;
   }
 
+  /* filter */
+
   .section-rooms__radio {
     display: none;
   }
@@ -3148,6 +3274,7 @@ table {
     text-transform: uppercase;
     margin: 20px auto;
     font-family: $bold;
+    font-weight: bold;
     cursor: pointer;
     margin-left: 0.9%;
     margin-top: 20px;
@@ -3203,6 +3330,8 @@ table {
     color: white;
     text-shadow: $text-shadow;
   }
+
+  /* available and booked rooms */
 
   .section-rooms__list {
     width: 98%;
@@ -3279,6 +3408,7 @@ table {
         @include transition(0.2s);
         font-family: $bold;
         font-size: 24px;
+        font-weight: bold;
 
         &:hover {
           opacity: $opacity;
@@ -3310,6 +3440,7 @@ table {
         background: black;
         font-family: $bold;
         font-size: 24px;
+        font-weight: bold;
 
         &:hover {
           opacity: $opacity;
@@ -3318,9 +3449,13 @@ table {
     }
   }
 
+  /* pagination */
+
   .section-rooms__list.pagination .section-rooms__item {
     border: none;
   }
+
+  /* modal window for booking */
 
   .section-rooms__modal-window {
     position: fixed;
@@ -3391,6 +3526,7 @@ table {
     @include transition(0.2s);
     font-family: $bold;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer;
 
     &:hover {
@@ -3580,14 +3716,7 @@ table {
     font-size: 24px;
   }
 
-  .section-contact__header {
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
-    font-family: $bold;
-    font-size: 24px;
-    text-transform: capitalize;
-  }
+  /* contact form */
 
   .section-contact__form {
     width: 49%;
@@ -3596,6 +3725,15 @@ table {
     display: inline;
     float: left;
     border-right: 4px solid black;
+  }
+
+  .section-contact__header {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: $bold;
+    font-size: 24px;
+    text-transform: capitalize;
   }
 
   .section-contact__input {
@@ -3647,8 +3785,11 @@ table {
     color: white;
     font-family: $bold;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer;
   }
+
+  /* contacts */
 
   .section-contact__paragraph {
     width: 49%;
@@ -3671,6 +3812,8 @@ table {
     font-family: $regular;
   }
 
+  /* map */
+
   .section-contact__map {
     width: 98%;
     margin: 20px auto;
@@ -3685,6 +3828,8 @@ table {
     margin: 40px auto;
   }
 
+  /* phone number */
+
   .footer__text {
     margin: 10px auto;
     margin-right: 15px;
@@ -3692,8 +3837,11 @@ table {
     text-decoration: none;
     font-family: $bold;
     font-size: 28px;
+    font-weight: bold;
     float: left;
   }
+
+  /* social buttons */
 
   .footer__list {
     width: 77%;
@@ -3720,7 +3868,7 @@ table {
       }
     }
 
-    .footer__item.facebook-share {
+    .footer__item.facebook-share { /* share */
       margin-left: 10px;
     }
 
@@ -3753,6 +3901,8 @@ table {
     }
   }
 
+  /* copyright */
+
   .footer__copy {
     width: 100%;
     margin: 20px auto;
@@ -3761,5 +3911,6 @@ table {
     text-align: center;
     font-family: $bold;
     font-size: 14px;
+    font-weight: bold;
   }
 }

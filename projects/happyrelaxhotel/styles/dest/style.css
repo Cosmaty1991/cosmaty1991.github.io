@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Rubik Black';
-  src: url("../../rubik-black-webfont.eot");
+  src: url("../../fonts/rubik-black-webfont.eot");
   src: url("../../fonts/rubik-black-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/rubik-black-webfont.woff2") format("woff2"), url("../../fonts/rubik-black-webfont.woff") format("woff"), url("../../fonts/rubik-black-webfont.ttf") format("truetype"), url("../../fonts/rubik-black-webfont.svg#rubikblack") format("svg");
   font-weight: normal;
   font-style: normal; }
@@ -87,12 +87,15 @@ table {
     margin: 20px auto;
     padding-bottom: 20px;
     overflow: hidden; }
+  /* menu */
   .header-menu__list {
     width: 95%;
     margin: 20px auto; }
     .header-menu__list .header-menu__item {
+      /* menu for desktop */
       display: none; }
       .header-menu__list .header-menu__item:nth-child(4) {
+        /* logo */
         display: block;
         width: 100%;
         text-decoration: none;
@@ -101,6 +104,7 @@ table {
         .header-menu__list .header-menu__item:nth-child(4) .header-menu__logo2 {
           display: none; }
       .header-menu__list .header-menu__item:last-child {
+        /* menu for mobile and tablet */
         display: block;
         width: 100%;
         margin: 20px auto;
@@ -111,6 +115,7 @@ table {
           text-transform: uppercase;
           font-family: "Rubik Bold", Arial, sans-serif;
           font-size: 60px;
+          font-weight: bold;
           color: black; }
         .header-menu__list .header-menu__item:last-child .header-menu__modal-window {
           position: fixed;
@@ -141,6 +146,7 @@ table {
           font-size: 48px;
           font-weight: bold; }
         .header-menu__list .header-menu__item:last-child .header-menu__modal-list {
+          /* sub-menu for mobile and tablet */
           position: absolute;
           left: 20px; }
           .header-menu__list .header-menu__item:last-child .header-menu__modal-list .header-menu__modal-item .header-menu__modal-link {
@@ -151,7 +157,8 @@ table {
             text-align: left;
             color: white;
             font-family: "Rubik Bold", Arial, sans-serif;
-            font-size: 28px; }
+            font-size: 28px;
+            font-weight: bold; }
   /* search */
   .header-search {
     width: 100%;
@@ -246,11 +253,13 @@ table {
     -moz-transition: 0.2s;
     transition: 0.2s;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: bold; }
     .section-home__button:active {
       -webkit-transform: translate(0, 4px);
       -moz-transform: translate(0, 4px);
       transform: translate(0, 4px); }
+  /* reviews */
   .section-home__header2 {
     width: 100%;
     text-align: center;
@@ -273,10 +282,12 @@ table {
       text-align: justify; }
       .section-home__list .section-home__item .section-home__text1 {
         font-family: "Rubik Italic", Arial, sans-serif;
+        font-style: italic;
         margin-top: 10px;
         margin-bottom: 20px; }
       .section-home__list .section-home__item .section-home__text2 {
         font-family: "Rubik Bold", Arial, sans-serif;
+        font-weight: bold;
         margin-top: 10px;
         margin-bottom: 10px; }
   /* rooms */
@@ -291,7 +302,9 @@ table {
     text-align: center;
     text-transform: uppercase;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 26px; }
+    font-size: 26px;
+    font-weight: bold; }
+  /* filter */
   .section-rooms__radio {
     display: none; }
   .section-rooms__label {
@@ -300,6 +313,7 @@ table {
     text-transform: uppercase;
     margin: 0px auto;
     font-family: "Rubik Bold", Arial, sans-serif;
+    font-weight: bold;
     margin-left: 0.9%;
     margin-top: 20px;
     padding-top: 20px;
@@ -340,6 +354,7 @@ table {
     background: #00cc00;
     color: white;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.5); }
+  /* available and booked rooms */
   .section-rooms__list {
     width: 98%;
     margin: 20px auto;
@@ -402,7 +417,8 @@ table {
         -moz-transition: 0.2s;
         transition: 0.2s;
         font-family: "Rubik Bold", Arial, sans-serif;
-        font-size: 18px; }
+        font-size: 18px;
+        font-weight: bold; }
         .section-rooms__list .section-rooms__item .section-rooms__button:active {
           -webkit-transform: translate(0, 4px);
           -moz-transform: translate(0, 4px);
@@ -420,7 +436,12 @@ table {
         color: white;
         background: black;
         font-family: "Rubik Bold", Arial, sans-serif;
-        font-size: 18px; }
+        font-size: 18px;
+        font-weight: bold; }
+  /* pagination */
+  .section-rooms__list.pagination .section-rooms__item {
+    border: none; }
+  /* modal window for booking */
   .section-rooms__modal-window {
     position: fixed;
     top: 0px;
@@ -482,7 +503,8 @@ table {
     -moz-transition: 0.2s;
     transition: 0.2s;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: bold; }
     .section-rooms__modal-button:active {
       -webkit-transform: translate(0, 4px);
       -moz-transform: translate(0, 4px);
@@ -618,6 +640,10 @@ table {
     text-transform: uppercase;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 26px; }
+  /* contact form */
+  .section-contact__form {
+    width: 98%;
+    margin: 20px auto; }
   .section-contact__header {
     width: 100%;
     margin: 20px auto;
@@ -625,9 +651,6 @@ table {
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 18px;
     text-transform: capitalize; }
-  .section-contact__form {
-    width: 98%;
-    margin: 20px auto; }
   .section-contact__input {
     display: block;
     width: 95%;
@@ -669,7 +692,9 @@ table {
     background: black;
     color: white;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: bold; }
+  /* contacts */
   .section-contact__paragraph {
     width: 98%;
     margin: 0px auto;
@@ -683,6 +708,7 @@ table {
     text-decoration: none;
     color: black;
     font-family: "Rubik Regular", Arial, sans-serif; }
+  /* map */
   .section-contact__map {
     width: 95%;
     margin: 20px auto;
@@ -693,6 +719,7 @@ table {
     width: 95%;
     margin: 20px auto;
     overflow: hidden; }
+  /* phone number */
   .footer__text {
     width: 100%;
     text-align: center;
@@ -700,7 +727,9 @@ table {
     color: black;
     text-decoration: none;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 28px; }
+    font-size: 28px;
+    font-weight: bold; }
+  /* social buttons */
   .footer__list {
     width: 98%;
     margin: 20px auto;
@@ -724,6 +753,7 @@ table {
     .footer__list .footer__item.facebook-share,
     .footer__list .footer__item.twitter-share,
     .footer__list .footer__item.google-share {
+      /* share */
       width: 92%;
       display: block;
       margin-right: 10px;
@@ -735,6 +765,7 @@ table {
       border-radius: 6px;
       font-family: "Mono Social Icons Font";
       font-size: 22px; }
+  /* copyright */
   .footer__copy {
     width: 100%;
     margin: 20px auto;
@@ -742,7 +773,8 @@ table {
     text-decoration: none;
     text-align: center;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 12px; } }
+    font-size: 12px;
+    font-weight: bold; } }
 
 /* tablet */
 @media screen and (min-width: 321px) and (max-width: 768px) {
@@ -755,12 +787,15 @@ table {
     margin: 20px auto;
     padding-bottom: 20px;
     overflow: hidden; }
+  /* menu */
   .header-menu__list {
     width: 304px;
     margin: 20px auto; }
     .header-menu__list .header-menu__item {
+      /* menu for desktop */
       display: none; }
       .header-menu__list .header-menu__item:nth-child(4) {
+        /* logo */
         display: block;
         width: 100%;
         text-decoration: none;
@@ -769,6 +804,7 @@ table {
         .header-menu__list .header-menu__item:nth-child(4) .header-menu__logo2 {
           display: none; }
       .header-menu__list .header-menu__item:last-child {
+        /* menu for mobile and tablet */
         display: block;
         width: 100%;
         margin: 20px auto;
@@ -779,6 +815,7 @@ table {
           text-transform: uppercase;
           font-family: "Rubik Bold", Arial, sans-serif;
           font-size: 62px;
+          font-weight: bold;
           color: black; }
         .header-menu__list .header-menu__item:last-child .header-menu__modal-window {
           position: fixed;
@@ -809,6 +846,7 @@ table {
           font-size: 48px;
           font-weight: bold; }
         .header-menu__list .header-menu__item:last-child .header-menu__modal-list {
+          /* sub-menu for mobile and tablet */
           position: absolute;
           left: 40px; }
           .header-menu__list .header-menu__item:last-child .header-menu__modal-list .header-menu__modal-item .header-menu__modal-link {
@@ -819,7 +857,8 @@ table {
             text-align: left;
             color: white;
             font-family: "Rubik Bold", Arial, sans-serif;
-            font-size: 36px; }
+            font-size: 36px;
+            font-weight: bold; }
   /* search */
   .header-search {
     width: 98%;
@@ -913,11 +952,13 @@ table {
     -moz-transition: 0.2s;
     transition: 0.2s;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: bold; }
     .section-home__button:active {
       -webkit-transform: translate(0, 4px);
       -moz-transform: translate(0, 4px);
       transform: translate(0, 4px); }
+  /* reviews */
   .section-home__header2 {
     text-align: center;
     margin: 20px auto;
@@ -939,10 +980,12 @@ table {
       text-align: justify; }
       .section-home__list .section-home__item .section-home__text1 {
         font-family: "Rubik Italic", Arial, sans-serif;
+        font-style: italic;
         margin-top: 10px;
         margin-bottom: 20px; }
       .section-home__list .section-home__item .section-home__text2 {
         font-family: "Rubik Bold", Arial, sans-serif;
+        font-weight: bold;
         margin-top: 10px;
         margin-bottom: 10px; }
   /* rooms */
@@ -958,6 +1001,7 @@ table {
     text-transform: uppercase;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 26px; }
+  /* filter */
   .section-rooms__radio {
     display: none; }
   .section-rooms__label {
@@ -969,6 +1013,7 @@ table {
     margin: 20px auto;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 14px;
+    font-weight: bold;
     margin-left: 0.9%;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -1010,6 +1055,7 @@ table {
     background: #00cc00;
     color: white;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.5); }
+  /* available and booked rooms */
   .section-rooms__list {
     width: 98%;
     margin: 20px auto;
@@ -1026,7 +1072,7 @@ table {
         margin-bottom: 20px;
         text-align: center;
         text-transform: uppercase;
-        font-family: "Rubik Black", Arial, sans-serif;
+        font-family: "Rubik Bold", Arial, sans-serif;
         font-size: 18px;
         text-align: center; }
       .section-rooms__list .section-rooms__item .section-rooms__image {
@@ -1038,7 +1084,7 @@ table {
         margin-bottom: 20px;
         padding-left: 5px;
         text-align: center;
-        font-family: "Rubik Black", Arial, sans-serif;
+        font-family: "Rubik Bold", Arial, sans-serif;
         font-size: 18px; }
       .section-rooms__list .section-rooms__item .section-rooms__text {
         margin-bottom: 20px;
@@ -1072,7 +1118,8 @@ table {
         -moz-transition: 0.2s;
         transition: 0.2s;
         font-family: "Rubik Bold", Arial, sans-serif;
-        font-size: 18px; }
+        font-size: 18px;
+        font-weight: bold; }
         .section-rooms__list .section-rooms__item .section-rooms__button:active {
           -webkit-transform: translate(0, 4px);
           -moz-transform: translate(0, 4px);
@@ -1090,7 +1137,12 @@ table {
         color: white;
         background: black;
         font-family: "Rubik Bold", Arial, sans-serif;
-        font-size: 18px; }
+        font-size: 18px;
+        font-weight: bold; }
+  /* pagination */
+  .section-rooms__list.pagination .section-rooms__item {
+    border: none; }
+  /* modal window for booking */
   .section-rooms__modal-window {
     position: fixed;
     top: 0px;
@@ -1152,7 +1204,8 @@ table {
     -moz-transition: 0.2s;
     transition: 0.2s;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: bold; }
     .section-rooms__modal-button:active {
       -webkit-transform: translate(0, 4px);
       -moz-transform: translate(0, 4px);
@@ -1287,6 +1340,10 @@ table {
     text-transform: uppercase;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 26px; }
+  /* contact form */
+  .section-contact__form {
+    width: 98%;
+    margin: 20px auto; }
   .section-contact__header {
     width: 100%;
     margin: 20px auto;
@@ -1294,9 +1351,6 @@ table {
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 18px;
     text-transform: capitalize; }
-  .section-contact__form {
-    width: 98%;
-    margin: 20px auto; }
   .section-contact__input {
     display: block;
     width: 95%;
@@ -1338,7 +1392,9 @@ table {
     background: black;
     color: white;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: bold; }
+  /* contacts */
   .section-contact__paragraph {
     width: 98%;
     margin: 0px auto;
@@ -1352,6 +1408,7 @@ table {
     text-decoration: none;
     color: black;
     font-family: "Rubik Regular", Arial, sans-serif; }
+  /* map */
   .section-contact__map {
     width: 95%;
     margin: 20px auto;
@@ -1361,6 +1418,7 @@ table {
   footer {
     width: 95%;
     margin: 20px auto; }
+  /* phone number */
   .footer__text {
     width: 100%;
     text-align: center;
@@ -1368,7 +1426,9 @@ table {
     color: black;
     text-decoration: none;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 28px; }
+    font-size: 28px;
+    font-weight: bold; }
+  /* social buttons */
   .footer__list {
     width: 304px;
     margin: 20px auto;
@@ -1390,6 +1450,7 @@ table {
     .footer__list .footer__item.facebook-share,
     .footer__list .footer__item.twitter-share,
     .footer__list .footer__item.google-share {
+      /* share */
       width: 280px;
       display: block;
       margin-right: 10px;
@@ -1401,6 +1462,7 @@ table {
       border-radius: 6px;
       font-family: "Mono Social Icons Font";
       font-size: 22px; }
+  /* copyright */
   .footer__copy {
     width: 100%;
     margin: 20px auto;
@@ -1408,7 +1470,8 @@ table {
     text-decoration: none;
     text-align: center;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 12px; } }
+    font-size: 12px;
+    font-weight: bold; } }
 
 /* desktop < 1440px */
 @media screen and (min-width: 769px) and (max-width: 1440px) {
@@ -1419,16 +1482,19 @@ table {
   header {
     width: 100%;
     padding-bottom: 20px; }
+  /* menu */
   .header-menu__list {
     width: 729px;
     margin: 20px auto; }
     .header-menu__list .header-menu__item {
+      /* menu for desktop */
       display: inline;
       float: left;
       z-index: 1;
       position: relative;
       margin-top: 15px; }
       .header-menu__list .header-menu__item:nth-child(4) .header-menu__logo {
+        /* logo */
         width: 200px;
         margin-top: -18px;
         margin-bottom: 20px;
@@ -1453,6 +1519,7 @@ table {
         color: black;
         font-family: "Rubik Bold", Arial, sans-serif;
         font-size: 16px;
+        font-weight: bold;
         cursor: pointer; }
       .header-menu__list .header-menu__item:first-child .header-menu__link,
       .header-menu__list .header-menu__item:nth-child(2) .header-menu__link,
@@ -1460,6 +1527,7 @@ table {
       .header-menu__list .header-menu__item:nth-child(6) .header-menu__link {
         border-right: 1px solid black; }
       .header-menu__list .header-menu__item .rooms__list {
+        /* sub-menu for desktop */
         display: none;
         padding-bottom: 10px;
         position: absolute;
@@ -1589,13 +1657,15 @@ table {
     -moz-transition: 0.2s;
     transition: 0.2s;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 24px; }
+    font-size: 24px;
+    font-weight: bold; }
     .section-home__button:hover {
       opacity: 0.8; }
     .section-home__button:active {
       -webkit-transform: translate(0, 4px);
       -moz-transform: translate(0, 4px);
       transform: translate(0, 4px); }
+  /* reviews */
   .section-home__header2 {
     text-align: center;
     margin: 40px auto;
@@ -1613,10 +1683,12 @@ table {
       padding-top: 5px; }
       .section-home__list .section-home__item .section-home__text1 {
         font-family: "Rubik Italic", Arial, sans-serif;
+        font-style: italic;
         margin-top: 10px;
         margin-bottom: 20px; }
       .section-home__list .section-home__item .section-home__text2 {
         font-family: "Rubik Bold", Arial, sans-serif;
+        font-weight: bold;
         margin-top: 10px;
         margin-bottom: 10px; }
   /* rooms */
@@ -1632,6 +1704,7 @@ table {
     text-transform: uppercase;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 24px; }
+  /* filter */
   .section-rooms__radio {
     display: none; }
   .section-rooms__label {
@@ -1642,6 +1715,7 @@ table {
     text-transform: uppercase;
     margin: 20px auto;
     font-family: "Rubik Bold", Arial, sans-serif;
+    font-weight: bold;
     cursor: pointer;
     margin-left: 0.9%;
     margin-top: 20px;
@@ -1688,6 +1762,7 @@ table {
     background: #00cc00;
     color: white;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.5); }
+  /* available and booked rooms */
   .section-rooms__list {
     width: 98%;
     margin: 20px auto;
@@ -1754,7 +1829,8 @@ table {
         -moz-transition: 0.2s;
         transition: 0.2s;
         font-family: "Rubik Bold", Arial, sans-serif;
-        font-size: 24px; }
+        font-size: 24px;
+        font-weight: bold; }
         .section-rooms__list .section-rooms__item .section-rooms__button:hover {
           opacity: 0.8; }
         .section-rooms__list .section-rooms__item .section-rooms__button:active {
@@ -1774,11 +1850,14 @@ table {
         color: white;
         background: black;
         font-family: "Rubik Bold", Arial, sans-serif;
-        font-size: 24px; }
+        font-size: 24px;
+        font-weight: bold; }
         .section-rooms__list .section-rooms__item .section-rooms__link:hover {
           opacity: 0.8; }
+  /* pagination */
   .section-rooms__list.pagination .section-rooms__item {
     border: none; }
+  /* modal window for booking */
   .section-rooms__modal-window {
     position: fixed;
     top: 0px;
@@ -1842,6 +1921,7 @@ table {
     transition: 0.2s;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer; }
     .section-rooms__modal-button:hover {
       opacity: 0.8; }
@@ -1979,13 +2059,7 @@ table {
     text-transform: uppercase;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 24px; }
-  .section-contact__header {
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
-    font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 24px;
-    text-transform: capitalize; }
+  /* contact form */
   .section-contact__form {
     width: 49%;
     margin: 20px auto;
@@ -1993,6 +2067,13 @@ table {
     display: inline;
     float: left;
     border-right: 4px solid black; }
+  .section-contact__header {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: "Rubik Bold", Arial, sans-serif;
+    font-size: 24px;
+    text-transform: capitalize; }
   .section-contact__input {
     display: block;
     width: 95%;
@@ -2036,7 +2117,9 @@ table {
     color: white;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer; }
+  /* contacts */
   .section-contact__paragraph {
     width: 49%;
     margin: 15px auto;
@@ -2052,6 +2135,7 @@ table {
     text-decoration: none;
     color: black;
     font-family: "Rubik Regular", Arial, sans-serif; }
+  /* map */
   .section-contact__map {
     width: 98%;
     margin: 20px auto;
@@ -2061,13 +2145,16 @@ table {
   footer {
     width: 95%;
     margin: 20px auto; }
+  /* phone number */
   .footer__text {
     text-align: center;
     margin: 10px auto;
     color: black;
     text-decoration: none;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 28px; }
+    font-size: 28px;
+    font-weight: bold; }
+  /* social buttons */
   .footer__list {
     width: 731px;
     margin: 20px auto;
@@ -2091,6 +2178,7 @@ table {
     .footer__list .footer__item.facebook-share,
     .footer__list .footer__item.twitter-share,
     .footer__list .footer__item.google-share {
+      /* share */
       display: block;
       margin-right: 10px;
       padding: 10px;
@@ -2106,6 +2194,7 @@ table {
     .footer__list .footer__item.twitter-share:hover,
     .footer__list .footer__item.google-share:hover {
       opacity: 0.8; }
+  /* copyright */
   .footer__copy {
     width: 100%;
     margin: 20px auto;
@@ -2113,7 +2202,8 @@ table {
     text-decoration: none;
     text-align: center;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 14px; } }
+    font-size: 14px;
+    font-weight: bold; } }
 
 /* desktop > 1440px */
 @media screen and (min-width: 1441px) {
@@ -2124,16 +2214,19 @@ table {
     width: 1440px;
     margin: 0px auto;
     padding-bottom: 20px; }
+  /* menu */
   .header-menu__list {
     width: 95%;
     margin: 20px auto; }
     .header-menu__list .header-menu__item {
+      /* menu for desktop */
       display: inline;
       float: left;
       z-index: 1;
       position: relative;
       margin-top: 15px; }
       .header-menu__list .header-menu__item:nth-child(4) .header-menu__logo {
+        /* logo */
         width: 200px;
         margin-top: -18px;
         margin-bottom: 20px;
@@ -2161,6 +2254,7 @@ table {
         color: black;
         font-family: "Rubik Bold", Arial, sans-serif;
         font-size: 16px;
+        font-weight: bold;
         cursor: pointer; }
       .header-menu__list .header-menu__item:first-child .header-menu__link,
       .header-menu__list .header-menu__item:nth-child(2) .header-menu__link,
@@ -2168,6 +2262,7 @@ table {
       .header-menu__list .header-menu__item:nth-child(6) .header-menu__link {
         border-right: 1px solid black; }
       .header-menu__list .header-menu__item .rooms__list {
+        /* sub-menu for desktop */
         display: none;
         padding-bottom: 10px;
         position: absolute;
@@ -2299,13 +2394,15 @@ table {
     -moz-transition: 0.2s;
     transition: 0.2s;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 24px; }
+    font-size: 24px;
+    font-weight: bold; }
     .section-home__button:hover {
       opacity: 0.8; }
     .section-home__button:active {
       -webkit-transform: translate(0, 4px);
       -moz-transform: translate(0, 4px);
       transform: translate(0, 4px); }
+  /* reviews */
   .section-home__header2 {
     text-align: center;
     margin: 40px auto;
@@ -2323,10 +2420,12 @@ table {
       padding-top: 5px; }
       .section-home__list .section-home__item .section-home__text1 {
         font-family: "Rubik Italic", Arial, sans-serif;
+        font-style: italic;
         margin-top: 10px;
         margin-bottom: 20px; }
       .section-home__list .section-home__item .section-home__text2 {
         font-family: "Rubik Bold", Arial, sans-serif;
+        font-weight: bold;
         margin-top: 10px;
         margin-bottom: 10px; }
   /* rooms */
@@ -2342,6 +2441,7 @@ table {
     text-transform: uppercase;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 24px; }
+  /* filter */
   .section-rooms__radio {
     display: none; }
   .section-rooms__label {
@@ -2352,6 +2452,7 @@ table {
     text-transform: uppercase;
     margin: 20px auto;
     font-family: "Rubik Bold", Arial, sans-serif;
+    font-weight: bold;
     cursor: pointer;
     margin-left: 0.9%;
     margin-top: 20px;
@@ -2398,6 +2499,7 @@ table {
     background: #00cc00;
     color: white;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.5); }
+  /* available and booked rooms */
   .section-rooms__list {
     width: 98%;
     margin: 20px auto;
@@ -2464,7 +2566,8 @@ table {
         -moz-transition: 0.2s;
         transition: 0.2s;
         font-family: "Rubik Bold", Arial, sans-serif;
-        font-size: 24px; }
+        font-size: 24px;
+        font-weight: bold; }
         .section-rooms__list .section-rooms__item .section-rooms__button:hover {
           opacity: 0.8; }
         .section-rooms__list .section-rooms__item .section-rooms__button:active {
@@ -2484,11 +2587,14 @@ table {
         color: white;
         background: black;
         font-family: "Rubik Bold", Arial, sans-serif;
-        font-size: 24px; }
+        font-size: 24px;
+        font-weight: bold; }
         .section-rooms__list .section-rooms__item .section-rooms__link:hover {
           opacity: 0.8; }
+  /* pagination */
   .section-rooms__list.pagination .section-rooms__item {
     border: none; }
+  /* modal window for booking */
   .section-rooms__modal-window {
     position: fixed;
     top: 0px;
@@ -2552,6 +2658,7 @@ table {
     transition: 0.2s;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer; }
     .section-rooms__modal-button:hover {
       opacity: 0.8; }
@@ -2689,13 +2796,7 @@ table {
     text-transform: uppercase;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 24px; }
-  .section-contact__header {
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
-    font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 24px;
-    text-transform: capitalize; }
+  /* contact form */
   .section-contact__form {
     width: 49%;
     margin: 20px auto;
@@ -2703,6 +2804,13 @@ table {
     display: inline;
     float: left;
     border-right: 4px solid black; }
+  .section-contact__header {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: "Rubik Bold", Arial, sans-serif;
+    font-size: 24px;
+    text-transform: capitalize; }
   .section-contact__input {
     display: block;
     width: 95%;
@@ -2746,7 +2854,9 @@ table {
     color: white;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer; }
+  /* contacts */
   .section-contact__paragraph {
     width: 49%;
     margin: 15px auto;
@@ -2762,6 +2872,7 @@ table {
     text-decoration: none;
     color: black;
     font-family: "Rubik Regular", Arial, sans-serif; }
+  /* map */
   .section-contact__map {
     width: 98%;
     margin: 20px auto;
@@ -2771,6 +2882,7 @@ table {
   footer {
     width: 1370px;
     margin: 40px auto; }
+  /* phone number */
   .footer__text {
     margin: 10px auto;
     margin-right: 15px;
@@ -2778,7 +2890,9 @@ table {
     text-decoration: none;
     font-family: "Rubik Bold", Arial, sans-serif;
     font-size: 28px;
+    font-weight: bold;
     float: left; }
+  /* social buttons */
   .footer__list {
     width: 77%;
     margin: 20px auto;
@@ -2798,6 +2912,7 @@ table {
         .footer__list .footer__item .footer__link:hover {
           opacity: 0.8; }
     .footer__list .footer__item.facebook-share {
+      /* share */
       margin-left: 10px; }
     .footer__list .footer__item.facebook-share,
     .footer__list .footer__item.twitter-share,
@@ -2821,6 +2936,7 @@ table {
       opacity: 0.8; }
     .footer__list .footer__item:last-child {
       margin-right: 0px; }
+  /* copyright */
   .footer__copy {
     width: 100%;
     margin: 20px auto;
@@ -2828,4 +2944,5 @@ table {
     text-decoration: none;
     text-align: center;
     font-family: "Rubik Bold", Arial, sans-serif;
-    font-size: 14px; } }
+    font-size: 14px;
+    font-weight: bold; } }

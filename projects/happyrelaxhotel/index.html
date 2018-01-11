@@ -16,23 +16,40 @@
     <!-- menu -->
 
     <ul class="header-menu__list">
+
+      <!-- menu for desktop -->
+
       <li class="header-menu__item"><a href="#section-home" data-tab="section-home" class="header-menu__link active">Home</a></li>
       <li class="header-menu__item"><span class="header-menu__link">Rooms&#9660;</span>
+
+        <!-- sub-menu for desktop -->
+
         <ul class="rooms__list">
           <li class="rooms__item"><a href="#section-rooms-classic" data-tab="section-rooms-classic" class="header-menu__link">Classic</a></li>
           <li class="rooms__item"><a href="#section-rooms-luxe" data-tab="section-rooms-luxe" class="header-menu__link">Luxe</a></li>
           <li class="rooms__item"><a href="#section-rooms-deluxe" data-tab="section-rooms-deluxe" class="header-menu__link">Deluxe</a></li>
         </ul>
       </li>
+
       <li class="header-menu__item"><a href="#section-restaurant" data-tab="section-restaurant" class="header-menu__link">Restaurant</a></li>
+
+      <!-- logo -->
+
       <li class="header-menu__item"><a href="#" class="header-menu__link"><img src="img\logo.svg" alt="Happy relax hotel" class="header-menu__logo"><img src="img\logo2.svg" alt="Happy relax hotel" class="header-menu__logo header-menu__logo2"></a></li>
+
       <li class="header-menu__item"><a href="#section-gallery" data-tab="section-gallery" class="header-menu__link">Gallery</a></li>
       <li class="header-menu__item"><a href="#section-about" data-tab="section-about" class="header-menu__link">About</a></li>
       <li class="header-menu__item"><a href="#section-contact" data-tab="section-contact" class="header-menu__link">Contact</a></li>
+
+      <!-- menu for mobile and tablet -->
+
       <li class="header-menu__item"><a href="#modal" class="header-menu__link">&#9776;Menu</a>
         <div id="modal" class="header-menu__modal-window">
           <div>
             <a href="#close" title="close" class="header-menu__modal-close">X</a>
+
+            <!-- sub-menu for mobile and tablet -->
+
             <ul class="header-menu__modal-list">
               <li class="header-menu__modal-item"><a href="#section-home" data-tab="section-home" class="header-menu__modal-link">Home</a></li>
               <li class="header-menu__modal-item"><a href="#section-rooms-classic" data-tab="section-rooms-classic" class="header-menu__modal-link">Classic Rooms</a></li>
@@ -78,6 +95,9 @@
       <h2 class="section-home__header1">Welcome to our Happy Relax Hotel</h2>
       <p class="section-home__text">Imagine yourself at the floor-to-ceiling windows of your 5-star hotel room, drinking in magnificent views of London’s glittering city district or swimming in the world’s highest and longest infinity pool with its unrivalled panoramic views – a once-in-a-lifetime experience available exclusively to guests of our hotel.</p>
       <a href="#section-rooms-classic" data-tab="section-rooms-classic" class="section-home__button">Book Now</a>
+
+      <!-- reviews -->
+
       <h3 class="section-home__header2">Reviews</h3>
       <ul class="section-home__list">
         <li class="section-home__item">
@@ -111,20 +131,35 @@
 
     <section class="section-rooms tabs" id="section-rooms-classic">
       <h2 class="section-rooms__title">Classic Rooms</h2>
+
+      <!-- filter -->
+
       <input type="radio" name="section-rooms__classic-input" class="section-rooms__radio" id="section-rooms-classic__all" checked>
       <label for="section-rooms-classic__all" class="section-rooms__label">All Rooms</label>
       <input type="radio" name="section-rooms__classic-input" class="section-rooms__radio" id="section-rooms-classic__available">
       <label for="section-rooms-classic__available" class="section-rooms__label">Available Rooms</label>
       <input type="radio" name="section-rooms__classic-input" class="section-rooms__radio" id="section-rooms-classic__booked">
       <label for="section-rooms-classic__booked" class="section-rooms__label">Booked Rooms</label>
+
+      <!-- available rooms -->
+
       <h2 class="section-rooms__title">Available Rooms</h2>
       <ul class="section-rooms__list available"></ul>
+
+      <!-- booked rooms -->
+
       <h2 class="section-rooms__title">Booked Rooms</h2>
       <ul class="section-rooms__list booked"></ul>
+
+      <!-- pagination -->
+
       <ul class="section-rooms__list pagination">
         <li class="section-rooms__item"><a href="#section-rooms-deluxe" data-tab="section-rooms-deluxe" class="section-rooms__link">&#8656; Deluxe Rooms</a></li>
         <li class="section-rooms__item"><a href="#section-rooms-luxe" data-tab="section-rooms-luxe" class="section-rooms__link">Luxe Rooms &#8658;</a></li>
       </ul>
+
+      <!-- modal window for booking -->
+
       <div class="section-rooms__modal-window">
         <div>
           <a href="#" title="close" class="section-rooms__modal-close">X</a>
@@ -139,20 +174,35 @@
 
     <section class="section-rooms tabs" id="section-rooms-luxe">
       <h2 class="section-rooms__title">Luxe Rooms</h2>
+
+      <!-- filter -->
+
       <input type="radio" name="section-rooms__luxe-input" class="section-rooms__radio" id="section-rooms-luxe__all" checked>
       <label for="section-rooms-luxe__all" class="section-rooms__label">All Rooms</label>
       <input type="radio" name="section-rooms__luxe-input" class="section-rooms__radio" id="section-rooms-luxe__available">
       <label for="section-rooms-luxe__available" class="section-rooms__label">Available Rooms</label>
       <input type="radio" name="section-rooms__luxe-input" class="section-rooms__radio" id="section-rooms-luxe__booked">
       <label for="section-rooms-luxe__booked" class="section-rooms__label">Booked Rooms</label>
+
+      <!-- available rooms -->
+
       <h2 class="section-rooms__title">Available Rooms</h2>
       <ul class="section-rooms__list available"></ul>
+
+      <!-- booked rooms -->
+
       <h2 class="section-rooms__title">Booked Rooms</h2>
       <ul class="section-rooms__list booked"></ul>
+
+      <!-- pagination -->
+
       <ul class="section-rooms__list pagination">
         <li class="section-rooms__item"><a href="#section-rooms-classic" data-tab="section-rooms-classic" class="section-rooms__link">&#8656; Classic Rooms</a></li>
         <li class="section-rooms__item"><a href="#section-rooms-deluxe" data-tab="section-rooms-deluxe" class="section-rooms__link">Deluxe Rooms &#8658;</a></li>
       </ul>
+
+      <!-- modal window for booking  -->
+
       <div class="section-rooms__modal-window">
         <div>
           <a href="#" title="close" class="section-rooms__modal-close">X</a>
@@ -167,20 +217,35 @@
 
     <section class="section-rooms tabs" id="section-rooms-deluxe">
       <h2 class="section-rooms__title">Deluxe Rooms</h2>
+
+      <!-- filter -->
+
       <input type="radio" name="section-rooms__deluxe-input" class="section-rooms__radio" id="section-rooms-deluxe__all" checked>
       <label for="section-rooms-deluxe__all" class="section-rooms__label">All Rooms</label>
       <input type="radio" name="section-rooms__deluxe-input" class="section-rooms__radio" id="section-rooms-deluxe__available">
       <label for="section-rooms-deluxe__available" class="section-rooms__label">Available Rooms</label>
       <input type="radio" name="section-rooms__deluxe-input" class="section-rooms__radio" id="section-rooms-deluxe__booked">
       <label for="section-rooms-deluxe__booked" class="section-rooms__label">Booked Rooms</label>
+
+      <!-- available rooms -->
+
       <h2 class="section-rooms__title">Available Rooms</h2>
       <ul class="section-rooms__list available"></ul>
+
+      <!-- booked rooms -->
+
       <h2 class="section-rooms__title">Booked Rooms</h2>
       <ul class="section-rooms__list booked"></ul>
+
+      <!-- pagination -->
+
       <ul class="section-rooms__list pagination">
         <li class="section-rooms__item"><a href="#section-rooms-luxe" data-tab="section-rooms-luxe" class="section-rooms__link">&#8656; Luxe Rooms</a></li>
         <li class="section-rooms__item"><a href="#section-rooms-classic" data-tab="section-rooms-classic" class="section-rooms__link">Classic Rooms &#8658;</a></li>
       </ul>
+
+      <!-- modal window for booking -->
+
       <div class="section-rooms__modal-window">
         <div>
           <a href="#" title="close" class="section-rooms__modal-close">X</a>
@@ -288,6 +353,7 @@
       <p class="section-about__text">There are several options when it comes to booking a room at Happy Relax Hotel. Feel free to browse the website for the perfect option that suits you and your family.</p>
       <p class="section-about__text">We recommend that you view some of the reviews our guests have written about us, on Tripadvisor and Facebook.</p>
       <p class="section-about__text">The employees of Happy Relax Hotel look forward to meeting you and welcome you to our hotel, and we hope you have an enjoyable and memorable stay in London. If you have any questions, please feel free to contact us.</p>
+
       <h2 class="section-about__title">History</h2>
       <p class="section-about__text">Happy Relax Hotel was built in 1997 by Tom Smith in the center of London.</p>
       <p class="section-about__text">For twenty years Happy Relax Hotel has undergone many changes and soon became the place for relax for many tourists.</p>
@@ -297,6 +363,9 @@
 
     <section class="section-contact tabs" id="section-contact">
       <h2 class="section-contact__title">Contact</h2>
+
+      <!-- contact form -->
+
       <form action="#" method="POST" class="section-contact__form">
         <h3 class="section-contact__header">Get in touch</h3>
         <input type="text" name="section-contact__name" placeholder="Your Name" pattern="[A-Za-z]{5,}" title="please enter at least 5 letters" class="section-contact__input" required>
@@ -305,12 +374,18 @@
         <textarea name="section-contact__message" placeholder="Message" class="section-contact__textarea" required></textarea>
         <input type="submit" name="section-contact__send" value="Send" class="section-contact__submit">
       </form>
+
+      <!-- contacts -->
+
       <div class="section-contact__paragraph">
         <h3 class="section-contact__header">Contacts</h3>
         <p class="section-contact__text"><strong>Address</strong>: Happy Relax Hotel, 45 Welbeck St, Marylebone, London W1G 8DN, Great Britain</p>
         <p class="section-contact__text"><strong>Phone</strong>: +44 20 7474 0000</p>
         <p class="section-contact__text"><a href="mailto:hrh@london.com" class="section-contact__link"><strong>Email</strong>: hrh@london.com</a></p>
       </div>
+
+      <!-- map -->
+
       <div class="section-contact__map"></div>
     </section>
   </main>
@@ -318,7 +393,13 @@
   <!-- footer -->
 
   <footer>
+
+    <!-- phone number -->
+
     <p class="footer__text">&#x2706; +44 20 7474 0000</p>
+
+    <!-- social buttons -->
+
     <ul class="footer__list">
       <li class="footer__item">
         <a href="mailto:hrh@london.com" class="footer__link">&#xe424;</a>
@@ -338,12 +419,20 @@
       <li class="footer__item">
         <a href="https://www.youtube.com/user/happyrelaxhotel/" class="footer__link">&#xe499;</a>
       </li>
+
+      <!-- share -->
+
       <li class="footer__item facebook-share">&#xe027;Share On Facebook</li>
       <li class="footer__item twitter-share">&#xe086;Share On Twitter</li>
       <li class="footer__item google-share">&#xe039;Share On Google+</li>
     </ul>
+
+    <!-- copyright -->
+
     <p class="footer__copy">&copy; 2018. Happy Relax Hotel. All Rights Reserved.</p>
   </footer>
+
+  <!-- scripts -->
 
   <script src="js\dest\jquery-3.2.1.min.js"></script>
   <script src="js\dest\script.min.js"></script>

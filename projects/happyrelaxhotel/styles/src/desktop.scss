@@ -13,18 +13,20 @@
     padding-bottom: 20px;
   }
 
+  /* menu */
+
   .header-menu__list {
     width: 729px;
     margin: 20px auto;
 
-    .header-menu__item {
+    .header-menu__item { /* menu for desktop */
       display: inline;
       float: left;
       z-index: 1;
       position: relative;
       margin-top: 15px;
 
-      &:nth-child(4) .header-menu__logo {
+      &:nth-child(4) .header-menu__logo { /* logo */
         width: 200px;
         margin-top: -18px;
         margin-bottom: 20px;
@@ -59,6 +61,7 @@
         color: black;
         font-family: $bold;
         font-size: 16px;
+        font-weight: bold;
         cursor: pointer;
       }
 
@@ -69,7 +72,7 @@
         border-right: 1px solid black;
       }
 
-      .rooms__list {
+      .rooms__list { /* sub-menu for desktop */
         display: none;
         padding-bottom: 10px;
         position: absolute;
@@ -254,6 +257,7 @@
     @include transition(0.2s);
     font-family: $bold;
     font-size: 24px;
+    font-weight: bold;
 
     &:hover {
       opacity: $opacity;
@@ -263,6 +267,8 @@
       @include transform(translate(0, 4px));
     }
   }
+
+  /* reviews */
 
   .section-home__header2 {
     text-align: center;
@@ -285,12 +291,14 @@
 
       .section-home__text1 {
         font-family: $italic;
+        font-style: italic;
         margin-top: 10px;
         margin-bottom: 20px;
       }
 
       .section-home__text2 {
         font-family: $bold;
+        font-weight: bold;
         margin-top: 10px;
         margin-bottom: 10px;
       }
@@ -315,6 +323,8 @@
     font-size: 24px;
   }
 
+  /* filter */
+
   .section-rooms__radio {
     display: none;
   }
@@ -327,6 +337,7 @@
     text-transform: uppercase;
     margin: 20px auto;
     font-family: $bold;
+    font-weight: bold;
     cursor: pointer;
     margin-left: 0.9%;
     margin-top: 20px;
@@ -382,6 +393,8 @@
     color: white;
     text-shadow: $text-shadow;
   }
+
+  /* available and booked rooms */
 
   .section-rooms__list {
     width: 98%;
@@ -458,6 +471,7 @@
         @include transition(0.2s);
         font-family: $bold;
         font-size: 24px;
+        font-weight: bold;
 
         &:hover {
           opacity: $opacity;
@@ -489,6 +503,7 @@
         background: black;
         font-family: $bold;
         font-size: 24px;
+        font-weight: bold;
 
         &:hover {
           opacity: $opacity;
@@ -497,9 +512,13 @@
     }
   }
 
+  /* pagination */
+
   .section-rooms__list.pagination .section-rooms__item {
     border: none;
   }
+
+  /* modal window for booking */
 
   .section-rooms__modal-window {
     position: fixed;
@@ -570,6 +589,7 @@
     @include transition(0.2s);
     font-family: $bold;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer;
 
     &:hover {
@@ -759,14 +779,7 @@
     font-size: 24px;
   }
 
-  .section-contact__header {
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
-    font-family: $bold;
-    font-size: 24px;
-    text-transform: capitalize;
-  }
+  /* contact form */
 
   .section-contact__form {
     width: 49%;
@@ -775,6 +788,15 @@
     display: inline;
     float: left;
     border-right: 4px solid black;
+  }
+
+  .section-contact__header {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: $bold;
+    font-size: 24px;
+    text-transform: capitalize;
   }
 
   .section-contact__input {
@@ -826,8 +848,11 @@
     color: white;
     font-family: $bold;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer;
   }
+
+  /* contacts */
 
   .section-contact__paragraph {
     width: 49%;
@@ -850,6 +875,8 @@
     font-family: $regular;
   }
 
+  /* map */
+
   .section-contact__map {
     width: 98%;
     margin: 20px auto;
@@ -864,6 +891,8 @@
     margin: 20px auto;
   }
 
+  /* phone number */
+
   .footer__text {
     text-align: center;
     margin: 10px auto;
@@ -871,7 +900,10 @@
     text-decoration: none;
     font-family: $bold;
     font-size: 28px;
+    font-weight: bold;
   }
+
+  /* social buttons */
 
   .footer__list {
     width: 731px;
@@ -907,7 +939,7 @@
 
     .footer__item.facebook-share,
     .footer__item.twitter-share,
-    .footer__item.google-share {
+    .footer__item.google-share { /* share */
       display: block;
       margin-right: 10px;
       padding: 10px;
@@ -928,6 +960,8 @@
     }
   }
 
+  /* copyright */
+
   .footer__copy {
     width: 100%;
     margin: 20px auto;
@@ -936,6 +970,7 @@
     text-align: center;
     font-family: $bold;
     font-size: 14px;
+    font-weight: bold;
   }
 }
 
@@ -949,23 +984,25 @@
   /* header */
 
   header {
-    width: 1440px;
+    width: $desktop;
     margin: 0px auto;
     padding-bottom: 20px;
   }
+
+  /* menu */
 
   .header-menu__list {
     width: 95%;
     margin: 20px auto;
 
-    .header-menu__item {
+    .header-menu__item { /* menu for desktop */
       display: inline;
       float: left;
       z-index: 1;
       position: relative;
       margin-top: 15px;
 
-      &:nth-child(4) .header-menu__logo {
+      &:nth-child(4) .header-menu__logo { /* logo */
         width: 200px;
         margin-top: -18px;
         margin-bottom: 20px;
@@ -1003,6 +1040,7 @@
         color: black;
         font-family: $bold;
         font-size: 16px;
+        font-weight: bold;
         cursor: pointer;
       }
 
@@ -1013,7 +1051,7 @@
         border-right: 1px solid black;
       }
 
-      .rooms__list {
+      .rooms__list { /* sub-menu for desktop */
         display: none;
         padding-bottom: 10px;
         position: absolute;
@@ -1133,7 +1171,7 @@
   /* content */
 
   main {
-    width: 1440px;
+    width: $desktop;
     margin: 0px auto;
   }
 
@@ -1200,6 +1238,7 @@
     @include transition(0.2s);
     font-family: $bold;
     font-size: 24px;
+    font-weight: bold;
 
     &:hover {
       opacity: $opacity;
@@ -1209,6 +1248,8 @@
       @include transform(translate(0, 4px));
     }
   }
+
+  /* reviews */
 
   .section-home__header2 {
     text-align: center;
@@ -1231,12 +1272,14 @@
 
       .section-home__text1 {
         font-family: $italic;
+        font-style: italic;
         margin-top: 10px;
         margin-bottom: 20px;
       }
 
       .section-home__text2 {
         font-family: $bold;
+        font-weight: bold;
         margin-top: 10px;
         margin-bottom: 10px;
       }
@@ -1261,6 +1304,8 @@
     font-size: 24px;
   }
 
+  /* filter */
+
   .section-rooms__radio {
     display: none;
   }
@@ -1273,6 +1318,7 @@
     text-transform: uppercase;
     margin: 20px auto;
     font-family: $bold;
+    font-weight: bold;
     cursor: pointer;
     margin-left: 0.9%;
     margin-top: 20px;
@@ -1328,6 +1374,8 @@
     color: white;
     text-shadow: $text-shadow;
   }
+
+  /* available and booked rooms */
 
   .section-rooms__list {
     width: 98%;
@@ -1404,6 +1452,7 @@
         @include transition(0.2s);
         font-family: $bold;
         font-size: 24px;
+        font-weight: bold;
 
         &:hover {
           opacity: $opacity;
@@ -1435,6 +1484,7 @@
         background: black;
         font-family: $bold;
         font-size: 24px;
+        font-weight: bold;
 
         &:hover {
           opacity: $opacity;
@@ -1443,9 +1493,13 @@
     }
   }
 
+  /* pagination */
+
   .section-rooms__list.pagination .section-rooms__item {
     border: none;
   }
+
+  /* modal window for booking */
 
   .section-rooms__modal-window {
     position: fixed;
@@ -1516,6 +1570,7 @@
     @include transition(0.2s);
     font-family: $bold;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer;
 
     &:hover {
@@ -1705,14 +1760,7 @@
     font-size: 24px;
   }
 
-  .section-contact__header {
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
-    font-family: $bold;
-    font-size: 24px;
-    text-transform: capitalize;
-  }
+  /* contact form */
 
   .section-contact__form {
     width: 49%;
@@ -1721,6 +1769,15 @@
     display: inline;
     float: left;
     border-right: 4px solid black;
+  }
+
+  .section-contact__header {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: $bold;
+    font-size: 24px;
+    text-transform: capitalize;
   }
 
   .section-contact__input {
@@ -1772,8 +1829,11 @@
     color: white;
     font-family: $bold;
     font-size: 24px;
+    font-weight: bold;
     cursor: pointer;
   }
+
+  /* contacts */
 
   .section-contact__paragraph {
     width: 49%;
@@ -1796,6 +1856,8 @@
     font-family: $regular;
   }
 
+  /* map */
+
   .section-contact__map {
     width: 98%;
     margin: 20px auto;
@@ -1810,6 +1872,8 @@
     margin: 40px auto;
   }
 
+  /* phone number */
+
   .footer__text {
     margin: 10px auto;
     margin-right: 15px;
@@ -1817,8 +1881,11 @@
     text-decoration: none;
     font-family: $bold;
     font-size: 28px;
+    font-weight: bold;
     float: left;
   }
+
+  /* social buttons */
 
   .footer__list {
     width: 77%;
@@ -1845,7 +1912,7 @@
       }
     }
 
-    .footer__item.facebook-share {
+    .footer__item.facebook-share { /* share */
       margin-left: 10px;
     }
 
@@ -1878,6 +1945,8 @@
     }
   }
 
+  /* copyright */
+
   .footer__copy {
     width: 100%;
     margin: 20px auto;
@@ -1886,5 +1955,6 @@
     text-align: center;
     font-family: $bold;
     font-size: 14px;
+    font-weight: bold;
   }
 }

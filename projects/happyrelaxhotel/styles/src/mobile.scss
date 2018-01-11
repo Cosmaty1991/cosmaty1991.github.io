@@ -15,14 +15,16 @@
     overflow: hidden;
   }
 
+  /* menu */
+
   .header-menu__list {
     width: 95%;
     margin: 20px auto;
 
-    .header-menu__item {
+    .header-menu__item { /* menu for desktop */
       display: none;
 
-      &:nth-child(4) {
+      &:nth-child(4) { /* logo */
         display: block;
         width: 100%;
         text-decoration: none;
@@ -34,7 +36,7 @@
         }
       }
 
-      &:last-child {
+      &:last-child { /* menu for mobile and tablet */
         display: block;
         width: 100%;
         margin: 20px auto;
@@ -46,6 +48,7 @@
           text-transform: uppercase;
           font-family: $bold;
           font-size: 60px;
+          font-weight: bold;
           color: black;
         }
 
@@ -85,7 +88,7 @@
           font-weight: bold;
         }
 
-        .header-menu__modal-list {
+        .header-menu__modal-list { /* sub-menu for mobile and tablet */
           position: absolute;
           left: 20px;
 
@@ -98,6 +101,7 @@
             color: white;
             font-family: $bold;
             font-size: 28px;
+            font-weight: bold;
           }
         }
       }
@@ -229,11 +233,14 @@
     @include transition(0.2s);
     font-family: $bold;
     font-size: 18px;
+    font-weight: bold;
 
     &:active {
       @include transform(translate(0, 4px));
     }
   }
+
+  /* reviews */
 
   .section-home__header2 {
     width: 100%;
@@ -261,12 +268,14 @@
 
       .section-home__text1 {
         font-family: $italic;
+        font-style: italic;
         margin-top: 10px;
         margin-bottom: 20px;
       }
 
       .section-home__text2 {
         font-family: $bold;
+        font-weight: bold;
         margin-top: 10px;
         margin-bottom: 10px;
       }
@@ -289,7 +298,10 @@
     text-transform: uppercase;
     font-family: $bold;
     font-size: 26px;
+    font-weight: bold;
   }
+
+  /* filter */
 
   .section-rooms__radio {
     display: none;
@@ -301,6 +313,7 @@
     text-transform: uppercase;
     margin: 0px auto;
     font-family: $bold;
+    font-weight: bold;
     margin-left: 0.9%;
     margin-top: 20px;
     padding-top: 20px;
@@ -348,6 +361,8 @@
     color: white;
     text-shadow: $text-shadow;
   }
+
+  /* available and booked rooms */
 
   .section-rooms__list {
     width: 98%;
@@ -418,6 +433,7 @@
         @include transition(0.2s);
         font-family: $bold;
         font-size: 18px;
+        font-weight: bold;
 
         &:active {
           @include transform(translate(0, 4px));
@@ -445,9 +461,18 @@
         background: black;
         font-family: $bold;
         font-size: 18px;
+        font-weight: bold;
       }
     }
   }
+
+  /* pagination */
+
+  .section-rooms__list.pagination .section-rooms__item {
+    border: none;
+  }
+
+  /* modal window for booking */
 
   .section-rooms__modal-window {
     position: fixed;
@@ -515,6 +540,7 @@
     @include transition(0.2s);
     font-family: $bold;
     font-size: 18px;
+    font-weight: bold;
 
     &:active {
       @include transform(translate(0, 4px));
@@ -698,6 +724,13 @@
     font-size: 26px;
   }
 
+  /* contact form */
+
+  .section-contact__form {
+    width: 98%;
+    margin: 20px auto;
+  }
+
   .section-contact__header {
     width: 100%;
     margin: 20px auto;
@@ -705,11 +738,6 @@
     font-family: $bold;
     font-size: 18px;
     text-transform: capitalize;
-  }
-
-  .section-contact__form {
-    width: 98%;
-    margin: 20px auto;
   }
 
   .section-contact__input {
@@ -760,7 +788,10 @@
     color: white;
     font-family: $bold;
     font-size: 18px;
+    font-weight: bold;
   }
+
+  /* contacts */
 
   .section-contact__paragraph {
     width: 98%;
@@ -781,6 +812,8 @@
     font-family: $regular;
   }
 
+  /* map */
+
   .section-contact__map {
     width: 95%;
     margin: 20px auto;
@@ -796,6 +829,8 @@
     overflow: hidden;
   }
 
+  /* phone number */
+
   .footer__text {
     width: 100%;
     text-align: center;
@@ -804,7 +839,10 @@
     text-decoration: none;
     font-family: $bold;
     font-size: 28px;
+    font-weight: bold;
   }
+
+  /* social buttons */
 
   .footer__list {
     width: 98%;
@@ -837,7 +875,7 @@
 
     .footer__item.facebook-share,
     .footer__item.twitter-share,
-    .footer__item.google-share {
+    .footer__item.google-share { /* share */
       width: 92%;
       display: block;
       margin-right: 10px;
@@ -852,6 +890,8 @@
     }
   }
 
+  /* copyright */
+
   .footer__copy {
     width: 100%;
     margin: 20px auto;
@@ -860,5 +900,6 @@
     text-align: center;
     font-family: $bold;
     font-size: 12px;
+    font-weight: bold;
   }
 }
