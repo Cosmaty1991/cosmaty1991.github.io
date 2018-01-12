@@ -68,7 +68,9 @@
     <!-- search -->
 
     <div class="header-search">
-      <div class="gcse-search" data-newWindow="true" data-queryParameterName="search"></div>
+      <input type="text" name="header-search__input" placeholder="Search" class="header-search__input">
+      <a href="#" title="clear" class="header-search__clear">X</a>
+      <a href="#" title="search" class="header-search__submit"><img src="img\search.svg" alt="Search" class="header-search__image"></a>
     </div>
 
     <!-- slider -->
@@ -435,6 +437,7 @@
   <!-- scripts -->
 
   <script src="js\dest\jquery-3.2.1.min.js"></script>
+  <script src="js\dest\jquery.mark.min.js"></script>
   <script src="js\dest\script.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2PvX2cEUEyzCv7gbAwDSaAp8ybBZxqsg&callback=initMap"></script>
 </body>
