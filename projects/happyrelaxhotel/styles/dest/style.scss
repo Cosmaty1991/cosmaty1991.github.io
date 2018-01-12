@@ -341,7 +341,8 @@ table {
     color: white;
     font-size: 48px;
     font-weight: bold;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    text-shadow: $text-shadow;
   }
 
   .header-slider__item-prev {
@@ -1293,6 +1294,7 @@ table {
     color: white;
     font-size: 48px;
     font-weight: bold;
+    text-decoration: none;
     text-shadow: $text-shadow;
   }
 
@@ -2266,6 +2268,7 @@ table {
     color: white;
     font-size: 48px;
     font-weight: bold;
+    text-decoration: none;
     cursor: pointer;
   }
 
@@ -3293,6 +3296,7 @@ table {
     color: white;
     font-size: 48px;
     font-weight: bold;
+    text-decoration: none;
     cursor: pointer;
   }
 

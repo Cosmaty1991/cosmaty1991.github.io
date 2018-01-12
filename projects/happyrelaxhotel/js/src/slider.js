@@ -46,13 +46,17 @@ function showSlides(n) {
 
 // click on previous arrow to show previous slide
 
-document.querySelector('.header-slider__item-prev').addEventListener('click', function() {
+document.querySelector('.header-slider__item-prev').addEventListener('click', function(e) {
+  e.preventDefault();
+
   prevSlide(1);
 });
 
 // click on next arrow to show next slide
 
-document.querySelector('.header-slider__item-next').addEventListener('click', function() {
+document.querySelector('.header-slider__item-next').addEventListener('click', function(e) {
+  e.preventDefault();
+
   nextSlide(1);
 });
 
