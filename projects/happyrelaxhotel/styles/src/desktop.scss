@@ -1035,7 +1035,7 @@
   /* header */
 
   header {
-    width: $desktop;
+    width: 100%;
     margin: 0px auto;
     padding-bottom: 20px;
   }
@@ -1043,7 +1043,7 @@
   /* menu */
 
   .header-menu__list {
-    width: 95%;
+    width: 1368px;
     margin: 20px auto;
 
     .header-menu__item { /* menu for desktop */
@@ -1272,7 +1272,7 @@
   /* content */
 
   main {
-    width: $desktop;
+    width: 100%;
     margin: 0px auto;
   }
 

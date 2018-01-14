@@ -2931,13 +2931,13 @@ table {
   }
   /* header */
   header {
-    width: 1440px;
+    width: 100%;
     margin: 0px auto;
     padding-bottom: 20px;
   }
   /* menu */
   .header-menu__list {
-    width: 95%;
+    width: 1368px;
     margin: 20px auto;
   }
 
@@ -3163,7 +3163,7 @@ table {
   }
   /* content */
   main {
-    width: 1440px;
+    width: 100%;
     margin: 0px auto;
   }
 
