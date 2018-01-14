@@ -76,11 +76,11 @@
     <!-- slider -->
 
     <ul class="header-slider__list">
-      <li class="header-slider__item"><img class="header-slider__image" src="img\view1.jpg" alt="photo1" title="hotel building"></li>
-      <li class="header-slider__item"><img class="header-slider__image" src="img\view2.jpg" alt="photo2" title="view from window"></li>
-      <li class="header-slider__item"><img class="header-slider__image" src="img\view3.jpg" alt="photo3" title="view from window"></li>
-      <li class="header-slider__item"><img class="header-slider__image" src="img\view4.jpg" alt="photo5" title="reception"></li>
-      <li class="header-slider__item"><img class="header-slider__image" src="img\view5.jpg" alt="photo6" title="corridor"></li>
+      <li class="header-slider__item"><img class="header-slider__image" data-object-fit="cover" src="img\view1.jpg" alt="photo1" title="hotel building"></li>
+      <li class="header-slider__item"><img class="header-slider__image" src="img\view2.jpg" alt="photo2" title="view from window" data-object-fit="cover"></li>
+      <li class="header-slider__item"><img class="header-slider__image" src="img\view3.jpg" alt="photo3" title="view from window" data-object-fit="cover"></li>
+      <li class="header-slider__item"><img class="header-slider__image" src="img\view4.jpg" alt="photo5" title="reception" data-object-fit="cover"></li>
+      <li class="header-slider__item"><img class="header-slider__image" src="img\view5.jpg" alt="photo6" title="corridor" data-object-fit="cover"></li>
     </ul>
     <a class="header-slider__item-prev" href="#">&#8592;</a>
     <a class="header-slider__item-next" href="#">&#8594;</a>
@@ -438,6 +438,7 @@
 
   <script src="js\dest\jquery-3.2.1.min.js"></script>
   <script src="js\dest\jquery.mark.min.js"></script>
+  <script src="js\dest\object-fit-polyfill.min.js"></script>
   <script src="js\dest\script.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2PvX2cEUEyzCv7gbAwDSaAp8ybBZxqsg&callback=initMap"></script>
 </body>

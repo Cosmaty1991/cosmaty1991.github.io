@@ -60,7 +60,7 @@ gulp.task('default', function() {
 
 gulp.task('watch', function() {
   gulp.watch('styles/src/*.scss', ['concat']);
-  gulp.watch('styles/src/*.scss', ['sass']);
+  gulp.watch('styles/dest/*.scss', ['sass']);
   gulp.watch('styles/dest/*.css', ['cssbeautify']);
   gulp.watch('styles/dest/*.css', ['minify-css']);
   gulp.watch('js/src/*.js', ['scripts']);

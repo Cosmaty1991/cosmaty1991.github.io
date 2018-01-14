@@ -2079,7 +2079,8 @@ table {
 
       &:nth-child(4) .header-menu__logo { /* logo */
         width: 200px;
-        margin-top: -18px;
+        height: 100%;
+        margin-top: -20px;
         margin-bottom: 20px;
         text-decoration: none;
         font-family: Arial, sans-serif;
@@ -2255,6 +2256,7 @@ table {
       width: 100%;
       height: 300px;
       object-fit: cover;
+      overflow: hidden;
       display: inline;
       float: right;
     }
@@ -3104,7 +3106,8 @@ table {
 
       &:nth-child(4) .header-menu__logo { /* logo */
         width: 200px;
-        margin-top: -18px;
+        height: 100%;
+        margin-top: -20px;
         margin-bottom: 20px;
         text-decoration: none;
         font-family: Arial, sans-serif;
@@ -3283,6 +3286,7 @@ table {
       width: 100%;
       height: 300px;
       object-fit: cover;
+      overflow: hidden;
       display: inline;
       float: right;
     }
