@@ -25,7 +25,7 @@ function Tabs() {
     }
   }
 
-  // create a function that make active main sections
+  // create a function that will make active main sections
 
   var change = function(e) {
     clear();

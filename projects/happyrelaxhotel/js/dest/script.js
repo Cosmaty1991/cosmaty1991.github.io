@@ -82,7 +82,7 @@ $(function() {
 
   var totalRooms = roomsClassic.length;
 
-  // add classic rooms on website
+  // create a function that will add classic rooms on website
 
   function showRoomsClassic() {
     $('#section-rooms-classic .available').html('');
@@ -134,7 +134,7 @@ $(function() {
     return number;
   });
 
-  // click on the modal button to book classic room
+  // click on the modal button to book room
 
   $('#section-rooms-classic .section-rooms__modal-window .section-rooms__modal-form').on('submit', function(e) {
     e.preventDefault();
@@ -248,7 +248,7 @@ $(function() {
 
   var totalRooms = roomsDeluxe.length;
 
-  // add deluxe rooms on website
+  // create a function that will add deluxe rooms on website
 
   function showRoomsDeluxe() {
     $('#section-rooms-deluxe .available').html('');
@@ -300,7 +300,7 @@ $(function() {
     return number;
   });
 
-  // click on the modal button to book classic room
+  // click on the modal button to book room
 
   $('#section-rooms-deluxe .section-rooms__modal-window .section-rooms__modal-form').on('submit', function(e) {
     e.preventDefault();
@@ -414,7 +414,7 @@ $(function() {
 
   var totalRooms = roomsLuxe.length;
 
-  // add luxe rooms on website
+  // create a function that will add luxe rooms on website
 
   function showRoomsLuxe() {
     $('#section-rooms-luxe .available').html('');
@@ -466,7 +466,7 @@ $(function() {
     return number;
   });
 
-  // click on the modal button to book classic room
+  // click on the modal button to book room
 
   $('#section-rooms-luxe .section-rooms__modal-window .section-rooms__modal-form').on('submit',   function(e) {
     e.preventDefault();
@@ -535,7 +535,7 @@ $(function() {
   var currentIndex = 0;
 
 
-  // create function that jump to the element matching the current index
+  // create a function that will jump to the element matching the current index
 
   function jumpTo() {
     if (results.length) {
@@ -553,7 +553,7 @@ $(function() {
     }
   }
 
-  // create function that search for the entered keyword in the specified context on input
+  // create a function that will search for the entered keyword in the specified context on input
 
   input.on('input', function() {
     var searchVal = this.value;
@@ -591,7 +591,7 @@ $(function() {
     }
   });
 
-  // create function that show the clear button when input is active
+  // create a function that will show the clear button when input is active
 
   input.on('input', function() {
     clear.fadeIn();
@@ -677,25 +677,25 @@ var slideIndex = 1;
 
 showSlides(slideIndex);
 
-// create a function that show previous slide
+// create a function that will show previous slide
 
 function prevSlide(n) {
   showSlides(slideIndex -= n);
 }
 
-// create a function that show next slide
+// create a function that will show next slide
 
 function nextSlide(n) {
   showSlides(slideIndex += n);
 }
 
-// create a function that show current slide
+// create a function that will show current slide
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-// create a function that show slides
+// create a function that will show slides
 
 function showSlides(n) {
   var slides = document.querySelectorAll('.header-slider__item');
@@ -729,7 +729,7 @@ document.querySelector('.header-slider__item-next').addEventListener('click', fu
   nextSlide(1);
 });
 
-// press on previous arrow to show previous slide and press on next arrow to show next slide
+// press on the left arrow to show previous slide and press on the right arrow to show next slide
 
 window.addEventListener('keydown', function(e) {
   if (e.keyCode === 37) {
@@ -766,7 +766,7 @@ function Tabs() {
     }
   }
 
-  // create a function that make active main sections
+  // create a function that will make active main sections
 
   var change = function(e) {
     clear();

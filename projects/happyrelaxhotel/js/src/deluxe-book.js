@@ -82,7 +82,7 @@ $(function() {
 
   var totalRooms = roomsDeluxe.length;
 
-  // add deluxe rooms on website
+  // create a function that will add deluxe rooms on website
 
   function showRoomsDeluxe() {
     $('#section-rooms-deluxe .available').html('');
@@ -134,7 +134,7 @@ $(function() {
     return number;
   });
 
-  // click on the modal button to book classic room
+  // click on the modal button to book room
 
   $('#section-rooms-deluxe .section-rooms__modal-window .section-rooms__modal-form').on('submit', function(e) {
     e.preventDefault();

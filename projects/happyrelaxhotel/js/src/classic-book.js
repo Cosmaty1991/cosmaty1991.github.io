@@ -82,7 +82,7 @@ $(function() {
 
   var totalRooms = roomsClassic.length;
 
-  // add classic rooms on website
+  // create a function that will add classic rooms on website
 
   function showRoomsClassic() {
     $('#section-rooms-classic .available').html('');
@@ -134,7 +134,7 @@ $(function() {
     return number;
   });
 
-  // click on the modal button to book classic room
+  // click on the modal button to book room
 
   $('#section-rooms-classic .section-rooms__modal-window .section-rooms__modal-form').on('submit', function(e) {
     e.preventDefault();

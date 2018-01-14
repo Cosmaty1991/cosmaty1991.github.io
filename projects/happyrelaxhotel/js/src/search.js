@@ -11,7 +11,7 @@ $(function() {
   var currentIndex = 0;
 
 
-  // create function that jump to the element matching the current index
+  // create a function that will jump to the element matching the current index
 
   function jumpTo() {
     if (results.length) {
@@ -29,7 +29,7 @@ $(function() {
     }
   }
 
-  // create function that search for the entered keyword in the specified context on input
+  // create a function that will search for the entered keyword in the specified context on input
 
   input.on('input', function() {
     var searchVal = this.value;
@@ -67,7 +67,7 @@ $(function() {
     }
   });
 
-  // create function that show the clear button when input is active
+  // create a function that will show the clear button when input is active
 
   input.on('input', function() {
     clear.fadeIn();

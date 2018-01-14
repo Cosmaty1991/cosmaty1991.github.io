@@ -8,25 +8,25 @@ var slideIndex = 1;
 
 showSlides(slideIndex);
 
-// create a function that show previous slide
+// create a function that will show previous slide
 
 function prevSlide(n) {
   showSlides(slideIndex -= n);
 }
 
-// create a function that show next slide
+// create a function that will show next slide
 
 function nextSlide(n) {
   showSlides(slideIndex += n);
 }
 
-// create a function that show current slide
+// create a function that will show current slide
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-// create a function that show slides
+// create a function that will show slides
 
 function showSlides(n) {
   var slides = document.querySelectorAll('.header-slider__item');
@@ -60,7 +60,7 @@ document.querySelector('.header-slider__item-next').addEventListener('click', fu
   nextSlide(1);
 });
 
-// press on previous arrow to show previous slide and press on next arrow to show next slide
+// press on the left arrow to show previous slide and press on the right arrow to show next slide
 
 window.addEventListener('keydown', function(e) {
   if (e.keyCode === 37) {
