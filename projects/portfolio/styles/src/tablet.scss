@@ -105,22 +105,22 @@
     margin-bottom: 10px;
     border: 5px solid black;
     display: block;
-    background: url(../../img/image1b.png);
+    background: url(../../img/image1b.jpg);
     background-size: cover;
 
     &:hover {
-      background: url(../../img/image1.png);
+      background: url(../../img/image1.jpg);
       background-size: cover;
       @include transition(1s);
     }
 
     &:last-child {
       margin-bottom: 0px;
-      background: url(../../img/image2b.png);
+      background: url(../../img/image2b.jpg);
       background-size: cover;
 
       &:hover {
-        background: url(../../img/image2.png);
+        background: url(../../img/image2.jpg);
         background-size: cover;
       }
     }

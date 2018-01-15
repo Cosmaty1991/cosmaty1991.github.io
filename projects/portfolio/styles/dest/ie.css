@@ -196,12 +196,12 @@ main {
   display: inline;
   float: left;
   margin-right: 20px;
-  background: url(../../img/image1bie.png);
+  background: url(../../img/image1bie.jpg);
 }
 
 .main__item2 {
   margin-right: 0px;
-  background: url(../../img/image2bie.png);
+  background: url(../../img/image2bie.jpg);
 }
 
 .main__item a {
