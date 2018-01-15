@@ -2284,8 +2284,8 @@ table {
     margin-right: 3%;
   }
 
-  .header-slider__prev:hover,
-  .header-slider__next:hover {
+  .header-slider__item-prev:hover,
+  .header-slider__item-next:hover {
     color: $red;
     text-shadow: $text-shadow;
   }
@@ -2797,7 +2797,7 @@ table {
       .section-gallery__modal-window > div {
         width: 100%;
         height: 100%;
-        padding-top: 80px;
+		padding-top: 30px;
         background: rgba(128, 128, 128, 0.8);
       }
 
@@ -2805,7 +2805,7 @@ table {
         color: $red;
         position: absolute;
         right: 40px;
-        top: 20px;
+        top: 50px;
         text-align: center;
         width: 24px;
         text-decoration: none;
@@ -2823,6 +2823,7 @@ table {
         display: block;
         object-fit: cover;
         width: 100%;
+		height: 90%;
         text-transform: uppercase;
         text-decoration: none;
         border: none;
@@ -3828,7 +3829,7 @@ table {
       .section-gallery__modal-window > div {
         width: 100%;
         height: 100%;
-        padding-top: 80px;
+		padding-top: 30px;
         background: rgba(128, 128, 128, 0.8);
       }
 
@@ -3836,7 +3837,7 @@ table {
         color: $red;
         position: absolute;
         right: 40px;
-        top: 20px;
+        top: 50px;
         text-align: center;
         width: 24px;
         text-decoration: none;
@@ -3854,6 +3855,7 @@ table {
         display: block;
         object-fit: cover;
         width: 100%;
+		height: 90%;
         text-transform: uppercase;
         text-decoration: none;
         border: none;
