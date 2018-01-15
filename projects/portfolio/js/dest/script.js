@@ -6,14 +6,14 @@
   var links = document.getElementsByTagName('a');
   var href;
 
-  for (var i = 0; i < links.length; i++) {   
+  for (var i = 0; i < links.length; i++) {
     href = (links[i].attributes.href === undefined) ? null : links[i].attributes.href.nodeValue.toString();
-	
+
     if (href !== null && href.length > 1 && href.substr(0, 1) == '#') {
       links[i].onclick = function() {
         var element;
         var href = this.attributes.href.nodeValue.toString();
-	  
+
         if (element = document.getElementById(href.substr(1))) {
           var hop_count = speed / moving_frequency
           var getScrollTopDocumentAtBegin = getScrollTopDocument();
@@ -22,10 +22,10 @@
           for (var i = 1; i <= hop_count; i++) {
             (function() {
               var hop_top_position = gap * i;
-			
-              setTimeout(function(){
-  		        window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin);
-  			  }, moving_frequency * i);
+
+              setTimeout(function() {
+                window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin);
+              }, moving_frequency * i);
             })();
           }
         }
