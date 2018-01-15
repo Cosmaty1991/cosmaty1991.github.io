@@ -2,7 +2,7 @@
 
 ## Specification
 
-- HTML5, CSS3, JavaScript (ES5, jQuery)
+- HTML5, CSS3, JavaScript (ES5)
 
 - BEM, SASS, Gulp
 

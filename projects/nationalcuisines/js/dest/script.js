@@ -1,4 +1,4 @@
-// menu
+// tabs
 
 $(function() {
   $('.main__subitem a').click(function(e) {
