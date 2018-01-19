@@ -10,7 +10,6 @@ $(function() {
   var offsetTop = 50;
   var currentIndex = 0;
 
-
   // create a function that will jump to the element matching the current index
 
   function jumpTo() {

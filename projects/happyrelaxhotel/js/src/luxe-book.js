@@ -136,7 +136,7 @@ $(function() {
 
   // click on the modal button to book room
 
-  $('#section-rooms-luxe .section-rooms__modal-window .section-rooms__modal-form').on('submit',   function(e) {
+  $('#section-rooms-luxe .section-rooms__modal-window .section-rooms__modal-form').on('submit', function(e) {
     e.preventDefault();
 
     var number = $('#section-rooms-luxe .section-rooms__modal-number').text();

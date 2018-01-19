@@ -333,14 +333,15 @@ $(function() {
 // internet explorer hover fix
 
 for (var i = 0; i < document.querySelectorAll('.header-menu__item').length; i++) {
-  document.querySelectorAll('.header-menu__item')[1].addEventListener('mouseover', function(){
+  document.querySelectorAll('.header-menu__item')[1].addEventListener('mouseover', function() {
     document.querySelector('.rooms__list').style.display = 'block';
   });
-  
-  document.querySelector('.rooms__list').addEventListener('mouseout', function(){
+
+  document.querySelector('.rooms__list').addEventListener('mouseout', function() {
     this.style.display = 'none';
   });
 }
+
 // booking luxe rooms
 
 $(function() {
@@ -479,7 +480,7 @@ $(function() {
 
   // click on the modal button to book room
 
-  $('#section-rooms-luxe .section-rooms__modal-window .section-rooms__modal-form').on('submit',   function(e) {
+  $('#section-rooms-luxe .section-rooms__modal-window .section-rooms__modal-form').on('submit', function(e) {
     e.preventDefault();
 
     var number = $('#section-rooms-luxe .section-rooms__modal-number').text();
@@ -544,7 +545,6 @@ $(function() {
   var currentClass = 'current';
   var offsetTop = 50;
   var currentIndex = 0;
-
 
   // create a function that will jump to the element matching the current index
 
