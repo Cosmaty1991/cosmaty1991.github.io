@@ -2,28 +2,29 @@
 
 @media screen and (min-width: $tablet + 1px) and (max-width: $desktop) {
   body {
-    width: $desktop;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   /* home */
 
   header {
-    width: $desktop;
+    width: 100%;
     background: #87509c;
     overflow: hidden;
     padding-bottom: 140px;
   }
 
   .header__container {
-    width: $desktop - 40px;
+    width: 728px;
     margin: 0px auto;
   }
 
   .header__logo a {
     display: inline;
     float: left;
-    margin-right: 820px;
-    margin-top: 10px;
+    margin-right: 20%;
+    margin-top: 7px;
     color: white;
     text-decoration: none;
     font-family: $bold;
@@ -33,6 +34,7 @@
   .header__list {
     overflow: hidden;
     list-style: none;
+    margin-bottom: 140px;
   }
 
   .header__item {
@@ -66,17 +68,18 @@
 
   .header__paragraph {
     color: white;
-    margin-top: 140px;
     margin-bottom: 62px;
     text-align: center;
     font-family: $bold;
-    font-size: $font-size;
+    font-size: $font-size - 10px;
   }
 
   .header__button {
     width: 275px;
-    height: 92px;
+    height: 72px;
     margin: 0px auto;
+    padding-top: 25px;
+    text-align: center;
     display: block;
     text-shadow: 0 -1px rgba(0,0,0,.5);
     user-select: none;
@@ -84,28 +87,29 @@
     @include border-radius(5px);
     outline: none;
     background: #eb7d4b;
+    font-family: $bold;
+    font-size: $font-size;
+    color: white;
+    text-decoration: none;
     -webkit-box-shadow: $box-shadow;
     -moz-box-shadow: $box-shadow;
     box-shadow: $box-shadow;
     @include transition(.2s);
 
-    &:active {
-      @include transform(translate(0, 4px));
+    &:hover {
+      background: #8a360f;
     }
 
-    a {
-      display: block;
-      font-family: $bold;
-      font-size: $font-size;
-      color: white;
-      text-decoration: none;
+    &:active {
+      @include transform(translate(0, 4px));
     }
   }
 
   /* works */
 
   main {
-    width: $desktop;
+    width: 100%;
+    display: block;
     font-family: $bold;
     font-size: $font-size;
     background: #ffdd99;
@@ -114,7 +118,7 @@
   }
 
   .main__container {
-    width: $desktop - 40px;
+    width: 95%;
     margin: 0px auto;
   }
 
@@ -126,6 +130,7 @@
   .main__paragraph {
     text-align: center;
     margin-bottom: 20px;
+    font-size: $font-size - 10px;
   }
 
   .main__list {
@@ -133,41 +138,43 @@
   }
 
   .main__item {
+    width: 47%;
+    height: 350px;
+    margin-right: 3%;
+    margin-bottom: 10px;
     border: 5px solid black;
     display: inline;
     float: left;
-    margin-right: 20px;
-    background: url(../../img/image1b.jpg);
+    background: url(../../img/image1b.jpg) center;
     background-size: cover;
+    cursor: pointer;
 
     &:hover {
-      background: url(../../img/image1.jpg);
+      background: url(../../img/image1.jpg) center;
       background-size: cover;
       @include transition(1s);
     }
 
     &:last-child {
       margin-right: 0px;
-      background: url(../../img/image2b.jpg);
+      background: url(../../img/image2b.jpg) center;
       background-size: cover;
 
       &:hover {
-        background: url(../../img/image2.jpg);
+        background: url(../../img/image2.jpg) center;
         background-size: cover;
       }
     }
 
     a {
       display: block;
-      width: 680px;
-      height: 350px;
     }
   }
 
   /* skills */
 
   section {
-    width: $desktop;
+    width: 100%;
     box-sizing: border-box;
     padding-top: 50px;
     padding-bottom: 120px;
@@ -177,7 +184,7 @@
   }
 
   .section__container {
-    width: $desktop - 40px;
+    width: 95%;
     margin: 0px auto;
   }
 
@@ -197,6 +204,7 @@
 
   .container {
     width: 100%;
+    margin-top: 10px;
     background-color: white;
   }
 
@@ -227,14 +235,14 @@
   /* contacts */
 
   footer {
-    width: $desktop;
+    width: 100%;
     background: #344b8e;
     overflow: hidden;
     padding-bottom: 20px;
   }
 
   .footer__container {
-    width: $desktop - 40px;
+    width: 728px;
     margin: 0px auto;
 
     .ie {
@@ -245,8 +253,8 @@
   .footer__paragraph {
     display: inline;
     float: left;
-    margin-right: 660px;
-    margin-top: 15px;
+    margin-right: 10%;
+    margin-top: 22px;
     color: white;
     text-decoration: none;
     font-family: $regular;
@@ -261,7 +269,7 @@
   .footer__item {
     display: inline;
     float: left;
-    margin-right: 40px;
+    margin-right: 10px;
     margin-top: 20px;
 
     &:last-child {
@@ -298,21 +306,22 @@
   /* home */
 
   header {
+    width: 100%;
     background: #87509c;
     overflow: hidden;
     padding-bottom: 140px;
   }
 
   .header__container {
-    width: $desktop;
+    width: 1368px;
     margin: 0px auto;
   }
 
   .header__logo a {
     display: inline;
     float: left;
-    margin-right: 820px;
-    margin-top: 10px;
+    margin-right: 58%;
+    margin-top: 7px;
     color: white;
     text-decoration: none;
     font-family: $bold;
@@ -322,12 +331,13 @@
   .header__list {
     overflow: hidden;
     list-style: none;
+    margin-bottom: 140px;
   }
 
   .header__item {
     display: inline;
     float: left;
-    margin-right: 20px;
+    margin-right: 18px;
     margin-top: 20px;
 
     &:last-child {
@@ -355,17 +365,18 @@
 
   .header__paragraph {
     color: white;
-    margin-top: 140px;
     margin-bottom: 62px;
     text-align: center;
     font-family: $bold;
-    font-size: $font-size;
+    font-size: $font-size - 10px;
   }
 
   .header__button {
     width: 275px;
-    height: 92px;
+    height: 72px;
     margin: 0px auto;
+    padding-top: 25px;
+    text-align: center;
     display: block;
     text-shadow: 0 -1px rgba(0,0,0,.5);
     user-select: none;
@@ -373,27 +384,29 @@
     @include border-radius(5px);
     outline: none;
     background: #eb7d4b;
+    font-family: $bold;
+    font-size: $font-size;
+    color: white;
+    text-decoration: none;
     -webkit-box-shadow: $box-shadow;
     -moz-box-shadow: $box-shadow;
     box-shadow: $box-shadow;
     @include transition(.2s);
 
-    &:active {
-      @include transform(translate(0, 4px));
+    &:hover {
+      background: #8a360f;
     }
 
-    a {
-      display: block;
-      font-family: $bold;
-      font-size: $font-size;
-      color: white;
-      text-decoration: none;
+    &:active {
+      @include transform(translate(0, 4px));
     }
   }
 
   /* works */
 
   main {
+    width: 100%;
+    display: block;
     font-family: $bold;
     font-size: $font-size;
     background: #ffdd99;
@@ -402,7 +415,7 @@
   }
 
   .main__container {
-    width: $desktop;
+    width: 95%;
     margin: 0px auto;
   }
 
@@ -414,6 +427,7 @@
   .main__paragraph {
     text-align: center;
     margin-bottom: 20px;
+    font-size: $font-size - 10px;
   }
 
   .main__list {
@@ -421,40 +435,43 @@
   }
 
   .main__item {
+    width: 47%;
+    height: 350px;
+    margin-right: 3%;
+    margin-bottom: 10px;
     border: 5px solid black;
     display: inline;
     float: left;
-    margin-right: 20px;
-    background: url(../../img/image1b.jpg);
+    background: url(../../img/image1b.jpg) center;
     background-size: cover;
+    cursor: pointer;
 
     &:hover {
-      background: url(../../img/image1.jpg);
+      background: url(../../img/image1.jpg) center;
       background-size: cover;
       @include transition(1s);
     }
 
     &:last-child {
       margin-right: 0px;
-      background: url(../../img/image2b.jpg);
+      background: url(../../img/image2b.jpg) center;
       background-size: cover;
 
       &:hover {
-        background: url(../../img/image2.jpg);
+        background: url(../../img/image2.jpg) center;
         background-size: cover;
       }
     }
 
     a {
       display: block;
-      width: 700px;
-      height: 350px;
     }
   }
 
   /* skills */
 
   section {
+    width: 100%;
     box-sizing: border-box;
     padding-top: 50px;
     padding-bottom: 120px;
@@ -464,7 +481,7 @@
   }
 
   .section__container {
-    width: $desktop;
+    width: 95%;
     margin: 0px auto;
   }
 
@@ -484,6 +501,7 @@
 
   .container {
     width: 100%;
+    margin-top: 10px;
     background-color: white;
   }
 
@@ -514,13 +532,14 @@
   /* contacts */
 
   footer {
+    width: 100%;
     background: #344b8e;
     overflow: hidden;
     padding-bottom: 20px;
   }
 
   .footer__container {
-    width: $desktop;
+    width: 1368px;
     margin: 0px auto;
 
     .ie {
@@ -531,8 +550,8 @@
   .footer__paragraph {
     display: inline;
     float: left;
-    margin-right: 660px;
-    margin-top: 15px;
+    margin-right: 52%;
+    margin-top: 22px;
     color: white;
     text-decoration: none;
     font-family: $regular;
@@ -547,7 +566,7 @@
   .footer__item {
     display: inline;
     float: left;
-    margin-right: 40px;
+    margin-right: 12px;
     margin-top: 20px;
 
     &:last-child {

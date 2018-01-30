@@ -2,7 +2,7 @@
 
 (function() {
   var speed = 1000;
-  var moving_frequency = 15;
+  var movingFrequency = 15;
   var links = document.getElementsByTagName('a');
   var href;
 
@@ -15,17 +15,17 @@
         var href = this.attributes.href.nodeValue.toString();
 
         if (element = document.getElementById(href.substr(1))) {
-          var hop_count = speed / moving_frequency
+          var hopCount = speed / movingFrequency
           var getScrollTopDocumentAtBegin = getScrollTopDocument();
-          var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count;
+          var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hopCount;
 
-          for (var i = 1; i <= hop_count; i++) {
+          for (var i = 1; i <= hopCount; i++) {
             (function() {
-              var hop_top_position = gap * i;
+              var hopTopPosition = gap * i;
 
               setTimeout(function() {
-                window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin);
-              }, moving_frequency * i);
+                window.scrollTo(0, hopTopPosition + getScrollTopDocumentAtBegin);
+              }, movingFrequency * i);
             })();
           }
         }
