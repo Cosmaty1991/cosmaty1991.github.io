@@ -800,13 +800,12 @@ table {
   .footer__paragraph {
     display: inline;
     float: left;
-    margin-right: 10%;
+    margin-right: 6%;
     margin-top: 22px;
     color: white;
     text-decoration: none;
     font-family: "Titillium Regular", Arial, sans-serif;
     font-size: 42px;
-    cursor: pointer;
   }
 
   .footer__list {
@@ -1096,13 +1095,12 @@ table {
   .footer__paragraph {
     display: inline;
     float: left;
-    margin-right: 52%;
+    margin-right: 50%;
     margin-top: 22px;
     color: white;
     text-decoration: none;
     font-family: "Titillium Regular", Arial, sans-serif;
     font-size: 42px;
-    cursor: pointer;
   }
 
   .footer__list {
