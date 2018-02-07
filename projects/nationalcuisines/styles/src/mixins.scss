@@ -1,5 +1,18 @@
+@mixin background-gradient($first-gradient, $second-gradient, $third-gradient) {
+  background: $first-gradient;
+  background: -webkit-linear-gradient(top, $first-gradient 0%, $second-gradient 47%, $third-gradient 100%);
+  background: -moz-linear-gradient(top, $first-gradient 0%, $second-gradient 47%, $third-gradient 100%);
+  background: -ms-linear-gradient(top, $first-gradient 0%, $second-gradient 47%, $third-gradient 100%);
+  background: -o-linear-gradient(top, $first-gradient 0%, $second-gradient 47%, $third-gradient 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $first-gradient), color-stop(47%, $second-gradient), color-stop(100%, $third-gradient));
+  background: linear-gradient(to bottom, $first-gradient 0%, $second-gradient 47%, $third-gradient 100%);
+  filter:     progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+}
+
 @mixin box-shadow($box-shadow) {
   -webkit-box-shadow: $box-shadow;
   -moz-box-shadow:    $box-shadow;
+  -ms-box-shadow:     $box-shadow;
+  -o-box-shadow:      $box-shadow;
   box-shadow:         $box-shadow;
 }
