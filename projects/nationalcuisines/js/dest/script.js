@@ -1,3 +1,5 @@
+// menu for mobile and tablet
+
 $(function() {
 
   // click on the menu button to show the modal window

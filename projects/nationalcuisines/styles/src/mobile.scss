@@ -6,7 +6,7 @@
     overflow-x: hidden;
   }
 
-  /* logo */
+  /* header */
 
   .header {
     width: 100%;
@@ -16,6 +16,8 @@
     background: url(../../img/header.jpg) no-repeat #45403d;
     background-size: cover;
   }
+
+  /* logo */
 
   .header__image {
     width: 50px;
@@ -207,7 +209,7 @@
     display: block;
   }
 
-  /* icons */
+  /* footer */
 
   .footer {
     width: 100%;
@@ -215,6 +217,8 @@
     padding-top: 20px;
     background: $black;
   }
+
+  /* icons */
 
   .footer__list {
     width: 95%;

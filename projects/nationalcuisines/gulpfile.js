@@ -37,6 +37,13 @@ gulp.task('minify-css', function() {
     .pipe(gulp.dest('styles/dest'));
 });
 
+gulp.task('minify-css-ie', function() {
+  return gulp.src('styles/dest/ie.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(rename('ie.min.css'))
+    .pipe(gulp.dest('styles/dest'));
+});
+
 gulp.task('scripts', function() {
   return gulp.src(['js/src/*.js'])
     .pipe(concat('script.js'))
@@ -55,7 +62,7 @@ gulp.task('compress', function(cb) {
 });
 
 gulp.task('default', function() {
-  gulp.run('concat', 'sass', 'cssbeautify', 'minify-css', 'scripts', 'compress');
+  gulp.run('concat', 'sass', 'cssbeautify', 'minify-css', 'minify-css-ie', 'scripts', 'compress');
 });
 
 gulp.task('watch', function() {
@@ -63,6 +70,7 @@ gulp.task('watch', function() {
   gulp.watch('styles/dest/*.scss', ['sass']);
   gulp.watch('styles/dest/*.css', ['cssbeautify']);
   gulp.watch('styles/dest/*.css', ['minify-css']);
+  gulp.watch('styles/dest/*.css', ['minify-css-ie']);
   gulp.watch('js/src/*.js', ['scripts']);
   gulp.watch('js/dest/*.js', ['compress']);
 });
