@@ -175,6 +175,7 @@ table {
     font-size: 20px;
     font-family: $bold;
     font-weight: bold;
+    line-height: 1.5;
   }
 
   /* menu */
@@ -200,8 +201,9 @@ table {
 
   .header__modal-button {
     width: 100%;
-    font-family: $regular;
+    font-family: $bold;
     font-size: 50px;
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
@@ -229,6 +231,7 @@ table {
   }
 
   .header__modal-close {
+    padding-right: 35px;
     color: maroon;
     position: absolute;
     right: 40px;
@@ -296,7 +299,6 @@ table {
     width: 95%;
     margin: 0px auto;
     overflow: hidden;
-    display: none;
     height: auto;
     text-align: justify;
     line-height: 25px;
@@ -306,7 +308,6 @@ table {
   .main__image {
     width: 95%;
     margin: 0px auto;
-    height: 220px;
     display: block;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -319,8 +320,9 @@ table {
     margin-top: 10px;
     display: block;
     font-family: $bold;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
   }
 
   .main__text {
@@ -331,10 +333,6 @@ table {
     font-style: italic;
     font-family: $italic;
     font-size: 16px;
-  }
-
-  .main__item.active {
-    display: block;
   }
 
   /* footer */
@@ -427,6 +425,7 @@ table {
     font-size: 20px;
     font-family: $bold;
     font-weight: bold;
+    line-height: 1.5;
   }
 
   /* menu */
@@ -482,6 +481,7 @@ table {
   }
 
   .header__modal-close {
+    padding-right: 35px;
     color: maroon;
     position: absolute;
     right: 40px;
@@ -549,7 +549,6 @@ table {
     width: 95%;
     margin: 0px auto;
     overflow: hidden;
-    display: none;
     height: auto;
     text-align: justify;
     line-height: 25px;
@@ -559,7 +558,6 @@ table {
   .main__image {
     width: 95%;
     margin: 0px auto;
-    height: 220px;
     display: block;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -572,8 +570,9 @@ table {
     margin-top: 10px;
     display: block;
     font-family: $bold;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
   }
 
   .main__text {
@@ -584,10 +583,6 @@ table {
     font-style: italic;
     font-family: $italic;
     font-size: 16px;
-  }
-
-  .main__item.active {
-    display: block;
   }
 
   /* footer */
@@ -684,6 +679,7 @@ table {
     font-size: 20px;
     font-family: $bold;
     font-weight: bold;
+    line-height: 1.5;
   }
 
   /* menu */
@@ -786,7 +782,6 @@ table {
     width: 95%;
     margin: 0px auto;
     overflow: hidden;
-    display: none;
     height: auto;
     text-align: justify;
     line-height: 25px;
@@ -795,7 +790,7 @@ table {
 
   .main__image {
     width: 47%;
-    height: 420px;
+    min-height: 320px;
     display: inline;
     float: left;
     margin-right: 20px;
@@ -805,7 +800,7 @@ table {
 
   .main__title {
     font-family: $bold;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .main__text {
@@ -816,10 +811,6 @@ table {
     font-style: italic;
     font-family: $italic;
     font-size: 16px;
-  }
-
-  .main__item.active {
-    display: block;
   }
 
   /* footer */
@@ -913,6 +904,7 @@ table {
     font-size: 20px;
     font-family: $bold;
     font-weight: $bold;
+    line-height: 1.5;
   }
 
   /* menu */
@@ -1017,7 +1009,6 @@ table {
     width: 95%;
     margin: 0px auto;
     overflow: hidden;
-    display: none;
     height: auto;
     text-align: justify;
     line-height: 25px;
@@ -1026,7 +1017,7 @@ table {
 
   .main__image {
     width: 48%;
-    height: 420px;
+    min-height: 420px;
     display: inline;
     float: left;
     margin-right: 20px;
@@ -1036,7 +1027,7 @@ table {
 
   .main__title {
     font-family: $bold;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .main__text {
@@ -1047,10 +1038,6 @@ table {
     font-style: italic;
     font-family: $italic;
     font-size: 16px;
-  }
-
-  .main__item.active {
-    display: block;
   }
 
   /* footer */

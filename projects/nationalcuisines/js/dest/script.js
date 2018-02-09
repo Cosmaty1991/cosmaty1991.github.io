@@ -1,48 +1,25 @@
 // menu for mobile and tablet
 
-$(function() {
+// click on the menu button to show the modal window
 
-  // click on the menu button to show the modal window
+document.querySelector('.header__modal-button').onclick = function() {
+  document.querySelector('.header__modal-window').style.display = 'block';
+}
 
-  $('.header__modal-button').click(function() {
-    $('.header__modal-window').fadeIn();
-  });
+// click on the menu item to show or close the sub-menu
 
-  // click on link to show or close the submenu
+for (var i = 0; i < document.querySelectorAll('.header__modal-window .header__item').length; i++) {
+  document.querySelectorAll('.header__modal-window .header__item')[i].onclick = function() {
+    if (this.querySelector('.header__sublist').style.display == 'block') {
+      this.querySelector('.header__sublist').style.display = 'none';
+    } else {
+      this.querySelector('.header__sublist').style.display = 'block';
+    }
+  }
+}
 
-  $('.header__modal-window .header__item').click(function() {
-    $(this).find('.header__sublist').toggle();
-  });
+// click on the close button to close the modal window
 
-  // click on the submenu link to close the modal window
-
-  $('.header__modal-window .header__link').click(function() {
-    $('.header__modal-window').fadeOut();
-  });
-
-  // click on the close button to close the modal window
-
-  $('.header__modal-window .header__modal-close').click(function() {
-    $('.header__modal-window').fadeOut();
-  });
-});
-
-// tabs
-
-$(function() {
-
-  // click on the submenu link to show the content
-
-  $('.header__link').click(function(e) {
-    e.preventDefault();
-
-    $(this).removeClass('active');
-    $(this).addClass('active');
-
-    $('.main__list').find('.main__item').hide();
-
-    var content = this.hash.replace('/', '');
-
-    $(content).fadeIn(2000);
-  });
-});
+document.querySelector('.header__modal-close').onclick = function() {
+  document.querySelector('.header__modal-window').style.display = 'none';
+}

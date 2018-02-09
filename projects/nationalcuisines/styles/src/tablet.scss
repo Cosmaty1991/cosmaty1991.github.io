@@ -47,6 +47,7 @@
     font-size: 20px;
     font-family: $bold;
     font-weight: bold;
+    line-height: 1.5;
   }
 
   /* menu */
@@ -102,6 +103,7 @@
   }
 
   .header__modal-close {
+    padding-right: 35px;
     color: maroon;
     position: absolute;
     right: 40px;
@@ -169,7 +171,6 @@
     width: 95%;
     margin: 0px auto;
     overflow: hidden;
-    display: none;
     height: auto;
     text-align: justify;
     line-height: 25px;
@@ -179,7 +180,6 @@
   .main__image {
     width: 95%;
     margin: 0px auto;
-    height: 220px;
     display: block;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -192,8 +192,9 @@
     margin-top: 10px;
     display: block;
     font-family: $bold;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
   }
 
   .main__text {
@@ -204,10 +205,6 @@
     font-style: italic;
     font-family: $italic;
     font-size: 16px;
-  }
-
-  .main__item.active {
-    display: block;
   }
 
   /* footer */

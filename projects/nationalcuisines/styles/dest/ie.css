@@ -241,7 +241,6 @@ body {
   width: 95%;
   margin: 0px auto;
   overflow: hidden;
-  display: none;
   height: auto;
   text-align: justify;
   line-height: 25px;
@@ -272,10 +271,6 @@ body {
   font-style: italic;
   font-family: "Aleo Italic", Arial, sans-serif;
   font-size: 16px;
-}
-
-.main__item.active {
-  display: block;
 }
 
 /* icons */
