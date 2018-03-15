@@ -1,14 +1,12 @@
 // share
 
-// share on facebook
-
 var facebookShare = document.querySelector('.facebook-share');
+var twitterShare = document.querySelector('.twitter-share');
+var googleShare = document.querySelector('.google-share');
 
 // click on the button to show new window for facebook share
 
-facebookShare.onclick = function(e) {
-  e.preventDefault();
-
+facebookShare.onclick = function() {
   var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?url=' + document.URL);
 
   if (facebookWindow.focus) {
@@ -18,15 +16,9 @@ facebookShare.onclick = function(e) {
   return false;
 }
 
-// share on twitter
-
-var twitterShare = document.querySelector('.twitter-share');
-
 // click on the button to show new window for twitter share
 
-twitterShare.onclick = function(e) {
-  e.preventDefault();
-
+twitterShare.onclick = function() {
   var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL);
 
   if (twitterWindow.focus) {
@@ -36,15 +28,9 @@ twitterShare.onclick = function(e) {
   return false;
 }
 
-// share on google+
-
-var googleShare = document.querySelector('.google-share');
-
 // click on the button to show new window for google+ share
 
-googleShare.onclick = function(e) {
-  e.preventDefault();
-
+googleShare.onclick = function() {
   var googleWindow = window.open('https://plus.google.com/share?url=' + document.URL);
 
   if (googleWindow.focus) {

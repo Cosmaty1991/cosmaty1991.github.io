@@ -85,34 +85,34 @@ $(function() {
   // create a function that will add luxe rooms on website
 
   function showRoomsLuxe() {
-    $('#section-rooms-luxe .available').html('');
-    $('#section-rooms-luxe .booked').html('');
+    $('.section-rooms-luxe .available').html('');
+    $('.section-rooms-luxe .booked').html('');
 
     for (var i = 0; i < totalRooms; i++) {
       if (roomsLuxe[i].status == 'available') {
         var availableRoom = $(
           '<li class="section-rooms__item">' +
-            '<h3 class="section-rooms__header1">' + roomsLuxe[i].title + '</h3>' +
+            '<h3 class="section-rooms__header">' + roomsLuxe[i].title + '</h3>' +
             roomsLuxe[i].image +
-            '<h4 class="section-rooms__header2">' + roomsLuxe[i].price + '</h4>' +
+            '<h4 class="section-rooms__heading">' + roomsLuxe[i].price + '</h4>' +
             '<p class="section-rooms__text">' + roomsLuxe[i].text + '</p>' +
-            '<a href="#" class="section-rooms__button">Book now</a>' +
+            '<button class="section-rooms__button" type="button">Book now</button>' +
           '</li>');
 
         availableRoom.attr('id', i)
-        $('#section-rooms-luxe .available').append(availableRoom);
+        $('.section-rooms-luxe .available').append(availableRoom);
       } else {
         var bookedRoom = $(
           '<li class="section-rooms__item">' +
-            '<h3 class="section-rooms__header1">' + roomsLuxe[i].title + '</h3>' +
+            '<h3 class="section-rooms__header">' + roomsLuxe[i].title + '</h3>' +
             roomsLuxe[i].image +
-            '<h4 class="section-rooms__header2">' + roomsLuxe[i].price + '</h4>' +
+            '<h4 class="section-rooms__heading">' + roomsLuxe[i].price + '</h4>' +
             '<p class="section-rooms__text">' + roomsLuxe[i].text + '</p>' +
-            '<h3 class="section-rooms__header1">Booked by ' + roomsLuxe[i].name + '</h3>' +
+            '<h3 class="section-rooms__heading">Booked by ' + roomsLuxe[i].name + '</h3>' +
           '</li>');
 
         bookedRoom.attr('id', i)
-        $('#section-rooms-luxe .booked').append(bookedRoom);
+        $('.section-rooms-luxe .booked').append(bookedRoom);
 
         roomsBookedLuxe.push(roomsLuxe[i]);
       }
@@ -123,43 +123,39 @@ $(function() {
 
   // click on the book button to show the modal window
 
-  $('#section-rooms-luxe .available').on('click', '.section-rooms__button', function(e) {
-    e.preventDefault();
-
+  $('.section-rooms-luxe .available .section-rooms__button').click(function() {
     var number = $(this).closest('.section-rooms__item').attr('id');
 
-    $('#section-rooms-luxe .section-rooms__modal-window').fadeIn();
-    $('#section-rooms-luxe .section-rooms__modal-number').text(number).css('display', 'none');
+    $('.section-rooms-luxe .section-rooms__modal-window').fadeIn();
+    $('.section-rooms-luxe .section-rooms__modal-number').text(number).fadeOut();
 
     return number;
   });
 
   // click on the modal button to book room
 
-  $('#section-rooms-luxe .section-rooms__modal-window .section-rooms__modal-form').on('submit', function(e) {
+  $('.section-rooms-luxe .section-rooms__modal-form').submit(function(e) {
     e.preventDefault();
 
-    var number = $('#section-rooms-luxe .section-rooms__modal-number').text();
-    var name = $('#section-rooms-luxe .section-rooms__modal-input').val();
+    var number = $('.section-rooms-luxe .section-rooms__modal-number').text();
+    var name = $('.section-rooms-luxe .section-rooms__modal-input').val();
 
     roomsClassic[number].status = 'booked';
     roomsClassic[number].name = name;
 
-    $('#section-rooms-luxe .section-rooms__modal-window').fadeOut('slow');
+    $('.section-rooms-luxe .section-rooms__modal-window').fadeOut('slow');
 
     showRoomsClassic();
 
     setTimeout(function() {
-      $('#section-rooms-luxe .section-rooms__modal-input').val('');
-      $('#section-rooms-luxe .section-rooms__modal-number').text('');
+      $('.section-rooms-luxe .section-rooms__modal-input').val('');
+      $('.section-rooms-luxe .section-rooms__modal-number').text('');
     }, 2000);
   });
 
   // click on the modal close button to close the modal window
 
-  $('#section-rooms-luxe .section-rooms__modal-window').on('click', '.section-rooms__modal-close', function(e) {
-    e.preventDefault();
-
-    $('#section-rooms-luxe .section-rooms__modal-window').fadeOut('slow');
+  $('.section-rooms-luxe .section-rooms__modal-close').click(function() {
+    $('.section-rooms-luxe .section-rooms__modal-window').fadeOut('slow');
   });
 });

@@ -85,34 +85,34 @@ $(function() {
   // create a function that will add classic rooms on website
 
   function showRoomsClassic() {
-    $('#section-rooms-classic .available').html('');
-    $('#section-rooms-classic .booked').html('');
+    $('.section-rooms-classic .available').html('');
+    $('.section-rooms-classic .booked').html('');
 
     for (var i = 0; i < totalRooms; i++) {
       if (roomsClassic[i].status == 'available') {
         var availableRoom = $(
           '<li class="section-rooms__item">' +
-            '<h3 class="section-rooms__header1">' + roomsClassic[i].title + '</h3>' +
+            '<h3 class="section-rooms__header">' + roomsClassic[i].title + '</h3>' +
             roomsClassic[i].image +
-            '<h4 class="section-rooms__header2">' + roomsClassic[i].price + '</h4>' +
+            '<h4 class="section-rooms__heading">' + roomsClassic[i].price + '</h4>' +
             '<p class="section-rooms__text">' + roomsClassic[i].text + '</p>' +
-            '<a href="#" class="section-rooms__button">Book now</a>' +
+            '<button class="section-rooms__button" type="button">Book now</button>' +
           '</li>');
 
         availableRoom.attr('id', i)
-        $('#section-rooms-classic .available').append(availableRoom);
+        $('.section-rooms-classic .available').append(availableRoom);
       } else {
         var bookedRoom = $(
           '<li class="section-rooms__item">' +
-            '<h3 class="section-rooms__header1">' + roomsClassic[i].title + '</h3>' +
+            '<h3 class="section-rooms__header">' + roomsClassic[i].title + '</h3>' +
             roomsClassic[i].image +
-            '<h4 class="section-rooms__header2">' + roomsClassic[i].price + '</h4>' +
+            '<h4 class="section-rooms__heading">' + roomsClassic[i].price + '</h4>' +
             '<p class="section-rooms__text">' + roomsClassic[i].text + '</p>' +
-            '<h3 class="section-rooms__header1">Booked by ' + roomsClassic[i].name + '</h3>' +
+            '<h3 class="section-rooms__heading">Booked by ' + roomsClassic[i].name + '</h3>' +
           '</li>');
 
         bookedRoom.attr('id', i)
-        $('#section-rooms-classic .booked').append(bookedRoom);
+        $('.section-rooms-classic .booked').append(bookedRoom);
 
         roomsBookedClassic.push(roomsClassic[i]);
       }
@@ -123,43 +123,39 @@ $(function() {
 
   // click on the book button to show the modal window
 
-  $('#section-rooms-classic .available').on('click', '.section-rooms__button', function(e) {
-    e.preventDefault();
-
+  $('.section-rooms-classic .available .section-rooms__button').click(function() {
     var number = $(this).closest('.section-rooms__item').attr('id');
 
-    $('#section-rooms-classic .section-rooms__modal-window').fadeIn();
-    $('#section-rooms-classic .section-rooms__modal-number').text(number).css('display', 'none');
+    $('.section-rooms-classic .section-rooms__modal-window').fadeIn();
+    $('.section-rooms-classic .section-rooms__modal-number').text(number).fadeOut();
 
     return number;
   });
 
   // click on the modal button to book room
 
-  $('#section-rooms-classic .section-rooms__modal-window .section-rooms__modal-form').on('submit', function(e) {
+  $('.section-rooms-classic .section-rooms__modal-form').submit(function(e) {
     e.preventDefault();
 
-    var number = $('#section-rooms-classic .section-rooms__modal-number').text();
-    var name = $('#section-rooms-classic .section-rooms__modal-input').val();
+    var number = $('.section-rooms-classic .section-rooms__modal-number').text();
+    var name = $('.section-rooms-classic .section-rooms__modal-input').val();
 
     roomsClassic[number].status = 'booked';
     roomsClassic[number].name = name;
 
-    $('#section-rooms-classic .section-rooms__modal-window').fadeOut('slow');
+    $('.section-rooms-classic .section-rooms__modal-window').fadeOut('slow');
 
     showRoomsClassic();
 
     setTimeout(function() {
-      $('#section-rooms-classic .section-rooms__modal-input').val('');
-      $('#section-rooms-classic .section-rooms__modal-number').text('');
+      $('.section-rooms-classic .section-rooms__modal-input').val('');
+      $('.section-rooms-classic .section-rooms__modal-number').text('');
     }, 2000);
   });
 
   // click on the modal close button to close the modal window
 
-  $('#section-rooms-classic .section-rooms__modal-window').on('click', '.section-rooms__modal-close', function(e) {
-    e.preventDefault();
-
-    $('#section-rooms-classic .section-rooms__modal-window').fadeOut('slow');
+  $('.section-rooms-classic .section-rooms__modal-close').click(function() {
+    $('.section-rooms-classic .section-rooms__modal-window').fadeOut('slow');
   });
 });

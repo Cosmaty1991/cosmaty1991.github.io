@@ -8,7 +8,7 @@
 
   /* header */
 
-  header {
+  .header {
     width: 100%;
     margin: 20px auto;
     padding-bottom: 20px;
@@ -19,156 +19,116 @@
 
   .header-menu__list {
     width: 304px;
-    margin: 20px auto;
-
-    .header-menu__item { /* menu for desktop */
-      display: none;
-
-      &:nth-child(4) { /* logo */
-        display: block;
-        width: 100%;
-        text-decoration: none;
-        font-family: Arial, sans-serif;
-        font-size: 42px;
-
-        .header-menu__logo2 {
-          display: none;
-        }
-      }
-
-      &:last-child { /* menu for mobile and tablet */
-        display: block;
-        width: 100%;
-        margin: 20px auto;
-        margin-top: 10px;
-        text-align: center;
-
-        .header-menu__link {
-          text-decoration: none;
-          text-transform: uppercase;
-          font-family: $bold;
-          font-size: 62px;
-          font-weight: bold;
-          color: black;
-        }
-
-        .header-menu__modal-window {
-          position: fixed;
-          top: 0px;
-          right: 0px;
-          bottom: 0px;
-          left: 0px;
-          z-index: 99999;
-          display: none;
-          overflow-y: scroll;
-
-          &:target {
-            display: block;
-          }
-        }
-
-        .header-menu__modal-window > div {
-          width: 100%;
-          height: 150%;
-          padding-top: 80px;
-          background: rgba(128, 128, 128, 0.8);
-        }
-
-        .header-menu__modal-close {
-          color: $darkred;
-          position: absolute;
-          right: 40px;
-          top: 20px;
-          text-align: center;
-          width: 24px;
-          text-decoration: none;
-          text-shadow: $text-shadow2;
-          font-family: Arial, sans-serif;
-          font-size: 48px;
-          font-weight: bold;
-        }
-
-        .header-menu__modal-list { /* sub-menu for mobile and tablet */
-          position: absolute;
-          left: 40px;
-
-          .header-menu__modal-item .header-menu__modal-link {
-            display: block;
-            margin-top: 20px;
-            text-transform: uppercase;
-            text-decoration: none;
-            text-align: left;
-            color: white;
-            font-family: $bold;
-            font-size: 36px;
-            font-weight: bold;
-          }
-        }
-      }
-    }
-  }
-
-  /* search */
-
-  .header-search {
-    display: block;
-    width: 95%;
-    margin: 20px auto;
-    overflow: hidden;
-  }
-
-  .header-search__input {
-    width: 80%;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: inline;
-    float: left;
-    background: white;
-    border: 1px solid black;
-    outline: none;
-    font-family: $regular;
-
-    &:focus {
-      outline: 2px solid black;
-    }
-  }
-
-  .header-search__clear {
-    display: none;
-    float: left;
-    color: $red;
-    margin-left: -18px;
-    margin-top: 6px;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  .header-search__submit {
-    width: 15%;
-    height: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: block;
-    float: right;
-    background: black;
-    border-radius: 3px;
-  }
-
-  .header-search__image {
-    width: 15px;
-    display: block;
     margin: 0px auto;
   }
 
-  mark {
-    background: yellow;
+  .header-menu__item,
+  .header-menu__item.ie {
+    display: none;
   }
 
-  mark.current {
-    background: orange;
+  /* logo */
+
+  .header-menu__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+  }
+
+  .header-menu__logo-first,
+  .header-menu__logo-second {
+    fill: white;
+    stroke: black;
+    stroke-miterlimit:10;
+  }
+
+  .header-menu__logo-second {
+    fill: black;
+  }
+
+  .header-menu__logo-third {
+    fill: none;
+  }
+
+  .header-menu__logo-fourth {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .header-menu__button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $bold;
+    font-size: 62px;
+    font-weight: bold;
+    color: black;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  /* menu for mobile and tablet */
+
+  .header-menu__list.mobile {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .header-menu__modal-window {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99999;
+    display: none;
+    overflow-y: scroll;
+  }
+
+  .header-menu__modal-window > div {
+    width: 100%;
+    height: 150%;
+    padding-top: 80px;
+    background: rgba(128, 128, 128, 0.8);
+  }
+
+  .header-menu__modal-close {
+    color: $darkred;
+    background: none;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    text-align: center;
+    width: 24px;
+    text-decoration: none;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .header-menu__modal-list {
+    position: absolute;
+    left: 40px;
+  }
+
+  .header-menu__modal-item .header-menu__modal-link {
+    display: block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    font-family: $bold;
+    font-size: 36px;
+    font-weight: bold;
   }
 
   /* slider */
@@ -178,26 +138,29 @@
     position: relative;
     margin: auto;
     overflow: hidden;
-
-    .header-slider__item .header-slider__image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      display: inline;
-      float: right;
-    }
   }
+
+  .header-slider__item {
+    border: 4px solid black;
+  }
+
+  .header-slider__image {
+    width: 100%;
+    height: 200px;
+    display: inline;
+    float: right;
+  }
+
+  /* slider buttons */
 
   .header-slider__item-prev,
   .header-slider__item-next {
     display: inline;
-    margin-top: -130px;
+    margin-top: -120px;
     position: relative;
-    color: white;
-    font-size: 48px;
-    font-weight: bold;
-    text-decoration: none;
-    text-shadow: $text-shadow;
+    border: none;
+    background: none;
+    outline: none;
   }
 
   .header-slider__item-prev {
@@ -210,18 +173,22 @@
     margin-right: 3%;
   }
 
-  /* content */
-
-  main {
-    width: 100%;
+  .header-slider__item-arrow {
+    width: 40px;
+    height: 40px;
+    fill: white;
   }
 
-  .tabs {
+  /* slider buttons for internet explorer < 9 */
+
+  .header-slider__item-arrow.ie {
     display: none;
   }
 
-  .tabs.active {
-    display: block;
+  /* content */
+
+  .main {
+    width: 100%;
   }
 
   /* home */
@@ -229,8 +196,6 @@
   .section-home {
     width: 95%;
     margin: 20px auto;
-    height: 500px;
-    overflow-y: scroll;
   }
 
   .section-home__title {
@@ -242,11 +207,11 @@
     font-size: 26px;
   }
 
-  .section-home__header1 {
+  .section-home__header {
     text-align: center;
     margin: 20px auto;
     font-family: $bold;
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .section-home__text {
@@ -265,7 +230,7 @@
     text-align: center;
     padding-top: 17px;
     display: block;
-    text-shadow: $text-shadow;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
     user-select: none;
     border: 1px solid $darkred;
     @include border-radius(5px);
@@ -274,9 +239,7 @@
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
+    @include box-shadow(0 6px rgb(77, 0, 0), 0 3px 15px rgba(0,0,0,.4), inset 0 1px rgba(255,255,255,.3), inset 0 0 3px rgba(255,255,255,.5));
     @include transition(0.2s);
     font-family: $bold;
     font-size: 18px;
@@ -287,9 +250,7 @@
     }
   }
 
-  /* reviews */
-
-  .section-home__header2 {
+  .section-home__heading {
     text-align: center;
     margin: 20px auto;
     margin-top: 40px;
@@ -301,31 +262,31 @@
   .section-home__list {
     width: 98%;
     margin: 20px auto;
+  }
 
-    .section-home__item {
-      border: 1px dashed black;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      padding-left: 5px;
-      padding-right: 5px;
-      padding-top: 5px;
-      line-height: 1.5;
-      text-align: justify;
+  .section-home__item {
+    border: 1px dashed black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    line-height: 1.5;
+    text-align: justify;
+  }
 
-      .section-home__text1 {
-        font-family: $italic;
-        font-style: italic;
-        margin-top: 10px;
-        margin-bottom: 20px;
-      }
+  .section-home__article {
+    font-family: $italic;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 
-      .section-home__text2 {
-        font-family: $bold;
-        font-weight: bold;
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-    }
+  .section-home__name {
+    font-family: $bold;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   /* rooms */
@@ -333,8 +294,6 @@
   .section-rooms {
     width: 95%;
     margin: 20px auto;
-    height: 500px;
-    overflow-y: scroll;
   }
 
   .section-rooms__title {
@@ -348,67 +307,25 @@
 
   /* filter */
 
-  .section-rooms__radio {
-    display: none;
-  }
-
-  .section-rooms__label {
-    display: block;
-    float: left;
-    width: 31.5%;
+  .section-rooms__filter {
+    width: 97%;
     text-align: center;
     text-transform: uppercase;
     margin: 20px auto;
     font-family: $bold;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 0.9%;
     margin-top: 20px;
-    margin-bottom: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
     overflow: hidden;
+    border: none;
   }
 
-  #section-rooms-classic__all:checked ~ .section-rooms__list,
-  #section-rooms-luxe__all:checked ~ .section-rooms__list,
-  #section-rooms-deluxe__all:checked ~ .section-rooms__list,
-  #section-rooms-classic__available:checked ~ .section-rooms__list.available,
-  #section-rooms-luxe__available:checked ~ .section-rooms__list.available,
-  #section-rooms-deluxe__available:checked ~ .section-rooms__list.available,
-  #section-rooms-classic__booked:checked ~ .section-rooms__list.booked,
-  #section-rooms-luxe__booked:checked ~ .section-rooms__list.booked,
-  #section-rooms-deluxe__booked:checked ~ .section-rooms__list.booked {
-    display: block;
-  }
-
-  #section-rooms-classic__available:checked ~ .section-rooms__list.booked,
-  #section-rooms-luxe__available:checked ~ .section-rooms__list.booked,
-  #section-rooms-deluxe__available:checked ~ .section-rooms__list.booked,
-  #section-rooms-classic__available:checked ~ .section-rooms__title:nth-of-type(3),
-  #section-rooms-luxe__available:checked ~ .section-rooms__title:nth-of-type(3),
-  #section-rooms-deluxe__available:checked ~ .section-rooms__title:nth-of-type(3),
-  #section-rooms-classic__booked:checked ~ .section-rooms__list.available,
-  #section-rooms-luxe__booked:checked ~ .section-rooms__list.available,
-  #section-rooms-deluxe__booked:checked ~ .section-rooms__list.available,
-  #section-rooms-classic__booked:checked ~ .section-rooms__title:nth-of-type(2),
-  #section-rooms-luxe__booked:checked ~ .section-rooms__title:nth-of-type(2),
-  #section-rooms-deluxe__booked:checked ~ .section-rooms__title:nth-of-type(2) {
-    display: none;
-  }
-
-  #section-rooms-classic__all:checked ~ .section-rooms__label[for=section-rooms-classic__all],
-  #section-rooms-luxe__all:checked ~ .section-rooms__label[for=section-rooms-luxe__all],
-  #section-rooms-deluxe__all:checked ~ .section-rooms__label[for=section-rooms-deluxe__all],
-  #section-rooms-classic__available:checked ~ .section-rooms__label[for=section-rooms-classic__available],
-  #section-rooms-luxe__available:checked ~ .section-rooms__label[for=section-rooms-luxe__available],
-  #section-rooms-deluxe__available:checked ~ .section-rooms__label[for=section-rooms-deluxe__available],
-  #section-rooms-classic__booked:checked ~ .section-rooms__label[for=section-rooms-classic__booked],
-  #section-rooms-luxe__booked:checked ~ .section-rooms__label[for=section-rooms-luxe__booked],
-  #section-rooms-deluxe__booked:checked ~ .section-rooms__label[for=section-rooms-deluxe__booked] {
+  .filter-active {
     background: $green;
     color: white;
-    text-shadow: $text-shadow;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
   }
 
   /* available and booked rooms */
@@ -417,108 +334,76 @@
     width: 98%;
     margin: 20px auto;
     overflow: hidden;
-
-    .section-rooms__item {
-      width: 98%;
-      margin-bottom: 40px;
-      border: 1px solid black;
-      padding-top: 10px;
-      padding-bottom: 10px;
-
-      .section-rooms__header1 {
-        width: 100%;
-        margin: 0px auto;
-        margin-bottom: 20px;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: $bold;
-        font-size: 18px;
-        text-align: center;
-      }
-
-      .section-rooms__image {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-
-      .section-rooms__header2 {
-        width: 100%;
-        margin: 0px auto;
-        margin-bottom: 20px;
-        padding-left: 5px;
-        text-align: center;
-        font-family: $bold;
-        font-size: 18px;
-      }
-
-      .section-rooms__text {
-        margin-bottom: 20px;
-        padding-left: 5px;
-        padding-right: 5px;
-        line-height: 1.5;
-        font-family: $regular;
-        text-align: justify;
-      }
-
-      .section-rooms__button {
-        width: 223px;
-        height: 35px;
-        margin: 10px auto;
-        text-align: center;
-        padding-top: 17px;
-        display: block;
-        text-shadow: $text-shadow;
-        user-select: none;
-        border: 1px solid $darkred;
-        @include border-radius(5px);
-        outline: none;
-        background: $red;
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-        -webkit-box-shadow: $box-shadow;
-        -moz-box-shadow: $box-shadow;
-        box-shadow: $box-shadow;
-        @include transition(0.2s);
-        font-family: $bold;
-        font-size: 18px;
-        font-weight: bold;
-
-        &:active {
-          @include transform(translate(0, 4px));
-        }
-      }
-
-      &:nth-child(7),
-      &:nth-child(8),
-      &:nth-child(15),
-      &:nth-child(16),
-      &:nth-child(23),
-      &:nth-child(24) {
-        border: none;
-        padding: 0px;
-      }
-
-      .section-rooms__link {
-        display: block;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-        background: black;
-        font-family: $bold;
-        font-size: 18px;
-        font-weight: bold;
-      }
-    }
   }
 
-  /* pagination */
+  .section-rooms__item {
+    width: 98%;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
 
-  .section-rooms__list.pagination .section-rooms__item {
-    border: none;
+  .section-rooms__header {
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $bold;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .section-rooms__image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .section-rooms__heading {
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $bold;
+    font-size: 16px;
+  }
+
+  .section-rooms__text {
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 1.5;
+    font-family: $regular;
+    text-align: justify;
+  }
+
+  .section-rooms__button {
+    width: 223px;
+    height: 55px;
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    border: 1px solid $darkred;
+    @include border-radius(5px);
+    outline: none;
+    background: $red;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include box-shadow(0 6px rgb(77, 0, 0), 0 3px 15px rgba(0,0,0,.4), inset 0 1px rgba(255,255,255,.3), inset 0 0 3px rgba(255,255,255,.5));
+    @include transition(0.2s);
+    font-family: $bold;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:active {
+      @include transform(translate(0, 4px));
+    }
   }
 
   /* modal window for booking */
@@ -537,7 +422,7 @@
   .section-rooms__modal-window > div {
     width: 100%;
     height: 100%;
-    padding-top: 20%;
+    padding-top: 40%;
     background: rgba(128, 128, 128, 0.8);
   }
 
@@ -549,10 +434,13 @@
     text-align: center;
     width: 24px;
     text-decoration: none;
-    text-shadow: $text-shadow2;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     font-weight: bold;
     font-family: Arial, sans-serif;
     font-size: 48px;
+    background: none;
+    border: none;
+    outline: none;
   }
 
   .section-rooms__modal-input {
@@ -574,7 +462,7 @@
     text-align: center;
     padding-top: 5px;
     display: block;
-    text-shadow: $text-shadow;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
     user-select: none;
     border: 1px solid $darkred;
     @include border-radius(5px);
@@ -583,9 +471,7 @@
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
+    @include box-shadow(0 6px rgb(77, 0, 0), 0 3px 15px rgba(0,0,0,.4), inset 0 1px rgba(255,255,255,.3), inset 0 0 3px rgba(255,255,255,.5));
     @include transition(0.2s);
     font-family: $bold;
     font-size: 18px;
@@ -601,8 +487,6 @@
   .section-restaurant {
     width: 95%;
     margin: 20px auto;
-    height: 500px;
-    overflow-y: scroll;
   }
 
   .section-restaurant__title {
@@ -616,14 +500,15 @@
 
   .section-restaurant__image {
     width: 100%;
+    height: 200px;
   }
 
   .section-restaurant__header {
     width: 100%;
-    margin: 20px auto;
+    margin: 40px auto;
     text-align: center;
     font-family: $bold;
-    font-size: 18px;
+    font-size: 22px;
     text-transform: capitalize;
   }
 
@@ -640,8 +525,6 @@
   .section-gallery {
     width: 95%;
     margin: 20px auto;
-    height: 500px;
-    overflow-y: scroll;
   }
 
   .section-gallery__title {
@@ -654,68 +537,68 @@
   }
 
   .section-gallery__list {
-    width: 100%;
+    width: 98%;
     margin: 20px auto;
     overflow: hidden;
+  }
 
-    .section-gallery__item {
-      display: inline;
-      float: left;
-      margin-right: 20px;
+  .section-gallery__item {
+    width: 98%;
+    margin-bottom: 20px;
+  }
 
-      .section-gallery__image {
-        display: block;
-        margin: 0px auto;
-        object-fit: cover;
-        width: 300px;
-        height: 300px;
-        margin: 10px auto;
-      }
+  .section-gallery__button {
+    border: none;
+    outline: none;
+    background: none;
+  }
 
-      .section-gallery__modal-window {
-        position: fixed;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        z-index: 99999;
-        display: none;
+  .section-gallery__image {
+    display: block;
+    width: 100%;
+    border: 3px solid black;
+  }
 
-        &:target {
-          display: block;
-        }
-      }
+  .section-gallery__modal-window {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99999;
+    display: none;
+    overflow-y: scroll;
+  }
 
-      .section-gallery__modal-window > div {
-        width: 100%;
-        height: 100%;
-        padding-top: 80px;
-        background: rgba(128, 128, 128, 0.8);
-      }
+  .section-gallery__modal-window > div {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    background: rgba(128, 128, 128, 0.8);
+  }
 
-      .section-gallery__modal-close {
-        color: $red;
-        position: absolute;
-        right: 40px;
-        top: 20px;
-        text-align: center;
-        width: 24px;
-        text-decoration: none;
-        text-shadow: $text-shadow2;
-        font-weight: bold;
-        font-family: Arial, sans-serif;
-        font-size: 48px;
-      }
+  .section-gallery__modal-close {
+    color: $red;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    text-align: center;
+    width: 24px;
+    text-decoration: none;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    border: none;
+    outline: none;
+    background: none;
+  }
 
-      .section-gallery__modal-image {
-        display: block;
-        object-fit: cover;
-        width: 100%;
-        margin-top: 10%;
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-    }
+  .section-gallery__modal-image {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 
   /* about */
@@ -723,8 +606,6 @@
   .section-about {
     width: 95%;
     margin: 20px auto;
-    height: 500px;
-    overflow-y: scroll;
   }
 
   .section-about__title {
@@ -739,10 +620,9 @@
   .section-about__header {
     width: 98%;
     margin: 20px auto;
-    font-size: 24px;
     line-height: 1.5;
     font-family: $bold;
-    font-size: 18px;
+    font-size: 22px;
     text-align: justify;
   }
 
@@ -759,8 +639,6 @@
   .section-contact {
     width: 95%;
     margin: 20px auto;
-    height: 500px;
-    overflow-y: scroll;
   }
 
   .section-contact__title {
@@ -772,8 +650,6 @@
     font-size: 26px;
   }
 
-  /* contact form */
-
   .section-contact__form {
     width: 98%;
     margin: 20px auto;
@@ -781,10 +657,10 @@
 
   .section-contact__header {
     width: 100%;
-    margin: 20px auto;
+    margin: 0px auto;
     text-align: center;
     font-family: $bold;
-    font-size: 18px;
+    font-size: 22px;
     text-transform: capitalize;
   }
 
@@ -839,8 +715,6 @@
     font-weight: bold;
   }
 
-  /* contacts */
-
   .section-contact__paragraph {
     width: 98%;
     margin: 0px auto;
@@ -860,8 +734,6 @@
     font-family: $regular;
   }
 
-  /* map */
-
   .section-contact__map {
     width: 95%;
     margin: 20px auto;
@@ -871,22 +743,11 @@
 
   /* footer */
 
-  footer {
-    width: 95%;
-    margin: 20px auto;
-  }
-
-  /* phone number */
-
-  .footer__text {
+  .footer {
     width: 100%;
-    text-align: center;
-    margin: 10px auto;
-    color: black;
-    text-decoration: none;
-    font-family: $bold;
-    font-size: 28px;
-    font-weight: bold;
+    margin: 40px auto;
+    padding-top: 20px;
+    border-top: 10px solid $darkred;
   }
 
   /* social buttons */
@@ -895,49 +756,66 @@
     width: 304px;
     margin: 20px auto;
     overflow: hidden;
-
-    .footer__item {
-      display: inline;
-      float: left;
-      margin-right: 95px;
-      margin-bottom: 20px;
-
-      &:nth-child(3),
-      &:nth-child(6),
-      &:nth-child(7),
-      &:nth-child(8),
-      &:nth-child(9) {
-        margin-right: 0px;
-      }
-
-      .footer__link {
-        display: block;
-        color: black;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: "Mono Social Icons Font";
-        font-size: 44px;
-      }
-    }
-
-    .footer__item.facebook-share,
-    .footer__item.twitter-share,
-    .footer__item.google-share { /* share */
-      width: 280px;
-      display: block;
-      margin-right: 10px;
-      padding: 10px;
-      text-align: center;
-      background: black;
-      color: white;
-      border: 1px solid black;
-      border-radius: 6px;
-      font-family: "Mono Social Icons Font";
-      font-size: 22px;
-    }
   }
 
-  /* copyright */
+  /* social buttons for internet explorer < 9 */
+
+  .footer__list.ie {
+    display: none;
+  }
+
+  .footer__item {
+    display: inline;
+    float: left;
+    margin-right: 85px;
+    margin-bottom: 20px;
+  }
+
+
+  .footer__item.margin-right,
+  .footer__item.margin-right.mobile {
+    margin-right: 0px;
+  }
+
+  .footer__link {
+    display: block;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    background: black;
+    color: white;
+    @include border-radius(6px);
+    font-family: $bold;
+    font-weight: bold;
+  }
+
+  .footer__text {
+    width: 280px;
+    font-size: 22px;
+  }
+
+  .footer__button {
+    width: 295px;
+    display: block;
+    margin-right: 8px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    color: white;
+    border: none;
+    @include border-radius(6px);
+    outline: none;
+    font-family: $bold;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .footer__image {
+    width: 25px;
+    height: 25px;
+    fill: white;
+  }
 
   .footer__copy {
     width: 100%;
