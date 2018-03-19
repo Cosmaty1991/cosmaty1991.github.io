@@ -6,9 +6,9 @@
     overflow-x: hidden;
   }
 
-  /* home */
+  /* header */
 
-  header {
+  .header {
     width: 100%;
     background: #87509c;
     overflow: hidden;
@@ -20,27 +20,49 @@
     margin: 0px auto;
   }
 
-  .header__logo a {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    color: white;
-    text-decoration: none;
-    font-family: $bold;
-    font-size: $font-size;
+  /* logo for internet explorer < 9 */
+
+  .header__logo.ie {
+    display: none;
   }
+
+  .header__logo.hide {
+    font-size: 0px;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  .header__image {
+    display: block;
+    width: 200px;
+    margin: 0px auto;
+    margin-top: -30px;
+    fill: white;
+    font-family: $bold;
+    font-size: 100px;
+    font-weight: bold;
+  }
+
+  /* menu */
 
   .header__list {
     display: none;
   }
 
-  .header__paragraph {
+  .header__title {
     color: white;
     margin-top: 20px;
     margin-bottom: 42px;
     text-align: center;
     font-family: $bold;
-    font-size: $font-size - 22px;
+    font-size: 20px;
   }
 
   .header__button {
@@ -50,19 +72,18 @@
     padding-top: 15px;
     text-align: center;
     display: block;
-    text-shadow: 0 -1px rgba(0,0,0,.5);
+    text-shadow: 0 -1px rgba(0, 0, 0, .5);
     user-select: none;
-    border: 1px solid rgb(80,32,0);
+    border: 1px solid rgb(80, 32, 0);
     @include border-radius(5px);
     outline: none;
-    background: #eb7d4b;
+    background: $orange;
     font-family: $bold;
-    font-size: $font-size - 10px;
+    font-size: 32px;
+    font-weight: bold;
     color: white;
     text-decoration: none;
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
+    @include box-shadow(0 6px rgb(86,38,6), 0 3px 15px rgba(0,0,0,.4), inset 0 1px rgba(255,255,255,.3), inset 0 0 3px rgba(255,255,255,.5));
     @include transition(.2s);
 
     &:active {
@@ -70,121 +91,126 @@
     }
   }
 
-  /* works */
+  /* content */
 
-  main {
+  .main {
     width: 100%;
     display: block;
-    font-family: $bold;
-    background: #ffdd99;
+  }
+
+  /* works */
+
+  .section-works__container {
+    width: 100%;
+    margin: 0px auto;
     padding-top: 20px;
     padding-bottom: 50px;
+    background: #ffdd99;
   }
 
-  .main__container {
+  .section-works__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: $bold;
+    font-size: 42px;
+  }
+
+  .section-works__paragraph {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: $bold;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .section-works__list {
     width: 95%;
     margin: 0px auto;
-  }
-
-  .main__header {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: $font-size;
-  }
-
-  .main__paragraph {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: $font-size - 26px;
-  }
-
-  .main__list {
     overflow: hidden;
   }
 
-  .main__item {
-    height: 250px;
-    margin-bottom: 10px;
+  .section-works__item {
+    margin-bottom: 20px;
     border: 5px solid black;
+  }
+
+  .section-works__link {
     display: block;
-    background: url(../../img/image1b.jpg) center;
-    background-size: cover;
+  }
 
-    &:last-child {
-      margin-bottom: 0px;
-      background: url(../../img/image2b.jpg) center;
-      background-size: cover;
-    }
-
-    a {
-      display: block;
-    }
+  .section-works__image {
+    display: block;
+    width: 100%;
   }
 
   /* skills */
 
-  section {
+  .section-skills {
     width: 100%;
     box-sizing: border-box;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: $bold;
     background: #e7f1f8;
   }
 
-  .section__container {
-    width: 95%;
-    margin: 0px auto;
-  }
-
-  .section__header {
+  .section-skills__title {
     margin-bottom: 20px;
     text-align: center;
-    font-size: $font-size;
+    font-family: $bold;
+    font-size: 42px;
   }
 
-  .section__item {
+  .section-skills__list {
+    width: 95%;
+    margin: 0px auto;
+    overflow: hidden;
+  }
+
+  .section-skills__item {
     margin-bottom: 20px;
     list-style: none;
-
-    p {
-      font-size: $font-size - 22px;
-    }
   }
 
-  .container {
+  .section-skills__header {
+    font-family: $bold;
+    font-size: 20px;
+  }
+
+  .section-skills__text {
     width: 100%;
     margin-top: 10px;
     background-color: white;
   }
 
-  .section__skills {
+  .section-skills__paragraph {
     text-align: right;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
-    font-size: $font-size - 20px;
+    font-family: $bold;
+    font-size: 22px;
+    font-weight: bold;
   }
 
-  .html {
+  .section-skills__paragraph.html {
     width: 75%;
     background-color: #ff791f;
   }
 
-  .js {
+  .section-skills__paragraph.js {
     width: 50%;
     background-color: #f2c300;
   }
 
-  .ps {
+  .section-skills__paragraph.ps {
     width: 50%;
     background-color: #2a3778;
   }
 
-  /* contacts */
+  /* footer */
 
-  footer {
+  .footer {
     width: 100%;
     background: #344b8e;
     overflow: hidden;
@@ -192,13 +218,17 @@
     padding-bottom: 20px;
   }
 
+  /* contacts */
+
   .footer__container {
     width: 95%;
     margin: 0px auto;
+  }
 
-    .ie {
-      display: none;
-    }
+  /* contacts for internet explorer < 9 */
+
+  .footer__container.ie {
+    display: none;
   }
 
   .footer__paragraph {
@@ -208,7 +238,13 @@
     color: white;
     text-decoration: none;
     font-family: $regular;
-    font-size: $font-size - 20px;
+    font-size: 32px;
+  }
+
+  .footer__paragraph .footer__image {
+    width: 25px;
+    height: 25px;
+    fill: white;
   }
 
   .footer__list {
@@ -218,18 +254,24 @@
   .footer__item {
     display: inline;
     float: left;
+    margin-right: 12px;
 
-    a {
-      padding-left: 18px;
-      padding-right: 18px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      display: block;
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: $icons;
-      font-size: $font-size;
+    &:last-child {
+      margin-right: 0px;
     }
+  }
+
+  .footer__link {
+    display: block;
+  }
+
+  .footer__link .footer__image {
+    width: 30px;
+    height: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    fill: white;
   }
 }

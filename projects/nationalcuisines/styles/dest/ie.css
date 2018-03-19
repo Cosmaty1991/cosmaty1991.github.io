@@ -72,7 +72,6 @@ body {
 .header__image {
   display: none;
   width: 50px;
-  fill: white;
 }
 
 /* logo for internet explorer < 9 */
@@ -87,14 +86,13 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 32px;
-  font-family: "WC Mano Negra Bta", Arial, sans-serif;
-  font-weight: bold;
+  font-family: Arial, sans-serif;
 }
 
 .header__text {
   margin-bottom: 20px;
   font-size: 20px;
-  font-family: "Aleo Bold", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -129,7 +127,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  font-family: "Aleo Regular", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   color: #3b3b3b;
 }
@@ -174,7 +172,7 @@ body {
   padding-bottom: 10px;
   text-decoration: none;
   color: #3b3b3b;
-  font-family: "Aleo Regular", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -217,7 +215,7 @@ body {
 
 .main__title {
   font-weight: bold;
-  font-family: "Aleo Bold", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -227,7 +225,7 @@ body {
   display: inline;
   float: left;
   font-style: italic;
-  font-family: "Aleo Italic", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
 }
 

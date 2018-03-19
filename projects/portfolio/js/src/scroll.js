@@ -15,7 +15,7 @@
         var href = this.attributes.href.nodeValue.toString();
 
         if (element = document.getElementById(href.substr(1))) {
-          var hopCount = speed / movingFrequency
+          var hopCount = speed / movingFrequency;
           var getScrollTopDocumentAtBegin = getScrollTopDocument();
           var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hopCount;
 
@@ -31,7 +31,7 @@
         }
 
         return false;
-      };
+      }
     }
   }
 
@@ -44,9 +44,9 @@
     }
 
     return top;
-  };
+  }
 
   var getScrollTopDocument = function() {
     return document.documentElement.scrollTop + document.body.scrollTop;
-  };
+  }
 })();
